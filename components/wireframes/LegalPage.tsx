@@ -75,7 +75,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
         <section data-block="legal.content" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="max-w-[800px]">
-              <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+              <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
                 Overview
               </h2>
               <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-12 leading-[28px]">

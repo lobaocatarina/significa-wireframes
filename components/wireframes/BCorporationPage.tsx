@@ -23,7 +23,7 @@ export function BCorporationPage() {
         {/* Overview Section */}
         <section data-block="bcorp.overview" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Overview
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -56,7 +56,7 @@ export function BCorporationPage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <div className="border border-[#e0e0e0] p-6">
-                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   1% for the Planet
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -69,7 +69,7 @@ export function BCorporationPage() {
               </div>
               
               <div className="border border-[#e0e0e0] p-6">
-                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Carbon Neutral
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -82,7 +82,7 @@ export function BCorporationPage() {
               </div>
               
               <div className="border border-[#e0e0e0] p-6">
-                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Fair Employment
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -95,7 +95,7 @@ export function BCorporationPage() {
               </div>
               
               <div className="border border-[#e0e0e0] p-6">
-                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Community Support
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -108,7 +108,7 @@ export function BCorporationPage() {
               </div>
               
               <div className="border border-[#e0e0e0] p-6">
-                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Ethical Business
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -121,7 +121,7 @@ export function BCorporationPage() {
               </div>
               
               <div className="border border-[#e0e0e0] p-6">
-                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Digital Accessibility
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -139,16 +139,16 @@ export function BCorporationPage() {
         {/* Impact Reports Section */}
         <section data-block="bcorp.impact-reports" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Impact Reports
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[823px]">
               We publish annual impact reports to share our progress and hold ourselves accountable to our commitments.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[2023, 2022, 2021].map((year) => (
                 <div key={year} className="border border-[#e0e0e0] p-6">
-                  <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
+                  <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {year} Impact Report
                   </h3>
                   <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
@@ -170,7 +170,7 @@ export function BCorporationPage() {
         {/* Transparency Section */}
         <section data-block="bcorp.transparency" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Transparency
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -204,7 +204,7 @@ export function BCorporationPage() {
         {/* Related Articles (Optional) */}
         <section data-block="blog.related-articles" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Related articles
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -214,7 +214,7 @@ export function BCorporationPage() {
                 'The importance of social impact in tech'
               ].map((article, index) => (
                 <div key={index} className="border border-[#e0e0e0] p-6">
-                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3">
+                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {article}
                   </h3>
                   <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">

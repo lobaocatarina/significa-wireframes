@@ -27,8 +27,8 @@ export function FAQPage() {
         <SectionLabel>Grouped FAQs</SectionLabel>
         
         {/* General */}
-        <div className="mb-12">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">General</h2>
+        <div className="mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">General</h2>
           <div className="space-y-4">
             <FAQItem question="What services does Significa offer?" />
             <FAQItem question="What industries do you work with?" />
@@ -39,8 +39,8 @@ export function FAQPage() {
         </div>
 
         {/* Process & Timeline */}
-        <div className="mb-12">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">Process & Timeline</h2>
+        <div className="mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Process & Timeline</h2>
           <div className="space-y-4">
             <FAQItem question="What is your design and development process?" />
             <FAQItem question="How long does a typical project take?" />
@@ -51,8 +51,8 @@ export function FAQPage() {
         </div>
 
         {/* Pricing & Budget */}
-        <div className="mb-12">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">Pricing & Budget</h2>
+        <div className="mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Pricing & Budget</h2>
           <div className="space-y-4">
             <FAQItem question="How do you price your projects?" />
             <FAQItem question="What is the minimum project budget?" />
@@ -63,8 +63,8 @@ export function FAQPage() {
         </div>
 
         {/* Technical */}
-        <div className="mb-12">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">Technical</h2>
+        <div className="mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Technical</h2>
           <div className="space-y-4">
             <FAQItem question="What technologies do you use?" />
             <FAQItem question="Do you provide source code?" />
@@ -75,8 +75,8 @@ export function FAQPage() {
         </div>
 
         {/* Getting Started */}
-        <div className="mb-12">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">Getting Started</h2>
+        <div className="mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Getting Started</h2>
           <div className="space-y-4">
             <FAQItem question="How do I get started with a project?" />
             <FAQItem question="What information do you need from me?" />
@@ -89,12 +89,12 @@ export function FAQPage() {
 
       {/* Still have questions */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[600px] mx-auto px-5 text-center">
+        <div className="max-w-[823px] mx-auto px-5 text-center">
           <SectionLabel>Still Have Questions</SectionLabel>
-          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
             Still have questions?
           </h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8">
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8 text-center">
             Can't find the answer you're looking for? We're here to help. Get in touch and we'll get back to you as soon as possible.
           </p>
           <div className="flex justify-center gap-4">

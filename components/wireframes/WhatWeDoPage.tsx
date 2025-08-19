@@ -34,7 +34,7 @@ export function WhatWeDoPage() {
                 { name: 'Grow', description: 'Measure & observability' }
               ].map((service, index) => (
                 <div key={index} className="border border-[#e0e0e0] p-6">
-                  <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-3">
+                  <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {service.name}
                   </h3>
                   <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
@@ -83,10 +83,10 @@ export function WhatWeDoPage() {
         {/* How We Work Section */}
         <section data-block="what-we-do.how-we-work" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               How we work.
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[823px]">
               We follow a hands-on collaborative approach that ensures your project delivers results.
             </p>
             <figure className="media" data-field="media-label">
@@ -130,7 +130,7 @@ export function WhatWeDoPage() {
         {/* FAQ Section */}
         <section data-block="global.faq-accordion" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">

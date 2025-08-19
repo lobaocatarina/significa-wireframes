@@ -21,7 +21,7 @@ export function HandbookPage() {
         {/* Overview Section */}
         <section data-block="handbook.overview" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Working with Significa
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -107,7 +107,7 @@ export function HandbookPage() {
         {/* All Sections */}
         <section data-block="handbook.links" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               All sections
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

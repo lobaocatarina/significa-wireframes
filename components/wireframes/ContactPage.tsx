@@ -22,7 +22,7 @@ export function ContactPage() {
         {/* Contact Form Section */}
         <section data-block="contact.form" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Contact form
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -115,7 +115,7 @@ export function ContactPage() {
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+                <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
                   Email address
                 </h2>
                 <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
@@ -142,7 +142,7 @@ export function ContactPage() {
                 <figcaption className="sr-only">Book a call illustration</figcaption>
               </figure>
               <div>
-                <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+                <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
                   Book a call
                 </h2>
                 <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
@@ -162,7 +162,7 @@ export function ContactPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="text-center">
-                <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-4">
+                <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-4 text-center">
                   Porto, Portugal
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-6">
@@ -174,7 +174,7 @@ export function ContactPage() {
                 </figure>
               </div>
               <div className="text-center">
-                <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-4">
+                <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-4 text-center">
                   Remote
                 </h3>
                 <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-6">

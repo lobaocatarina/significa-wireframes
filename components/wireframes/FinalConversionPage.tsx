@@ -28,7 +28,7 @@ export function FinalConversionPage() {
         <div className="grid grid-cols-2 gap-16">
           {/* Contact Form */}
           <div>
-            <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">Tell us about your project</h2>
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Tell us about your project</h2>
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -62,11 +62,11 @@ export function FinalConversionPage() {
 
           {/* Contact Information */}
           <div>
-            <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">Get in touch</h2>
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Get in touch</h2>
             
             {/* Email */}
             <div className="mb-8">
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4">Email us</h3>
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4 text-center">Email us</h3>
               <div className="flex items-center gap-4 p-4 border border-[#e0e0e0] hover:border-[#1f1f1f] cursor-pointer transition-colors">
                 <ImagePlaceholder width="40px" height="40px" />
                 <div>
@@ -78,7 +78,7 @@ export function FinalConversionPage() {
 
             {/* Phone */}
             <div className="mb-8">
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4">Call us</h3>
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4 text-center">Call us</h3>
               <div className="flex items-center gap-4 p-4 border border-[#e0e0e0] hover:border-[#1f1f1f] cursor-pointer transition-colors">
                 <ImagePlaceholder width="40px" height="40px" />
                 <div>
@@ -90,7 +90,7 @@ export function FinalConversionPage() {
 
             {/* Calendly */}
             <div className="mb-8">
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4">Schedule a call</h3>
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4 text-center">Schedule a call</h3>
               <div className="flex items-center gap-4 p-4 border border-[#e0e0e0] hover:border-[#1f1f1f] cursor-pointer transition-colors">
                 <ImagePlaceholder width="40px" height="40px" />
                 <div>
@@ -104,7 +104,7 @@ export function FinalConversionPage() {
 
         {/* Locations */}
         <div className="mt-16">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8 text-center">Our locations</h2>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Our locations</h2>
           <div className="grid grid-cols-3 gap-8">
             {[
               {
@@ -128,12 +128,12 @@ export function FinalConversionPage() {
             ].map((location, i) => (
               <div key={i} className="text-center p-6 border border-[#e0e0e0]">
                 <ImagePlaceholder width="80px" height="80px" className="mx-auto mb-4" />
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">
                   {location.city}
                   {location.isMain && <span className="text-[14px] opacity-50 ml-2">(HQ)</span>}
                 </h3>
-                <p className="text-[16px] text-black opacity-50 leading-[24px] mb-3">{location.country}</p>
-                <p className="text-[14px] text-black opacity-50 leading-[20px] whitespace-pre-line">
+                <p className="text-[16px] text-black opacity-50 leading-[24px] mb-3 text-center">{location.country}</p>
+                <p className="text-[14px] text-black opacity-50 leading-[20px] whitespace-pre-line text-center">
                   {location.address}
                 </p>
               </div>
@@ -143,7 +143,7 @@ export function FinalConversionPage() {
 
         {/* What happens next */}
         <div className="mt-16 bg-[#f8f9fa] p-8 text-center">
-          <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">What happens next?</h2>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">What happens next?</h2>
           <div className="grid grid-cols-3 gap-8">
             {[
               {
@@ -166,8 +166,8 @@ export function FinalConversionPage() {
                 <div className="w-12 h-12 bg-[#1f1f1f] text-white flex items-center justify-center mx-auto mb-4 rounded-full">
                   <span className="text-[16px] font-medium">{step.step}</span>
                 </div>
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">{step.title}</h3>
-                <p className="text-[16px] text-black opacity-80 leading-[24px]">{step.description}</p>
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">{step.title}</h3>
+                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">{step.description}</p>
               </div>
             ))}
           </div>

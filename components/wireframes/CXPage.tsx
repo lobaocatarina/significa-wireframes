@@ -29,29 +29,29 @@ export function CXPage() {
         <SectionLabel>Why We Track It</SectionLabel>
         <div className="grid grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Why we measure CX
             </h2>
             <div className="space-y-6">
-              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px]">
+              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
                 We believe that great work speaks for itself, but we also believe in being accountable for the experience we create for our clients.
               </p>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Continuous Improvement</h3>
-                  <p className="text-[16px] text-black opacity-80 leading-[24px]">
+                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Continuous Improvement</h3>
+                  <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                     Regular feedback helps us identify areas where we can improve our processes and service.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Transparency</h3>
-                  <p className="text-[16px] text-black opacity-80 leading-[24px]">
+                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Transparency</h3>
+                  <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                     We share our results openly because we believe in building trust through honesty.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Accountability</h3>
-                  <p className="text-[16px] text-black opacity-80 leading-[24px]">
+                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Accountability</h3>
+                  <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                     Measuring client satisfaction keeps us focused on delivering exceptional experiences.
                   </p>
                 </div>
@@ -66,9 +66,9 @@ export function CXPage() {
       <div className="bg-[#f8f9fa] py-16">
         <div className="max-w-[1400px] mx-auto px-5">
           <SectionLabel>How We Track It</SectionLabel>
-          <div className="text-center mb-12">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4">Our methodology</h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[600px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">Our methodology</h2>
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto">
               We use a combination of quantitative surveys and qualitative interviews to gather comprehensive feedback.
             </p>
           </div>
@@ -90,8 +90,8 @@ export function CXPage() {
             ].map((method, i) => (
               <div key={i} className="text-center">
                 <ImagePlaceholder width="120px" height="120px" className="mx-auto mb-6" />
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">{method.title}</h3>
-                <p className="text-[16px] text-black opacity-80 leading-[24px]">{method.description}</p>
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">{method.title}</h3>
+                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">{method.description}</p>
               </div>
             ))}
           </div>
@@ -111,20 +111,20 @@ export function CXPage() {
         <div className="grid grid-cols-2 gap-16">
           <div className="space-y-8">
             <div>
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">Independent Collection</h3>
-              <p className="text-[16px] text-black opacity-80 leading-[24px]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">Independent Collection</h3>
+              <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                 All feedback is collected by a third-party research company to ensure unbiased results.
               </p>
             </div>
             <div>
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">Real Responses</h3>
-              <p className="text-[16px] text-black opacity-80 leading-[24px]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">Real Responses</h3>
+              <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                 We share actual client responses, both positive feedback and areas for improvement.
               </p>
             </div>
             <div>
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">Regular Updates</h3>
-              <p className="text-[16px] text-black opacity-80 leading-[24px]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">Regular Updates</h3>
+              <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                 Our CX metrics are updated quarterly and shared publicly on this page.
               </p>
             </div>
@@ -137,9 +137,9 @@ export function CXPage() {
       <div className="bg-[#f8f9fa] py-16">
         <div className="max-w-[1400px] mx-auto px-5">
           <SectionLabel>Survey Data Snippets</SectionLabel>
-          <div className="text-center mb-12">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8">Current metrics</h2>
-            <div className="flex justify-center gap-16 mb-12">
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Current metrics</h2>
+            <div className="flex justify-center gap-16 mb-16">
               <Metric value="98%" label="Client Satisfaction" />
               <Metric value="9.2/10" label="Quality Rating" />
               <Metric value="95%" label="Would Recommend" />
@@ -182,8 +182,8 @@ export function CXPage() {
       {/* FAQ */}
       <div className="max-w-[800px] mx-auto px-5 py-16">
         <SectionLabel>FAQ</SectionLabel>
-        <div className="text-center mb-12">
-          <h2 className="text-[32px] font-medium text-black leading-[36px]">Frequently asked questions</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">Frequently asked questions</h2>
         </div>
         <div className="space-y-4">
           <FAQItem question="How often do you collect client feedback?" />

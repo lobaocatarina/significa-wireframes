@@ -22,16 +22,20 @@ export function ProjectsIndexPage() {
         showMedia={false}
       />
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* Filters */}
-      <div className="max-w-[1400px] mx-auto px-5 pb-8">
+      <div className="flex flex-col items-center py-16">
+        <div className="max-w-[1400px] mx-auto px-6 w-full">
         <SectionLabel>Filters</SectionLabel>
         <div className="flex gap-3 mb-8">
-          <WireframeButton>All Projects</WireframeButton>
-          <WireframeButton variant="secondary">E-commerce</WireframeButton>
-          <WireframeButton variant="secondary">SaaS</WireframeButton>
-          <WireframeButton variant="secondary">Mobile</WireframeButton>
-          <WireframeButton variant="secondary">B2B</WireframeButton>
-          <WireframeButton variant="secondary">Healthcare</WireframeButton>
+          <WireframeButton data-field="cta">All Projects</WireframeButton>
+          <WireframeButton variant="secondary" data-field="cta">E-commerce</WireframeButton>
+          <WireframeButton variant="secondary" data-field="cta">SaaS</WireframeButton>
+          <WireframeButton variant="secondary" data-field="cta">Mobile</WireframeButton>
+          <WireframeButton variant="secondary" data-field="cta">B2B</WireframeButton>
+          <WireframeButton variant="secondary" data-field="cta">Healthcare</WireframeButton>
         </div>
         <div className="flex justify-between items-center text-[16px] text-black opacity-50">
           <span>Showing 24 projects</span>
@@ -41,10 +45,15 @@ export function ProjectsIndexPage() {
             <option>Industry</option>
           </select>
         </div>
+        </div>
       </div>
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* Project List */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="flex flex-col items-center py-16">
+        <div className="max-w-[1400px] mx-auto px-6 w-full">
         <SectionLabel>Project List (tiles)</SectionLabel>
         <div className="grid grid-cols-2 gap-8">
           {[...Array(8)].map((_, i) => (
@@ -59,15 +68,19 @@ export function ProjectsIndexPage() {
         </div>
         
         <div className="flex justify-center mt-16">
-          <WireframeButton variant="secondary">Load More Projects</WireframeButton>
+          <WireframeButton variant="secondary" data-field="cta">Load More Projects</WireframeButton>
+        </div>
         </div>
       </div>
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* Stats Section */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[1400px] mx-auto px-5 text-center">
+        <div className="max-w-[1400px] mx-auto px-6 text-center">
           <SectionLabel>Project Statistics</SectionLabel>
-          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
             By the numbers
           </h2>
           <div className="grid grid-cols-4 gap-8">
@@ -91,12 +104,18 @@ export function ProjectsIndexPage() {
         </div>
       </div>
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* Conversion */}
       <MainCTA 
         title="Like what you see?"
         description="Let's create something amazing together. Start your project with Significa today."
         buttonText="Get Started"
       />
+
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
 
       <WireframeFooter />
     </div>

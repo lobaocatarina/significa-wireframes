@@ -27,10 +27,10 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* How We Work Section */}
         <section data-block="service.how-we-work" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               How we work.
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[823px]">
               Our approach to {serviceName.toLowerCase()} combines proven methodologies with innovative thinking.
             </p>
             <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
@@ -46,7 +46,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* Awards Section */}
         <section data-block="service.awards" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Awards & Recognition
             </h2>
             <div className="flex gap-8 items-center">
@@ -71,7 +71,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               {[1, 2, 3].map((poc) => (
                 <div key={poc} className="border border-[#e0e0e0] p-6">
-                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3">
+                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     POC Project {poc}
                   </h3>
                   <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
@@ -95,7 +95,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* Selected Work Grid */}
         <section data-block="global.selected-work-grid" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Selected projects
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,13 +109,13 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* Related Articles */}
         <section data-block="service.related-articles" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Related articles
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[1, 2, 3].map((article) => (
                 <div key={article} className="border border-[#e0e0e0] p-6">
-                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3">
+                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     Article about {serviceName} {article}
                   </h3>
                   <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
@@ -128,7 +128,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
                 </div>
               ))}
             </div>
-            <div className="mt-8">
+            <div className="mt-8 text-center">
               <WireframeButton variant="secondary" data-field="cta">View all articles</WireframeButton>
             </div>
           </div>

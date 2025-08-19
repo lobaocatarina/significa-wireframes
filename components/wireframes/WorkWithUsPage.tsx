@@ -21,10 +21,10 @@ export function WorkWithUsPage() {
         {/* Summary Section */}
         <section data-block="work-with-us.summary" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Working with Significa
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[823px]">
               We believe in building lasting partnerships with our clients through transparency, collaboration, and shared success.
             </p>
             <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
@@ -40,10 +40,10 @@ export function WorkWithUsPage() {
         {/* Team Allocation Section */}
         <section data-block="work-with-us.team-allocation" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Team allocation
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[823px]">
               We are not body leasing; we assemble a dedicated team.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -56,7 +56,7 @@ export function WorkWithUsPage() {
                 'Client Success'
               ].map((role, index) => (
                 <div key={index} className="border border-[#e0e0e0] p-6 text-center">
-                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3">
+                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {role}
                   </h3>
                   <figure className="media" data-field="media-label">
@@ -72,10 +72,10 @@ export function WorkWithUsPage() {
         {/* Pricing Section */}
         <section data-block="work-with-us.pricing" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               Pricing & rates
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[823px]">
               Transparent pricing structure tailored to your project scope and timeline.
             </p>
             <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
@@ -91,10 +91,10 @@ export function WorkWithUsPage() {
         {/* CX Preview Section */}
         <section data-block="global.cx-preview" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
               CX Data
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[600px]">
+            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[823px]">
               Our commitment to excellence is measured and shared transparently.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -115,7 +115,7 @@ export function WorkWithUsPage() {
         {/* Testimonials Section */}
         <section data-block="work-with-us.testimonials" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               Testimonials
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -147,7 +147,7 @@ export function WorkWithUsPage() {
         {/* FAQ Section */}
         <section data-block="global.faq-accordion" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8">
+            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
               FAQs
             </h2>
             <div className="space-y-4">

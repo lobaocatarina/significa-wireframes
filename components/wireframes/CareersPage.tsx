@@ -27,10 +27,10 @@ export function CareersPage() {
         <SectionLabel>Life at Significa</SectionLabel>
         <div className="grid grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Life at Significa
             </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8 text-center">
               Our culture is built on collaboration, creativity, and continuous learning. We believe in work-life balance and creating an environment where everyone can thrive.
             </p>
           </div>
@@ -48,8 +48,8 @@ export function CareersPage() {
           ].map((benefit, i) => (
             <div key={i} className="flex flex-col gap-4">
               <ImagePlaceholder width="80px" height="80px" />
-              <h3 className="text-[18px] font-medium text-black leading-[24px]">{benefit}</h3>
-              <p className="text-[16px] text-black opacity-50 leading-[24px]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] text-center">{benefit}</h3>
+              <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">
                 Description of this benefit and how it contributes to our team culture.
               </p>
             </div>
@@ -71,8 +71,8 @@ export function CareersPage() {
           {['Design Team', 'Development Team', 'Strategy Team', 'Operations Team'].map((team, i) => (
             <div key={i} className="flex flex-col gap-4">
               <ImagePlaceholder height="200px" />
-              <h3 className="text-[18px] font-medium text-black leading-[24px]">{team}</h3>
-              <p className="text-[16px] text-black opacity-50 leading-[24px]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] text-center">{team}</h3>
+              <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">
                 Overview of team responsibilities and typical roles within this department.
               </p>
             </div>
@@ -94,8 +94,8 @@ export function CareersPage() {
           ].map((value, i) => (
             <div key={i} className="text-center">
               <ImagePlaceholder width="120px" height="120px" className="mx-auto mb-6" />
-              <h3 className="text-[24px] font-medium text-black leading-[32px] mb-4">{value.title}</h3>
-              <p className="text-[16px] text-black opacity-80 leading-[24px]">{value.description}</p>
+              <h3 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">{value.title}</h3>
+              <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">{value.description}</p>
             </div>
           ))}
         </div>
@@ -116,22 +116,22 @@ export function CareersPage() {
             <div className="flex gap-4">
               <ImagePlaceholder width="60px" height="60px" />
               <div>
-                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2">Health & Wellness</h4>
-                <p className="text-[16px] text-black opacity-50 leading-[24px]">Comprehensive health insurance and wellness programs.</p>
+                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Health & Wellness</h4>
+                <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">Comprehensive health insurance and wellness programs.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <ImagePlaceholder width="60px" height="60px" />
               <div>
-                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2">Learning Budget</h4>
-                <p className="text-[16px] text-black opacity-50 leading-[24px]">Annual budget for courses, conferences, and skill development.</p>
+                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Learning Budget</h4>
+                <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">Annual budget for courses, conferences, and skill development.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <ImagePlaceholder width="60px" height="60px" />
               <div>
-                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2">Equipment</h4>
-                <p className="text-[16px] text-black opacity-50 leading-[24px]">Top-tier equipment and tools to do your best work.</p>
+                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Equipment</h4>
+                <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">Top-tier equipment and tools to do your best work.</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ export function CareersPage() {
       {/* Open Positions */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">
         <SectionLabel>Open Positions</SectionLabel>
-        <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12">
+        <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
           Current openings
         </h2>
         <div className="space-y-6">
@@ -154,7 +154,7 @@ export function CareersPage() {
           ].map((job, i) => (
             <div key={i} className="border border-[#e0e0e0] p-6 flex justify-between items-center">
               <div>
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">{job.title}</h3>
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">{job.title}</h3>
                 <div className="flex gap-4 text-[16px] text-black opacity-50">
                   <span>{job.type}</span>
                   <span>{job.location}</span>

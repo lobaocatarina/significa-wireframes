@@ -29,25 +29,25 @@ export function ExpertiseDetailPage() {
         <SectionLabel>Industry Overview</SectionLabel>
         <div className="grid grid-cols-2 gap-16 items-center mb-16">
           <div>
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               E-commerce challenges we solve
             </h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Conversion Optimization</h3>
-                <p className="text-[16px] text-black opacity-80 leading-[24px]">
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Conversion Optimization</h3>
+                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                   Designing user experiences that guide customers from discovery to purchase with minimal friction.
                 </p>
               </div>
               <div>
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Mobile Commerce</h3>
-                <p className="text-[16px] text-black opacity-80 leading-[24px]">
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Mobile Commerce</h3>
+                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                   Creating seamless mobile shopping experiences that drive mobile revenue growth.
                 </p>
               </div>
               <div>
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Inventory Management</h3>
-                <p className="text-[16px] text-black opacity-80 leading-[24px]">
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Inventory Management</h3>
+                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
                   Building systems that efficiently manage complex inventory across multiple channels.
                 </p>
               </div>
@@ -71,7 +71,7 @@ export function ExpertiseDetailPage() {
           
           {/* Services for this industry */}
           <div className="mb-16">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8">Our e-commerce services</h2>
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Our e-commerce services</h2>
             <div className="grid grid-cols-3 gap-8">
               {[
                 {
@@ -92,7 +92,7 @@ export function ExpertiseDetailPage() {
               ].map((service, i) => (
                 <div key={i} className="bg-white p-6 border border-[#e0e0e0]">
                   <ImagePlaceholder width="80px" height="80px" className="mb-4" />
-                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">{service.title}</h3>
+                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">{service.title}</h3>
                   <p className="text-[16px] text-black opacity-80 leading-[24px] mb-4">{service.description}</p>
                   <ul className="space-y-1">
                     {service.features.map((feature, j) => (
@@ -108,7 +108,7 @@ export function ExpertiseDetailPage() {
           <div className="grid grid-cols-2 gap-16 items-center">
             <ImagePlaceholder height="400px" />
             <div>
-              <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4">Case Study: RetailCorp</h2>
+              <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">Case Study: RetailCorp</h2>
               <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-6">
                 How we helped a traditional retailer transition to e-commerce and increase online sales by 400% in 6 months.
               </p>
@@ -135,9 +135,9 @@ export function ExpertiseDetailPage() {
       {/* Technology Stack */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">
         <SectionLabel>Technology Stack</SectionLabel>
-        <div className="text-center mb-12">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4">Technologies we use</h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px]">
+        <div className="text-center mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">Technologies we use</h2>
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
             We work with the latest e-commerce technologies to ensure your platform is fast, secure, and scalable.
           </p>
         </div>
@@ -178,7 +178,7 @@ export function ExpertiseDetailPage() {
       {/* Related Articles */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">
         <SectionLabel>Related Articles</SectionLabel>
-        <h2 className="text-[24px] font-medium text-black leading-[32px] mb-8">E-commerce insights</h2>
+        <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">E-commerce insights</h2>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
             <BlogCard 

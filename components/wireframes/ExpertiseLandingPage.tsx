@@ -66,7 +66,7 @@ export function ExpertiseLandingPage() {
               <ImagePlaceholder height="250px" />
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-[18px] font-medium text-black leading-[24px] group-hover:opacity-70 transition-opacity">
+                  <h3 className="text-[18px] font-medium text-black leading-[24px] group-hover:opacity-70 transition-opacity text-center">
                     {industry.title}
                   </h3>
                   <span className="text-[14px] text-black opacity-50">{industry.projects}</span>
@@ -87,11 +87,11 @@ export function ExpertiseLandingPage() {
       <div className="bg-[#f8f9fa] py-16">
         <div className="max-w-[1400px] mx-auto px-5">
           <SectionLabel>Why Industry Expertise Matters</SectionLabel>
-          <div className="text-center mb-12">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4">
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
               Why expertise matters
             </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[600px] mx-auto">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto">
               Every industry has unique challenges, regulations, and user expectations. Our deep sector knowledge ensures we build solutions that truly fit your business.
             </p>
           </div>
@@ -113,8 +113,8 @@ export function ExpertiseLandingPage() {
             ].map((benefit, i) => (
               <div key={i} className="text-center">
                 <ImagePlaceholder width="100px" height="100px" className="mx-auto mb-4" />
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3">{benefit.title}</h3>
-                <p className="text-[16px] text-black opacity-80 leading-[24px]">{benefit.description}</p>
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">{benefit.title}</h3>
+                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -124,7 +124,7 @@ export function ExpertiseLandingPage() {
       {/* Success Stories by Industry */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">
         <SectionLabel>Success Stories by Industry</SectionLabel>
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="text-[32px] font-medium text-black leading-[36px]">Proven results across industries</h2>
         </div>
         

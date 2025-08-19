@@ -48,7 +48,7 @@ export function HomePage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Highlights / Selected Projects</SectionLabel>
         <div className="text-center mb-8">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px]">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
             From strategy to code, we deliver user-centred platforms for ambitious businesses.
           </h2>
         </div>
@@ -89,11 +89,14 @@ export function HomePage() {
           </h2>
         </div>
         <div className="max-w-[1400px] mx-auto px-6 w-full">
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-6 mb-16">
             {[...Array(3)].map((_, i) => (
               <BlogCard key={i} />
             ))}
           </div>
+        </div>
+        <div className="text-center">
+          <WireframeButton variant="secondary" data-field="cta">View All Blog Posts</WireframeButton>
         </div>
       </div>
 
@@ -120,21 +123,25 @@ export function HomePage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* 7. Playground / Experiments */}
-      <div className="flex justify-center py-16">
-        <div className="flex flex-col items-center">
-          <SectionLabel>Playground / Experiments</SectionLabel>
-          <TitleDescription
-            title="We have fun!"
-            description="Our Playground is where we let our creativity run wild. As avid contributors to the Open Source community, we are proud to share some of the tools we've built."
-          />
+      <div className="flex flex-col items-center py-16">
+        <SectionLabel>Playground / Experiments</SectionLabel>
+        <div className="text-center mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">
+            We have fun!
+          </h2>
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+            Our Playground is where we let our creativity run wild. As avid contributors to the Open Source community, we are proud to share some of the tools we've built.
+          </p>
         </div>
-      </div>
-
-      <div className="max-w-[1400px] mx-auto px-6 pb-16">
-        <div className="grid grid-cols-3 gap-6">
-          {[...Array(3)].map((_, i) => (
-            <ProjectCard key={i} title="Experiment Title" />
-          ))}
+        <div className="max-w-[1400px] mx-auto px-6 w-full">
+          <div className="grid grid-cols-3 gap-6 mb-16">
+            {[...Array(3)].map((_, i) => (
+              <ProjectCard key={i} title="Experiment Title" />
+            ))}
+          </div>
+        </div>
+        <div className="text-center">
+          <WireframeButton variant="secondary" data-field="cta">Explore Playground</WireframeButton>
         </div>
       </div>
 
