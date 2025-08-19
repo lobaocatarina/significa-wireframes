@@ -79,12 +79,15 @@ export function ProjectCard({
 }) {
   return (
     <div className="flex flex-col gap-5">
-      <ImagePlaceholder height="495px" />
+      <figure className="media" data-field="media-label">
+        <ImagePlaceholder height="495px" />
+        <figcaption className="sr-only">{title} project preview</figcaption>
+      </figure>
       <div className="flex flex-col gap-1.5">
-        <div className="text-[18px] font-medium text-black leading-[24px]">
+        <div data-field="item-title" className="text-[18px] font-medium text-black leading-[24px]">
           {title}
         </div>
-        <div className="text-[18px] font-medium text-black opacity-50 leading-[24px]">
+        <div data-field="item-excerpt" className="text-[18px] font-medium text-black opacity-50 leading-[24px]">
           {description}
         </div>
         {industry && (
@@ -107,12 +110,15 @@ export function BlogCard({
 }) {
   return (
     <div className="flex flex-col gap-5 h-[390px]">
-      <ImagePlaceholder height="322px" className="flex-1" />
+      <figure className="media flex-1" data-field="media-label">
+        <ImagePlaceholder height="322px" className="flex-1" />
+        <figcaption className="sr-only">{title} blog post cover</figcaption>
+      </figure>
       <div className="flex flex-col gap-1.5">
-        <div className="text-[18px] font-medium text-black leading-[24px]">
+        <div data-field="item-title" className="text-[18px] font-medium text-black leading-[24px]">
           {title}
         </div>
-        <div className="text-[18px] font-medium text-black opacity-50 leading-[24px]">
+        <div data-field="item-excerpt" className="text-[18px] font-medium text-black opacity-50 leading-[24px]">
           {description}
         </div>
       </div>
@@ -130,10 +136,10 @@ export function Metric({
 }) {
   return (
     <div className="flex flex-col gap-1 w-40">
-      <div className="text-[40px] font-medium text-black leading-[40px]">
+      <div data-field="metric-value" className="text-[40px] font-medium text-black leading-[40px]">
         {value}
       </div>
-      <div className="text-[16px] font-medium text-black opacity-50 leading-[16px]">
+      <div data-field="metric-label" className="text-[16px] font-medium text-black opacity-50 leading-[16px]">
         {label}
       </div>
     </div>
@@ -150,12 +156,12 @@ export function FAQItem({
 }) {
   return (
     <div className="flex flex-col">
-      <div className="flex items-center justify-between py-4">
-        <div className="text-[18px] font-medium text-black leading-[24px] flex-1">
+      <button className="flex items-center justify-between py-4 w-full text-left focus:outline-none focus:ring-2 focus:ring-[#1f1f1f]">
+        <div data-field="item-title" className="text-[18px] font-medium text-black leading-[24px] flex-1">
           {question}
         </div>
         <div className="w-6 h-6 flex items-center justify-center">
-          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
             <path 
               d="M7.19922 10.2002L11.9992 15.0002L16.7992 10.2002" 
               stroke="#7A7A7A" 
@@ -164,7 +170,7 @@ export function FAQItem({
             />
           </svg>
         </div>
-      </div>
+      </button>
       <div className="h-px bg-[#E0E0E0]"></div>
     </div>
   );
@@ -187,11 +193,11 @@ export function TitleDescription({
   return (
     <div className={`flex flex-col gap-6 w-[680px] ${alignment === "center" ? "items-center text-center" : "items-start text-left"}`}>
       <div className="flex flex-col gap-2">
-        <h2 className="text-[32px] font-medium text-black leading-[36px]">
+        <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px]">
           {title}
         </h2>
         {description && (
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px]">
+          <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px]">
             {description}
           </p>
         )}
@@ -201,8 +207,11 @@ export function TitleDescription({
           <div className="grid grid-cols-2 gap-6">
             {[...Array(services)].map((_, i) => (
               <div key={i} className="flex flex-col gap-4">
-                <ImagePlaceholder width="100%" height="200px" />
-                <div className="text-[18px] font-medium text-black leading-[24px]">
+                <figure className="media" data-field="media-label">
+                  <ImagePlaceholder width="100%" height="200px" />
+                  <figcaption className="sr-only">Service {i + 1}</figcaption>
+                </figure>
+                <div data-field="item-title" className="text-[18px] font-medium text-black leading-[24px]">
                   Service
                 </div>
               </div>
@@ -222,27 +231,35 @@ export function TitleDescription({
 // Button component - consistent with wireframe style
 export function WireframeButton({ 
   children = "Button Text",
-  variant = "secondary"
+  variant = "secondary",
+  className = ""
 }: { 
-  children?: string;
+  children?: React.ReactNode;
   variant?: "primary" | "secondary";
+  className?: string;
 }) {
   if (variant === "primary") {
     return (
-      <div className="bg-[#1f1f1f] border border-[#1f1f1f] px-3 py-1.5 h-9 flex items-center justify-center">
+      <button 
+        data-field="cta"
+        className={`bg-[#1f1f1f] border border-[#1f1f1f] px-3 py-1.5 h-9 flex items-center justify-center hover:bg-[#333] focus:outline-none focus:ring-2 focus:ring-[#1f1f1f] focus:ring-offset-2 ${className}`}
+      >
         <span className="text-[14px] font-medium text-white leading-[20px]">
           {children}
         </span>
-      </div>
+      </button>
     );
   }
   
   return (
-    <div className="border border-[#e0e0e0] px-3 py-1.5 h-9 flex items-center justify-center">
+    <button 
+      data-field="cta"
+      className={`border border-[#e0e0e0] px-3 py-1.5 h-9 flex items-center justify-center hover:bg-[#f5f5f5] focus:outline-none focus:ring-2 focus:ring-[#1f1f1f] focus:ring-offset-2 ${className}`}
+    >
       <span className="text-[14px] font-medium text-[#1f1f1f] leading-[20px]">
         {children}
       </span>
-    </div>
+    </button>
   );
 }
 
@@ -263,15 +280,23 @@ export function WireframeCTA({
 export function WireframeHeader() {
   return (
     <div className="bg-white h-14 w-full border-b border-[#f0f0f0] z-50">
-      <div className="flex items-center justify-between h-full px-6">
-        <div className="text-[16px] font-medium text-[#1f1f1f] leading-[24px]">
+      <div className="flex items-center justify-between h-full px-6 max-w-[1400px] mx-auto">
+        <div data-field="logo-text" className="text-[16px] font-medium text-[#1f1f1f] leading-[24px]">
           Significa
         </div>
-        <div className="flex gap-10 text-[16px] text-black leading-[24px]">
-          <span>What we do</span>
-          <span>Projects</span>
-          <span>Work with us</span>
-        </div>
+        <nav className="flex gap-10 text-[16px] text-black leading-[24px]" role="navigation">
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Home</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">What we do</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Projects</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Blog</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Work with us</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Careers</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Playground</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">About</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">CX</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Handbook</a>
+          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Contact</a>
+        </nav>
         <WireframeButton variant="primary">Get in Touch</WireframeButton>
       </div>
     </div>
@@ -313,39 +338,42 @@ export function WireframeFooter() {
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="grid grid-cols-4 gap-16 mb-16">
           <div className="flex flex-col gap-3">
-            <div className="text-[16px] font-medium text-black leading-[24px]">Navigation</div>
-            <div className="flex flex-col gap-2 text-[16px] text-black leading-[24px]">
-              <span>What we do</span>
-              <span>Projects</span>
-              <span>About</span>
-              <span>Blog</span>
-            </div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Quick Links</div>
+            <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Home</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">What we do</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Projects</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Blog</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Work with us</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Careers</a>
+            </nav>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="text-[16px] font-medium text-black leading-[24px]">Services</div>
-            <div className="flex flex-col gap-2 text-[16px] text-black leading-[24px]">
-              <span>Strategy</span>
-              <span>Design</span>
-              <span>Development</span>
-              <span>CX</span>
-            </div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">More</div>
+            <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Playground</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">About</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">CX</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Handbook</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Contact</a>
+            </nav>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="text-[16px] font-medium text-black leading-[24px]">Social</div>
-            <div className="flex flex-col gap-2 text-[16px] text-black leading-[24px]">
-              <span>Twitter</span>
-              <span>LinkedIn</span>
-              <span>Instagram</span>
-              <span>Dribbble</span>
-            </div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Social</div>
+            <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Twitter</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">LinkedIn</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Instagram</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Dribbble</a>
+            </nav>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="text-[16px] font-medium text-black leading-[24px]">Legal</div>
-            <div className="flex flex-col gap-2 text-[16px] text-black leading-[24px]">
-              <span>Privacy Policy</span>
-              <span>Terms of Service</span>
-              <span>Cookie Policy</span>
-            </div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Legal</div>
+            <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Privacy Policy</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Terms of Service</a>
+              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Cookie Policy</a>
+            </nav>
           </div>
         </div>
         <div className="border-t border-[#e0e0e0] pt-4">
@@ -353,7 +381,7 @@ export function WireframeFooter() {
             <div className="text-[14px] text-gray-600 leading-[20px]">
               © 2025 Significa. All rights reserved.
             </div>
-            <div className="text-[14px] text-black leading-[20px]">
+            <div data-field="logo-text" className="text-[14px] text-black leading-[20px]">
               Significa
             </div>
           </div>

@@ -8,19 +8,24 @@ interface WireframeNavigationProps {
 export function WireframeNavigation({ currentPage, onPageChange }: WireframeNavigationProps) {
   const pages = [
     'Home',
-    'Services', 
-    'Careers',
-    'Blog Index',
+    'What We Do',
+    'Service Detail',
     'Deliverables',
+    'Expertise Landing',
+    'Expertise Detail', 
+    'CX',
+    'Work With Us',
+    'Contact',
     'Projects Index',
     'Project Page',
+    'Blog Index',
     'Playground',
     'About',
-    'CX',
-    'Expertise Landing',
-    'Expertise Detail',
+    'Careers',
+    'B Corporation',
     'FAQ',
-    'Final Conversion'
+    'Legal',
+    'Handbook'
   ];
 
   return (

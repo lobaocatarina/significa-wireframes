@@ -173,7 +173,7 @@ export function DeliverablesPage() {
             title="Ready to see what we can deliver?"
             description="Let's discuss your project and explore how our deliverables can drive your business forward."
           />
-          <WireframeButton>Start a Project</WireframeButton>
+          <WireframeButton variant="primary" data-field="cta">Start a Project</WireframeButton>
         </div>
       </div>
 
