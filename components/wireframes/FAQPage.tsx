@@ -99,8 +99,8 @@ export function FAQPage() {
             Can't find the answer you're looking for? We're here to help. Get in touch and we'll get back to you as soon as possible.
           </p>
           <div className="flex justify-center gap-4">
-            <WireframeButton>Contact Us</WireframeButton>
-            <WireframeButton variant="secondary">Schedule a Call</WireframeButton>
+            <WireframeButton variant="primary" data-field="cta">Contact Us</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">Schedule a Call</WireframeButton>
           </div>
         </div>
       </div>

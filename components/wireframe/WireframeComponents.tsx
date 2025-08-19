@@ -220,7 +220,7 @@ export function TitleDescription({
         </div>
       )}
       {cta && (
-        <WireframeButton variant="secondary">
+        <WireframeButton variant="secondary" data-field="cta">
           {cta}
         </WireframeButton>
       )}
@@ -317,15 +317,15 @@ export function MainCTA({
     <div className="border border-[#e0e0e0] mx-auto max-w-[1400px] mb-16">
       <div className="flex flex-col items-center justify-center h-[316px] gap-6">
         <SectionLabel>Main CTA</SectionLabel>
-        <h2 className="text-[32px] font-medium text-black leading-[40px] text-center max-w-[600px]">
+        <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[40px] text-center max-w-[600px]">
           {title}
         </h2>
         {description && (
-          <p className="text-[18px] text-black opacity-80 leading-[28px] text-center max-w-[500px]">
+          <p data-field="paragraph" className="text-[18px] text-black opacity-80 leading-[28px] text-center max-w-[500px]">
             {description}
           </p>
         )}
-        <WireframeButton variant="primary">{buttonText}</WireframeButton>
+        <WireframeButton variant="primary" data-field="cta">{buttonText}</WireframeButton>
       </div>
     </div>
   );

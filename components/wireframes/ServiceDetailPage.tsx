@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeCTA, TitleDescription, ProjectCard } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, ProjectCard, SectionLabel } from '../wireframe/WireframeComponents';
 
 interface ServiceDetailPageProps {
   serviceName: string;
@@ -147,18 +147,16 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         </section>
 
         {/* Final CTA */}
-        <section data-block="global.final-cta" className="py-16">
-          <div className="max-w-[1400px] mx-auto px-6 text-center">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6">
-              Start a project.
-            </h2>
+        <div className="border border-[#e0e0e0] mx-auto max-w-[1400px] mb-16">
+          <div className="flex flex-col items-center justify-center h-[316px] gap-6">
+            <SectionLabel>Conversion</SectionLabel>
+            <TitleDescription
+              title="Start a project."
+              description="Let's discuss your project and explore how we can help bring your vision to life."
+            />
             <WireframeButton variant="primary" data-field="cta">Get in touch</WireframeButton>
-            <figure className="media mt-8" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[200px]" />
-              <figcaption className="sr-only">Start a project call-to-action visual</figcaption>
-            </figure>
           </div>
-        </section>
+        </div>
       </main>
 
       <footer data-block="global.site-footer">

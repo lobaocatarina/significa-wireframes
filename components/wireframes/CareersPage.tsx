@@ -173,7 +173,7 @@ export function CareersPage() {
           <p className="text-[16px] text-black opacity-80 leading-[24px] mb-6">
             Don't see a role that fits? We're always looking for exceptional talent.
           </p>
-          <WireframeButton variant="primary">Send us your CV</WireframeButton>
+          <WireframeButton variant="primary" data-field="cta">Send us your CV</WireframeButton>
         </div>
       </div>
 

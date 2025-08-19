@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeCTA } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton } from '../wireframe/WireframeComponents';
 
 export function ContactPage() {
   return (

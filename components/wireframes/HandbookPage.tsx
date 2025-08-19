@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeCTA, TitleDescription } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription } from '../wireframe/WireframeComponents';
 
 export function HandbookPage() {
   return (
