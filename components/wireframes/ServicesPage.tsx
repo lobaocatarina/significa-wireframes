@@ -6,7 +6,8 @@ import {
   WireframeHeader,
   WireframeFooter,
   MainCTA,
-  FAQItem
+  FAQItem,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function ServicesPage() {
@@ -14,15 +15,11 @@ export function ServicesPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-16 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <div className="max-w-[823px] text-center">
-          <h1 className="text-[48px] font-medium text-black leading-[56px]">
-            Custom design and development services built to grow your business.
-          </h1>
-        </div>
-      </div>
+      <Hero
+        title="Custom design and development services built to grow your business."
+        variant="basic"
+        showMedia={false}
+      />
 
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>

@@ -6,7 +6,8 @@ import {
   WireframeHeader,
   WireframeFooter,
   FAQItem,
-  MainCTA
+  MainCTA,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function FAQPage() {
@@ -14,14 +15,12 @@ export function FAQPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Intro */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Intro</SectionLabel>
-        <TitleDescription
-          title="Frequently Asked Questions"
-          description="Find answers to the most common questions about working with Significa and our process."
-        />
-      </div>
+      <Hero
+        title="Frequently Asked Questions"
+        description="Find answers to the most common questions about working with Significa and our process."
+        variant="compact"
+        showMedia={false}
+      />
 
       {/* Grouped FAQs */}
       <div className="max-w-[800px] mx-auto px-5 py-16">

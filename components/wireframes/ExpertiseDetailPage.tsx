@@ -8,7 +8,8 @@ import {
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
-  Metric
+  Metric,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function ExpertiseDetailPage() {
@@ -16,17 +17,12 @@ export function ExpertiseDetailPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="E-commerce & Retail Expertise"
-          description="Building scalable e-commerce platforms that drive sales, enhance customer experiences, and grow your business."
-        />
-        <div className="mt-8">
-          <ImagePlaceholder width="800px" height="400px" />
-        </div>
-      </div>
+      <Hero
+        title="E-commerce & Retail Expertise"
+        description="Building scalable e-commerce platforms that drive sales, enhance customer experiences, and grow your business."
+        variant="media"
+        mediaHeight="h-[400px]"
+      />
 
       {/* Industry Overview */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, Hero } from '../wireframe/WireframeComponents';
 
 interface LegalPageProps {
   pageTitle: string;
@@ -65,23 +65,11 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="compact" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                {pageTitle}.
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                Last updated: January 2025
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[250px]" />
-              <figcaption className="sr-only">{pageTitle} legal document illustration</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title={`${pageTitle}.`}
+          description="Last updated: January 2025"
+          mediaHeight="h-[250px]"
+        />
 
         {/* Legal Content Section */}
         <section data-block="legal.content" className="py-16">

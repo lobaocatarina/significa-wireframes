@@ -5,7 +5,8 @@ import {
   BlogCard, 
   WireframeButton,
   WireframeHeader,
-  WireframeFooter
+  WireframeFooter,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function BlogIndexPage() {
@@ -13,18 +14,12 @@ export function BlogIndexPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Header */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Header</SectionLabel>
-        <div className="max-w-[680px] text-center">
-          <h1 className="text-[48px] font-medium text-black leading-[56px] mb-4">
-            Insights & Ideas
-          </h1>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px]">
-            Thoughts on design, development, and digital product strategy from our team.
-          </p>
-        </div>
-      </div>
+      <Hero
+        title="Insights & Ideas"
+        description="Thoughts on design, development, and digital product strategy from our team."
+        variant="compact"
+        showMedia={false}
+      />
 
       {/* Filters */}
       <div className="max-w-[1400px] mx-auto px-5 pb-8">

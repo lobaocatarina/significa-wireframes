@@ -7,7 +7,8 @@ import {
   TitleDescription,
   WireframeButton,
   WireframeHeader,
-  WireframeFooter
+  WireframeFooter,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function ProjectPage() {
@@ -15,24 +16,12 @@ export function ProjectPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <div className="max-w-[800px] text-center mb-8">
-          <h1 className="text-[48px] font-medium text-black leading-[56px] mb-4">
-            Project Title
-          </h1>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-6">
-            Brief project description highlighting the key challenge and solution we delivered.
-          </p>
-          <div className="flex justify-center gap-8 text-[16px] text-black opacity-50">
-            <span>Industry: Technology</span>
-            <span>Year: 2024</span>
-            <span>Duration: 6 months</span>
-          </div>
-        </div>
-        <ImagePlaceholder width="1200px" height="600px" />
-      </div>
+      <Hero
+        title="Project Title"
+        description="Brief project description highlighting the key challenge and solution we delivered."
+        variant="media-metrics"
+        mediaHeight="h-[600px]"
+      />
 
       {/* Project Content */}
       <div className="max-w-[800px] mx-auto px-5 py-16">

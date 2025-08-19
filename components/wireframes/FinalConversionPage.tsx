@@ -5,7 +5,8 @@ import {
   TitleDescription, 
   WireframeButton,
   WireframeHeader,
-  WireframeFooter
+  WireframeFooter,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function FinalConversionPage() {
@@ -13,14 +14,12 @@ export function FinalConversionPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Heading */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Heading</SectionLabel>
-        <TitleDescription
-          title="I have a project"
-          description="Ready to bring your digital product vision to life? Let's discuss how we can work together to create something exceptional."
-        />
-      </div>
+      <Hero
+        title="I have a project"
+        description="Ready to bring your digital product vision to life? Let's discuss how we can work together to create something exceptional."
+        variant="compact"
+        showMedia={false}
+      />
 
       {/* Contact Methods */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

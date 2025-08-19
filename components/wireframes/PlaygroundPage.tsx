@@ -6,7 +6,8 @@ import {
   TitleDescription, 
   WireframeButton,
   WireframeHeader,
-  WireframeFooter
+  WireframeFooter,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function PlaygroundPage() {
@@ -14,17 +15,12 @@ export function PlaygroundPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="Playground"
-          description="Where we experiment, learn, and contribute to the open-source community."
-        />
-        <div className="mt-8">
-          <ImagePlaceholder width="800px" height="400px" />
-        </div>
-      </div>
+      <Hero
+        title="Playground"
+        description="Where we experiment, learn, and contribute to the open-source community."
+        variant="media"
+        mediaHeight="h-[400px]"
+      />
 
       {/* Why Open Source */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

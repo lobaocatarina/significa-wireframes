@@ -8,7 +8,8 @@ import {
   WireframeFooter,
   Metric,
   FAQItem,
-  MainCTA
+  MainCTA,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function CXPage() {
@@ -16,14 +17,12 @@ export function CXPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="Customer Experience"
-          description="Transparency is at the core of how we work. See what our clients really think about working with Significa."
-        />
-      </div>
+      <Hero
+        title="Customer Experience"
+        description="Transparency is at the core of how we work. See what our clients really think about working with Significa."
+        variant="compact"
+        showMedia={false}
+      />
 
       {/* Why We Track It */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Hero } from '../wireframe/WireframeComponents';
 
 export function HandbookPage() {
   return (
@@ -13,23 +13,10 @@ export function HandbookPage() {
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="compact" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                Handbook.
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                Everything you need to know about working with Significa, our processes, and our approach.
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[300px]" />
-              <figcaption className="sr-only">Handbook and documentation</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title="Handbook."
+          description="Everything you need to know about working with Significa, our processes, and our approach."
+        />
 
         {/* Overview Section */}
         <section data-block="handbook.overview" className="border-b border-[#e0e0e0] py-16">

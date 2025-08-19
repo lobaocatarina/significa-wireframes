@@ -6,7 +6,8 @@ import {
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
-  MainCTA
+  MainCTA,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function ProjectsIndexPage() {
@@ -14,14 +15,12 @@ export function ProjectsIndexPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="Our Work"
-          description="A showcase of digital products we've designed and built for ambitious businesses worldwide."
-        />
-      </div>
+      <Hero
+        title="Our Work"
+        description="A showcase of digital products we've designed and built for ambitious businesses worldwide."
+        variant="compact"
+        showMedia={false}
+      />
 
       {/* Filters */}
       <div className="max-w-[1400px] mx-auto px-5 pb-8">

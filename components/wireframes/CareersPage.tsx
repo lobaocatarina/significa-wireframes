@@ -6,7 +6,8 @@ import {
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
-  MainCTA
+  MainCTA,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function CareersPage() {
@@ -14,17 +15,12 @@ export function CareersPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="Join our team"
-          description="We're looking for talented individuals who share our passion for creating exceptional digital experiences."
-        />
-        <div className="mt-8">
-          <ImagePlaceholder width="800px" height="400px" />
-        </div>
-      </div>
+      <Hero
+        title="Join our team"
+        description="We're looking for talented individuals who share our passion for creating exceptional digital experiences."
+        variant="media"
+        mediaHeight="h-[400px]"
+      />
 
       {/* Life at Significa */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

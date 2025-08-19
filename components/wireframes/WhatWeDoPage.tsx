@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero } from '../wireframe/WireframeComponents';
 
 export function WhatWeDoPage() {
   return (
@@ -13,23 +13,10 @@ export function WhatWeDoPage() {
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="compact" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                What we do.
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                Custom design and development services built to grow your business.
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[300px]" />
-              <figcaption className="sr-only">What we do hero image</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title="What we do."
+          description="Custom design and development services built to grow your business."
+        />
 
         {/* Services Section */}
         <section data-block="what-we-do.services" className="border-b border-[#e0e0e0] py-16">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Metric, SectionLabel } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Metric, SectionLabel, Hero } from '../wireframe/WireframeComponents';
 
 export function WorkWithUsPage() {
   return (
@@ -13,23 +13,10 @@ export function WorkWithUsPage() {
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="compact" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                Work with us.
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                Learn how we collaborate, assemble teams, and structure our engagement to deliver exceptional results.
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[300px]" />
-              <figcaption className="sr-only">Working with Significa team collaboration</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title="Work with us."
+          description="Learn how we collaborate, assemble teams, and structure our engagement to deliver exceptional results."
+        />
 
         {/* Summary Section */}
         <section data-block="work-with-us.summary" className="border-b border-[#e0e0e0] py-16">

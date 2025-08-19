@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, ProjectCard, SectionLabel } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, ProjectCard, SectionLabel, Hero } from '../wireframe/WireframeComponents';
 
 interface ServiceDetailPageProps {
   serviceName: string;
@@ -18,23 +18,11 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="compact" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                {serviceName}
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                {serviceDescription}
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full aspect-video" />
-              <figcaption className="sr-only">{serviceName} service overview</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title={serviceName}
+          description={serviceDescription}
+          mediaHeight="aspect-video"
+        />
 
         {/* How We Work Section */}
         <section data-block="service.how-we-work" className="border-b border-[#e0e0e0] py-16">

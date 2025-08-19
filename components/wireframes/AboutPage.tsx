@@ -7,7 +7,8 @@ import {
   WireframeHeader,
   WireframeFooter,
   Metric,
-  MainCTA
+  MainCTA,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function AboutPage() {
@@ -15,17 +16,12 @@ export function AboutPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="About Significa"
-          description="We are a design and development agency building digital products that people love to use."
-        />
-        <div className="mt-8">
-          <ImagePlaceholder width="800px" height="400px" />
-        </div>
-      </div>
+      <Hero
+        title="About Significa"
+        description="We are a design and development agency building digital products that people love to use."
+        variant="media"
+        mediaHeight="h-[400px]"
+      />
 
       {/* Team */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

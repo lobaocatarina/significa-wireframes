@@ -5,7 +5,8 @@ import {
   TitleDescription, 
   WireframeButton,
   WireframeHeader,
-  WireframeFooter
+  WireframeFooter,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function ExpertiseLandingPage() {
@@ -13,14 +14,11 @@ export function ExpertiseLandingPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="Industry Expertise"
-          description="Deep industry knowledge combined with cutting-edge technology to deliver solutions that truly understand your business."
-        />
-      </div>
+      <Hero
+        title="Industry Expertise"
+        description="Deep industry knowledge combined with cutting-edge technology to deliver solutions that truly understand your business."
+        showMedia={false}
+      />
 
       {/* Categories */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

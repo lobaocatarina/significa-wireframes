@@ -331,6 +331,44 @@ export function MainCTA({
   );
 }
 
+// Hero component - standardized hero section for all pages
+export function Hero({
+  title,
+  description,
+  variant = "compact",
+  showMedia = true,
+  mediaHeight = "h-[300px]"
+}: {
+  title: string;
+  description?: string;
+  variant?: "basic" | "media" | "media-metrics" | "compact";
+  showMedia?: boolean;
+  mediaHeight?: string;
+}) {
+  return (
+    <section data-block="global.hero" data-variant={variant} className="border-b border-[#e0e0e0] py-12">
+      <div className="max-w-[1400px] mx-auto px-6 text-center">
+        <div className="max-w-[800px] mx-auto">
+          <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
+            {title}
+          </h1>
+          {description && (
+            <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
+              {description}
+            </p>
+          )}
+        </div>
+        {showMedia && (
+          <figure className="media" data-field="media-label">
+            <ImagePlaceholder className={`w-full ${mediaHeight}`} />
+            <figcaption className="sr-only">{title} hero image</figcaption>
+          </figure>
+        )}
+      </div>
+    </section>
+  );
+}
+
 // Footer component
 export function WireframeFooter() {
   return (

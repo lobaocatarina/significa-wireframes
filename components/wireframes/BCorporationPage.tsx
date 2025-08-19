@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Metric, SectionLabel } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Metric, SectionLabel, Hero } from '../wireframe/WireframeComponents';
 
 export function BCorporationPage() {
   return (
@@ -13,23 +13,12 @@ export function BCorporationPage() {
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="media" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                B Corp.
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                We're certified as a B Corporation, meeting rigorous standards for social and environmental performance, accountability, and transparency.
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[400px]" />
-              <figcaption className="sr-only">B Corp certification and impact</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title="B Corp."
+          description="We're certified as a B Corporation, meeting rigorous standards for social and environmental performance, accountability, and transparency."
+          variant="media"
+          mediaHeight="h-[400px]"
+        />
 
         {/* Overview Section */}
         <section data-block="bcorp.overview" className="border-b border-[#e0e0e0] py-16">

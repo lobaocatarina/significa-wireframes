@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, Hero } from '../wireframe/WireframeComponents';
 
 export function ContactPage() {
   return (
@@ -13,23 +13,11 @@ export function ContactPage() {
       </header>
 
       <main id="content">
-        {/* Hero Section */}
-        <section data-block="global.hero" data-variant="compact" className="border-b border-[#e0e0e0] py-12">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h1 data-field="heading" className="text-[48px] leading-[52px] font-bold text-[#1f1f1f] mb-6">
-                I have a project.
-              </h1>
-              <p data-field="lead" className="text-[18px] leading-[28px] text-[#7A7A7A] mb-8">
-                Choose how you'd like to connect: fill out our form, send us an email, or book a quick call.
-              </p>
-            </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[250px]" />
-              <figcaption className="sr-only">Contact us illustration</figcaption>
-            </figure>
-          </div>
-        </section>
+        <Hero
+          title="I have a project."
+          description="Choose how you'd like to connect: fill out our form, send us an email, or book a quick call."
+          mediaHeight="h-[250px]"
+        />
 
         {/* Contact Form Section */}
         <section data-block="contact.form" className="border-b border-[#e0e0e0] py-16">

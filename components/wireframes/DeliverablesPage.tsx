@@ -8,7 +8,8 @@ import {
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
-  Metric
+  Metric,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function DeliverablesPage() {
@@ -16,17 +17,11 @@ export function DeliverablesPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      {/* Hero */}
-      <div className="flex flex-col items-center pt-24 pb-16">
-        <SectionLabel>Hero</SectionLabel>
-        <TitleDescription
-          title="What we deliver"
-          description="Comprehensive deliverables that drive business results and user satisfaction."
-        />
-        <div className="mt-8">
-          <ImagePlaceholder width="800px" height="400px" />
-        </div>
-      </div>
+      <Hero
+        title="What we deliver"
+        description="Comprehensive deliverables that drive business results and user satisfaction."
+        mediaHeight="h-[400px]"
+      />
 
       {/* Categories */}
       <div className="max-w-[1400px] mx-auto px-5 py-16">

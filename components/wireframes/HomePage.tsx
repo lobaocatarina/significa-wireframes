@@ -12,7 +12,8 @@ import {
   WireframeCTA,
   WireframeHeader,
   WireframeFooter,
-  MainCTA
+  MainCTA,
+  Hero
 } from '../wireframe/WireframeComponents';
 
 export function HomePage() {
@@ -25,7 +26,7 @@ export function HomePage() {
       <div className="flex flex-col items-center pt-16 pb-16">
         <SectionLabel>Hero</SectionLabel>
         <div className="max-w-[823px] text-center mb-16">
-          <h1 className="text-[48px] font-medium text-black leading-[56px]">
+          <h1 data-field="heading" className="text-[48px] font-bold text-[#1f1f1f] leading-[52px]">
             We are a design and development agency building digital products that work beautifully.
           </h1>
         </div>
