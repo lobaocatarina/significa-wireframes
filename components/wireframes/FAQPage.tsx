@@ -23,7 +23,7 @@ export function FAQPage() {
       />
 
       {/* Grouped FAQs */}
-      <div className="max-w-[800px] mx-auto px-5 py-16">
+      <div className="max-w-[800px] mx-auto px-6 py-16">
         <SectionLabel>Grouped FAQs</SectionLabel>
         
         {/* General */}
@@ -89,7 +89,7 @@ export function FAQPage() {
 
       {/* Still have questions */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[823px] mx-auto px-5 text-center">
+        <div className=" px-6 text-center">
           <SectionLabel>Still Have Questions</SectionLabel>
           <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
             Still have questions?

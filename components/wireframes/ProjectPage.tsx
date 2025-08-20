@@ -99,7 +99,7 @@ export function ProjectPage() {
         <div className="max-w-[1400px] mx-auto px-6 w-full">
         <SectionLabel>Related Articles</SectionLabel>
         <div className="text-center mb-8">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">Related Reading</h2>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Related Reading</h2>
         </div>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
@@ -132,7 +132,7 @@ export function ProjectPage() {
         <div className="max-w-[1400px] mx-auto px-6 w-full">
         <SectionLabel>Other Projects</SectionLabel>
         <div className="text-center mb-8">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">More Work</h2>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">More Work</h2>
         </div>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (

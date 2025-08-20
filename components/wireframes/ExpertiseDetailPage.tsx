@@ -25,7 +25,7 @@ export function ExpertiseDetailPage() {
       />
 
       {/* Industry Overview */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Industry Overview</SectionLabel>
         <div className="grid grid-cols-2 gap-16 items-center mb-16">
           <div>
@@ -66,7 +66,7 @@ export function ExpertiseDetailPage() {
 
       {/* Deep Content Sections */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[1400px] mx-auto px-5">
+        <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Deep Content</SectionLabel>
           
           {/* Services for this industry */}
@@ -133,11 +133,11 @@ export function ExpertiseDetailPage() {
       </div>
 
       {/* Technology Stack */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Technology Stack</SectionLabel>
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">Technologies we use</h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
             We work with the latest e-commerce technologies to ensure your platform is fast, secure, and scalable.
           </p>
         </div>
@@ -153,7 +153,7 @@ export function ExpertiseDetailPage() {
       </div>
 
       {/* Selected Projects/Playground */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="E-commerce projects"
           description="See examples of e-commerce solutions we've built for businesses like yours."
@@ -161,7 +161,7 @@ export function ExpertiseDetailPage() {
         />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-5 pb-16">
+      <div className="max-w-[1400px] mx-auto px-6 pb-16">
         <SectionLabel>Selected Projects/Playground</SectionLabel>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
@@ -176,7 +176,7 @@ export function ExpertiseDetailPage() {
       </div>
 
       {/* Related Articles */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Related Articles</SectionLabel>
         <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">E-commerce insights</h2>
         <div className="grid grid-cols-3 gap-6">

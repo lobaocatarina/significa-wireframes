@@ -29,10 +29,10 @@ export function PlaygroundPage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Why We Open Source</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             Why we contribute
           </h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
             Open source is at the heart of what we do. We believe in giving back to the community that has given us so much.
           </p>
         </div>
@@ -45,8 +45,8 @@ export function PlaygroundPage() {
             ].map((benefit, i) => (
               <div key={i} className="text-center">
                 <ImagePlaceholder width="80px" height="80px" className="mx-auto mb-4" />
-                <h2 className="text-[32px] font-medium text-black leading-[36px] text-center mb-4">{benefit.title}</h2>
-                <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">{benefit.description}</p>
+                <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center mb-4">{benefit.title}</h2>
+                <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -60,7 +60,7 @@ export function PlaygroundPage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Open Source Projects</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             Our contributions
           </h2>
         </div>
@@ -83,7 +83,7 @@ export function PlaygroundPage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Open Source Stats</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             By the numbers
           </h2>
         </div>
@@ -111,15 +111,15 @@ export function PlaygroundPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* GitHub Callout */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <div className="flex flex-col items-center">
           <SectionLabel>GitHub Callout</SectionLabel>
           <ImagePlaceholder width="120px" height="120px" className="mx-auto mb-6" />
           <div className="text-center mb-16">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
               Follow us on GitHub
             </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
               Stay up to date with our latest experiments and contributions. Star, fork, and contribute to our projects.
             </p>
           </div>

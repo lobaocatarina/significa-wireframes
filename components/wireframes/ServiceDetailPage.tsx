@@ -27,10 +27,10 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* How We Work Section */}
         <section data-block="service.how-we-work" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               How we work.
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6 max-w-[823px]">
+            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6 ">
               Our approach to {serviceName.toLowerCase()} combines proven methodologies with innovative thinking.
             </p>
             <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
@@ -46,13 +46,13 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* Awards Section */}
         <section data-block="service.awards" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Awards & Recognition
             </h2>
             <div className="flex gap-8 items-center">
               {[1, 2, 3, 4].map((award) => (
                 <div key={award} className="border border-[#e0e0e0] p-4 text-center min-w-[120px]">
-                  <span data-field="item-title" className="text-[14px] text-[#7A7A7A]">
+                  <span data-field="item-title" className="text-[14px] text-[rgba(0,0,0,0.8)]">
                     Award {award}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
                   <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     POC Project {poc}
                   </h3>
-                  <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
+                  <p data-field="item-excerpt" className="text-[14px] text-[rgba(0,0,0,0.8)] mb-4">
                     Experimental project related to {serviceName.toLowerCase()}
                   </p>
                   <figure className="media" data-field="media-label">
@@ -95,7 +95,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* Selected Work Grid */}
         <section data-block="global.selected-work-grid" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Selected projects
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,7 +109,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         {/* Related Articles */}
         <section data-block="service.related-articles" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Related articles
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -118,7 +118,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
                   <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     Article about {serviceName} {article}
                   </h3>
-                  <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
+                  <p data-field="item-excerpt" className="text-[14px] text-[rgba(0,0,0,0.8)] mb-4">
                     Insights and best practices for {serviceName.toLowerCase()}
                   </p>
                   <figure className="media" data-field="media-label">

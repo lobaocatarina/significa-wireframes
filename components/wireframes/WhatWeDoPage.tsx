@@ -37,7 +37,7 @@ export function WhatWeDoPage() {
                   <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {service.name}
                   </h3>
-                  <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                  <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4 text-center">
                     {service.description}
                   </p>
                   <figure className="media" data-field="media-label">
@@ -81,14 +81,16 @@ export function WhatWeDoPage() {
         </section>
 
         {/* How We Work Section */}
-        <section data-block="what-we-do.how-we-work" className="border-b border-[#e0e0e0] py-16">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
-              How we work.
-            </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[823px]">
-              We follow a hands-on collaborative approach that ensures your project delivers results.
-            </p>
+        <section data-block="what-we-do.how-we-work" className="border-b border-[#e0e0e0]">
+          <div className="flex flex-col items-center py-16">
+            <div className="text-center mb-16">
+              <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
+                How we work.
+              </h2>
+              <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
+                We follow a hands-on collaborative approach that ensures your project delivers results.
+              </p>
+            </div>
             <figure className="media" data-field="media-label">
               <ImagePlaceholder className="w-full h-[300px]" />
               <figcaption className="sr-only">Our collaborative work process</figcaption>
@@ -128,11 +130,13 @@ export function WhatWeDoPage() {
         </section>
 
         {/* FAQ Section */}
-        <section data-block="global.faq-accordion" className="border-b border-[#e0e0e0] py-16">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
+        <section data-block="global.faq-accordion" className="border-b border-[#e0e0e0]">
+          <div className="flex flex-col items-center py-16">
+            <div className="text-center mb-8">
+              <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
+                Frequently Asked Questions
+              </h2>
+            </div>
             <div className="space-y-4">
               {[1, 2, 3].map((item) => (
                 <div key={item} className="border border-[#e0e0e0] p-6">

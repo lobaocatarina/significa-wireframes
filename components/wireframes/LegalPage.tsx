@@ -75,10 +75,10 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
         <section data-block="legal.content" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="max-w-[800px]">
-              <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+              <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
                 Overview
               </h2>
-              <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-12 leading-[28px]">
+              <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-12 leading-[28px]">
                 This document outlines our policies and practices regarding {pageType === 'privacy' ? 'the collection, use, and protection of your personal information' : pageType === 'terms' ? 'the terms and conditions for using our services' : 'our use of cookies and similar technologies'}.
               </p>
 
@@ -90,10 +90,10 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
                       {index + 1}. {section}
                     </h3>
                     <div className="space-y-4">
-                      <p data-field="paragraph" className="text-[16px] text-[#7A7A7A] leading-[24px]">
+                      <p data-field="paragraph" className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[24px]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                       </p>
-                      <p data-field="paragraph" className="text-[16px] text-[#7A7A7A] leading-[24px]">
+                      <p data-field="paragraph" className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[24px]">
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                       </p>
                       
@@ -114,7 +114,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
                 <h3 className="text-[20px] font-semibold text-[#1f1f1f] mb-4">
                   Questions or Concerns?
                 </h3>
-                <p data-field="paragraph" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="paragraph" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   If you have any questions about this {pageTitle.toLowerCase()}, please contact us:
                 </p>
                 <div className="space-y-2">
@@ -129,7 +129,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
 
               {/* Last Updated Info */}
               <div className="mt-8 text-center">
-                <p className="text-[14px] text-[#7A7A7A]">
+                <p className="text-[14px] text-[rgba(0,0,0,0.8)]">
                   This document was last updated on January 15, 2025.
                 </p>
                 <figure className="media mt-6" data-field="media-label">

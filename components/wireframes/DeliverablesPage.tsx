@@ -24,7 +24,7 @@ export function DeliverablesPage() {
       />
 
       {/* Categories */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Categories</SectionLabel>
         <div className="grid grid-cols-3 gap-8">
           {[
@@ -49,13 +49,13 @@ export function DeliverablesPage() {
 
       {/* Success Metrics Callout */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[1400px] mx-auto px-5">
+        <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Success Metrics Callout</SectionLabel>
           <div className="text-center mb-16">
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
               Proven results
             </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
               Our deliverables consistently drive measurable business outcomes.
             </p>
           </div>
@@ -69,7 +69,7 @@ export function DeliverablesPage() {
       </div>
 
       {/* Intro */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="Our comprehensive approach"
           description="Every deliverable is crafted with precision, backed by research, and designed to achieve your business objectives. We don't just deliver files—we deliver solutions."
@@ -77,7 +77,7 @@ export function DeliverablesPage() {
       </div>
 
       {/* How We Approach */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>How We Approach</SectionLabel>
         <div className="grid grid-cols-2 gap-16 items-center mb-16">
           <div>
@@ -116,10 +116,10 @@ export function DeliverablesPage() {
       </div>
 
       {/* Awards */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Awards</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">Recognition & Awards</h2>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Recognition & Awards</h2>
         </div>
         <div className="grid grid-cols-6 gap-8">
           {[...Array(6)].map((_, i) => (
@@ -132,7 +132,7 @@ export function DeliverablesPage() {
       </div>
 
       {/* Selected Projects/Playground */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="See our work in action"
           description="Explore examples of our deliverables and the impact they've had on our clients' businesses."
@@ -140,7 +140,7 @@ export function DeliverablesPage() {
         />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-5 pb-16">
+      <div className="max-w-[1400px] mx-auto px-6 pb-16">
         <SectionLabel>Selected Projects/Playground</SectionLabel>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
@@ -150,7 +150,7 @@ export function DeliverablesPage() {
       </div>
 
       {/* Related Articles */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Related Articles</SectionLabel>
         <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Learn more</h2>
         <div className="grid grid-cols-3 gap-6">

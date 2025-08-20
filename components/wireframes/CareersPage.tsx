@@ -23,7 +23,7 @@ export function CareersPage() {
       />
 
       {/* Life at Significa */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Life at Significa</SectionLabel>
         <div className="grid grid-cols-2 gap-12 items-center mb-16">
           <div>
@@ -58,14 +58,14 @@ export function CareersPage() {
       </div>
 
       {/* Teams & Roles */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="Our teams"
           description="We're organized into collaborative teams that work together to deliver exceptional results."
         />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-5 pb-16">
+      <div className="max-w-[1400px] mx-auto px-6 pb-16">
         <SectionLabel>Teams & Roles</SectionLabel>
         <div className="grid grid-cols-4 gap-8">
           {['Design Team', 'Development Team', 'Strategy Team', 'Operations Team'].map((team, i) => (
@@ -81,7 +81,7 @@ export function CareersPage() {
       </div>
 
       {/* What Defines Us */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>What Defines Us</SectionLabel>
         <h2 className="text-[32px] font-medium text-black leading-[36px] mb-16 text-center">
           Our values
@@ -102,14 +102,14 @@ export function CareersPage() {
       </div>
 
       {/* Benefits */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="Benefits & perks"
           description="We offer comprehensive benefits and perks designed to support your wellbeing and growth."
         />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-5 pb-16">
+      <div className="max-w-[1400px] mx-auto px-6 pb-16">
         <SectionLabel>Benefits</SectionLabel>
         <div className="grid grid-cols-2 gap-12">
           <div className="space-y-6">
@@ -140,7 +140,7 @@ export function CareersPage() {
       </div>
 
       {/* Open Positions */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Open Positions</SectionLabel>
         <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
           Current openings

@@ -193,11 +193,11 @@ export function TitleDescription({
   return (
     <div className={`flex flex-col gap-6 ${alignment === "center" ? "items-center text-center" : "items-start text-left"}`}>
       <div className="flex flex-col gap-2">
-        <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px]">
+        <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mx-32">
           {title}
         </h2>
         {description && (
-          <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px]">
+          <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mx-32">
             {description}
           </p>
         )}

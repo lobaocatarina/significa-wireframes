@@ -48,7 +48,7 @@ export function HomePage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Highlights / Selected Projects</SectionLabel>
         <div className="text-center mb-8">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             From strategy to code, we deliver user-centred platforms for ambitious businesses.
           </h2>
         </div>
@@ -67,13 +67,13 @@ export function HomePage() {
       {/* 4. About us snippet */}
       <div className="flex justify-center py-16">
         <div className="flex flex-col items-center">
-          <SectionLabel>About us snippet</SectionLabel>
-          <TitleDescription
-            title="We are a team of designers, developers, and product managers working as one."
-            description="When you work with us, you get the whole team to turn your ideas into seamless experiences. Whether it's an e-commerce platform, a mobile app, a SaaS product, we'll build it with care, curiosity, backed by 10 years of expertise, recognised by international awards."
-            services={4}
-            cta="Explore our services →"
-          />
+        <SectionLabel>About us snippet</SectionLabel>
+        <TitleDescription
+          title="We are a team of designers, developers, and product managers working as one."
+          description="When you work with us, you get the whole team to turn your ideas into seamless experiences. Whether it's an e-commerce platform, a mobile app, a SaaS product, we'll build it with care, curiosity, backed by 10 years of expertise, recognised by international awards."
+          services={4}
+          cta="Explore our services →"
+        />
         </div>
       </div>
 
@@ -84,7 +84,7 @@ export function HomePage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Blog / Insights</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             We think things through.
           </h2>
         </div>
@@ -106,12 +106,12 @@ export function HomePage() {
       {/* 6. Impact / B Corp */}
       <div className="flex justify-center py-16">
         <div className="flex flex-col items-center">
-          <SectionLabel>Impact / B Corp</SectionLabel>
-          <TitleDescription
-            title="We do business for good, building with impact in mind."
-            description="As a certified B Corp and member of 1% for the Planet, we are committed to designing and building ethically, inclusively, and sustainably."
-            cta="Learn more →"
-          />
+        <SectionLabel>Impact / B Corp</SectionLabel>
+        <TitleDescription
+          title="We do business for good, building with impact in mind."
+          description="As a certified B Corp and member of 1% for the Planet, we are committed to designing and building ethically, inclusively, and sustainably."
+          cta="Learn more →"
+        />
         </div>
       </div>
 
@@ -126,10 +126,10 @@ export function HomePage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Playground / Experiments</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             We have fun!
           </h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
             Our Playground is where we let our creativity run wild. As avid contributors to the Open Source community, we are proud to share some of the tools we've built.
           </p>
         </div>
@@ -149,15 +149,13 @@ export function HomePage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* 8. Client Experience */}
-      <div className="flex justify-center py-16">
-        <div className="flex flex-col items-center">
-          <SectionLabel>Client Experience</SectionLabel>
-          <TitleDescription
-            title="We love what we do, and so do our clients."
-            description="Our clients don't just get great products, they enjoy the process too. An independent entity runs customer satisfaction surveys and interviews to help us understand how we can keep continuously improving."
-            cta="View full CX page →"
-          />
-        </div>
+      <div className="flex flex-col items-center py-16">
+        <SectionLabel>Client Experience</SectionLabel>
+        <TitleDescription
+          title="We love what we do, and so do our clients."
+          description="Our clients don't just get great products, they enjoy the process too. An independent entity runs customer satisfaction surveys and interviews to help us understand how we can keep continuously improving."
+          cta="View full CX page →"
+        />
       </div>
 
       <div className="flex justify-center pb-16">

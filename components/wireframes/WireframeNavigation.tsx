@@ -32,7 +32,7 @@ export function WireframeNavigation({ currentPage, onPageChange }: WireframeNavi
     <div className="bg-[#f8f9fa] border-b border-[#e0e0e0] p-4 sticky top-0 z-50">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-[14px] font-medium text-[#7A7A7A] mr-4">
+          <span className="text-[14px] font-medium text-[rgba(0,0,0,0.8)] mr-4">
             Wireframes:
           </span>
           {pages.map((page) => (
@@ -51,7 +51,7 @@ export function WireframeNavigation({ currentPage, onPageChange }: WireframeNavi
         </div>
         
         <div className="flex items-center gap-3">
-          <span className="text-[14px] text-[#7A7A7A]">
+          <span className="text-[14px] text-[rgba(0,0,0,0.8)]">
             Current: {currentPage}
           </span>
         </div>

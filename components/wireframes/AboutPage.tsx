@@ -31,10 +31,10 @@ export function AboutPage() {
         <div className="max-w-[1400px] mx-auto px-6 w-full">
         <SectionLabel>Team</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             Our team
           </h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
             Meet the passionate individuals behind Significa. Our diverse team brings together expertise from design, development, and business strategy.
           </p>
         </div>
@@ -64,10 +64,10 @@ export function AboutPage() {
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Locations</SectionLabel>
           <div className="text-center mb-16">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
               Where we work
             </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
               We're a global team with offices and remote workers around the world.
             </p>
           </div>
@@ -142,7 +142,7 @@ export function AboutPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* Continuous Improvement */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="Always improving"
           description="We believe in continuous improvement, regularly gathering feedback and refining our processes to deliver even better results."

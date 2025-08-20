@@ -23,15 +23,15 @@ export function BCorporationPage() {
         {/* Overview Section */}
         <section data-block="bcorp.overview" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Overview
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6">
                   As a certified B Corporation, we balance profit and purpose, using business as a force for good. We're part of a global movement of companies committed to redefining success in business.
                 </p>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8">
                   Our certification demonstrates our commitment to meeting the highest standards of verified social and environmental performance, public transparency, and legal accountability.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
@@ -59,7 +59,7 @@ export function BCorporationPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   1% for the Planet
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   We donate 1% of our annual revenue to environmental causes and organizations.
                 </p>
                 <figure className="media" data-field="media-label">
@@ -72,7 +72,7 @@ export function BCorporationPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Carbon Neutral
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Committed to carbon neutrality through renewable energy and offset programs.
                 </p>
                 <figure className="media" data-field="media-label">
@@ -85,7 +85,7 @@ export function BCorporationPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Fair Employment
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Equal opportunities, fair wages, and inclusive workplace practices for all team members.
                 </p>
                 <figure className="media" data-field="media-label">
@@ -98,7 +98,7 @@ export function BCorporationPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Community Support
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Supporting local communities through volunteering and pro-bono work.
                 </p>
                 <figure className="media" data-field="media-label">
@@ -111,7 +111,7 @@ export function BCorporationPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Ethical Business
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Transparent business practices with strong governance and accountability.
                 </p>
                 <figure className="media" data-field="media-label">
@@ -124,7 +124,7 @@ export function BCorporationPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Digital Accessibility
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Creating inclusive digital experiences accessible to everyone.
                 </p>
                 <figure className="media" data-field="media-label">
@@ -139,10 +139,10 @@ export function BCorporationPage() {
         {/* Impact Reports Section */}
         <section data-block="bcorp.impact-reports" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Impact Reports
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8 max-w-[823px]">
+            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8 ">
               We publish annual impact reports to share our progress and hold ourselves accountable to our commitments.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -151,7 +151,7 @@ export function BCorporationPage() {
                   <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {year} Impact Report
                   </h3>
-                  <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
+                  <p data-field="item-excerpt" className="text-[14px] text-[rgba(0,0,0,0.8)] mb-4">
                     Our annual report covering social and environmental impact for {year}.
                   </p>
                   <a data-field="link-href" className="text-[14px] text-[#1f1f1f] underline">
@@ -170,15 +170,15 @@ export function BCorporationPage() {
         {/* Transparency Section */}
         <section data-block="bcorp.transparency" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Transparency
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6">
                   Transparency is fundamental to our B Corp certification. We openly share our impact data, governance structure, and business practices.
                 </p>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8">
                   Our B Impact Assessment is publicly available, showing how we measure against other certified B Corporations across all impact areas.
                 </p>
                 <div className="space-y-4">
@@ -204,7 +204,7 @@ export function BCorporationPage() {
         {/* Related Articles (Optional) */}
         <section data-block="blog.related-articles" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Related articles
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -217,7 +217,7 @@ export function BCorporationPage() {
                   <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {article}
                   </h3>
-                  <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
+                  <p data-field="item-excerpt" className="text-[14px] text-[rgba(0,0,0,0.8)] mb-4">
                     Learn more about our commitment to social and environmental impact.
                   </p>
                   <figure className="media" data-field="media-label">

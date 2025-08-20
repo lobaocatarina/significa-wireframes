@@ -21,15 +21,15 @@ export function HandbookPage() {
         {/* Overview Section */}
         <section data-block="handbook.overview" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Working with Significa
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6">
                   Our handbook is a living document that outlines how we work, our processes, values, and everything you need to know about collaborating with our team.
                 </p>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-8">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8">
                   From project kickoff to final delivery, we've documented our proven methodologies to ensure transparency and successful outcomes.
                 </p>
                 <div className="space-y-4">
@@ -67,10 +67,10 @@ export function HandbookPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
                   Pricing Structure
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Fixed-price projects with clear milestones and deliverables. No hidden fees or surprises.
                 </p>
-                <ul className="space-y-2 text-[14px] text-[#7A7A7A]">
+                <ul className="space-y-2 text-[14px] text-[rgba(0,0,0,0.8)]">
                   <li>• Project-based pricing</li>
                   <li>• Milestone-based payments</li>
                   <li>• Transparent cost breakdown</li>
@@ -86,10 +86,10 @@ export function HandbookPage() {
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
                   Payment Terms
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-4">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-4">
                   Flexible payment schedules aligned with project milestones and deliverables.
                 </p>
-                <ul className="space-y-2 text-[14px] text-[#7A7A7A]">
+                <ul className="space-y-2 text-[14px] text-[rgba(0,0,0,0.8)]">
                   <li>• 30% upfront payment</li>
                   <li>• Milestone-based invoicing</li>
                   <li>• Net 15 payment terms</li>
@@ -107,7 +107,7 @@ export function HandbookPage() {
         {/* All Sections */}
         <section data-block="handbook.links" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               All sections
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -147,12 +147,12 @@ export function HandbookPage() {
                   <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
                     {section.title}
                   </h3>
-                  <p data-field="item-excerpt" className="text-[14px] text-[#7A7A7A] mb-4">
+                  <p data-field="item-excerpt" className="text-[14px] text-[rgba(0,0,0,0.8)] mb-4">
                     {section.description}
                   </p>
                   <div className="space-y-1 mb-4">
                     {section.sections.map((subsection, subIndex) => (
-                      <p key={subIndex} className="text-[12px] text-[#7A7A7A]">
+                      <p key={subIndex} className="text-[12px] text-[rgba(0,0,0,0.8)]">
                         • {subsection}
                       </p>
                     ))}
@@ -169,7 +169,7 @@ export function HandbookPage() {
             </div>
             
             <div className="mt-12 text-center">
-              <p data-field="paragraph" className="text-[16px] text-[#7A7A7A] mb-6">
+              <p data-field="paragraph" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-6">
                 Need something specific? Can't find what you're looking for?
               </p>
               <WireframeButton variant="primary" data-field="cta">Contact us</WireframeButton>

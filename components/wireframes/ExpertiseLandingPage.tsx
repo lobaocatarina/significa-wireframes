@@ -21,7 +21,7 @@ export function ExpertiseLandingPage() {
       />
 
       {/* Categories */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Categories (industry cards)</SectionLabel>
         <div className="grid grid-cols-3 gap-8">
           {[
@@ -85,13 +85,13 @@ export function ExpertiseLandingPage() {
 
       {/* Why Industry Expertise Matters */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[1400px] mx-auto px-5">
+        <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Why Industry Expertise Matters</SectionLabel>
           <div className="text-center mb-16">
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
               Why expertise matters
             </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] ">
               Every industry has unique challenges, regulations, and user expectations. Our deep sector knowledge ensures we build solutions that truly fit your business.
             </p>
           </div>
@@ -122,7 +122,7 @@ export function ExpertiseLandingPage() {
       </div>
 
       {/* Success Stories by Industry */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Success Stories by Industry</SectionLabel>
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-medium text-black leading-[36px]">Proven results across industries</h2>

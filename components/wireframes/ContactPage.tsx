@@ -22,7 +22,7 @@ export function ContactPage() {
         {/* Contact Form Section */}
         <section data-block="contact.form" className="border-b border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Contact form
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -32,7 +32,7 @@ export function ContactPage() {
                     Name *
                   </label>
                   <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">Your full name</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Your full name</span>
                   </div>
                 </div>
                 
@@ -41,7 +41,7 @@ export function ContactPage() {
                     Email *
                   </label>
                   <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">your@email.com</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">your@email.com</span>
                   </div>
                 </div>
                 
@@ -50,7 +50,7 @@ export function ContactPage() {
                     Company
                   </label>
                   <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">Company name</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Company name</span>
                   </div>
                 </div>
                 
@@ -59,7 +59,7 @@ export function ContactPage() {
                     Project Summary *
                   </label>
                   <div className="border border-[#e0e0e0] p-3 h-[120px] bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">Tell us about your project...</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Tell us about your project...</span>
                   </div>
                 </div>
                 
@@ -68,7 +68,7 @@ export function ContactPage() {
                     Budget Range
                   </label>
                   <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">Select budget range</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Select budget range</span>
                   </div>
                 </div>
                 
@@ -77,7 +77,7 @@ export function ContactPage() {
                     Timeline
                   </label>
                   <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">When do you need this?</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">When do you need this?</span>
                   </div>
                 </div>
                 
@@ -86,13 +86,13 @@ export function ContactPage() {
                     Attachment
                   </label>
                   <div className="border border-[#e0e0e0] border-dashed p-6 text-center bg-[#f8f9fa]">
-                    <span className="text-[14px] text-[#7A7A7A]">Drop files or click to upload</span>
+                    <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Drop files or click to upload</span>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 border border-[#e0e0e0] mt-0.5"></div>
-                  <p className="text-[14px] text-[#7A7A7A]">
+                  <p className="text-[14px] text-[rgba(0,0,0,0.8)]">
                     I consent to processing of my personal data according to the Privacy Policy.
                   </p>
                 </div>
@@ -115,10 +115,10 @@ export function ContactPage() {
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+                <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
                   Email address
                 </h2>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6">
                   Prefer to reach out directly? Send us an email and we'll get back to you within 24 hours.
                 </p>
                 <a data-field="link-href" className="text-[18px] text-[#1f1f1f] underline font-medium">
@@ -142,10 +142,10 @@ export function ContactPage() {
                 <figcaption className="sr-only">Book a call illustration</figcaption>
               </figure>
               <div>
-                <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-6 text-center">
+                <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
                   Book a call
                 </h2>
-                <p data-field="paragraph" className="text-[18px] text-[#7A7A7A] mb-6">
+                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6">
                   Schedule a 30-minute discovery call to discuss your project and see if we're a good fit.
                 </p>
                 <WireframeButton variant="primary" data-field="cta">Schedule Call</WireframeButton>
@@ -157,7 +157,7 @@ export function ContactPage() {
         {/* Locations Section */}
         <section data-block="contact.locations" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 data-field="heading" className="text-[32px] font-bold text-[#1f1f1f] mb-8 text-center">
+            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Locations
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -165,7 +165,7 @@ export function ContactPage() {
                 <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-4 text-center">
                   Porto, Portugal
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-6">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-6">
                   Our main office and creative hub
                 </p>
                 <figure className="media" data-field="media-label">
@@ -177,7 +177,7 @@ export function ContactPage() {
                 <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-4 text-center">
                   Remote
                 </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[#7A7A7A] mb-6">
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-6">
                   We work with clients worldwide
                 </p>
                 <figure className="media" data-field="media-label">

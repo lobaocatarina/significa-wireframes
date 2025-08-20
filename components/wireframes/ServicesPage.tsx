@@ -28,10 +28,10 @@ export function ServicesPage() {
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Strategy Overview</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             Strategy-led. Design-driven. Clean code.
           </h2>
-          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
             We combine strategy, design and engineering to build digital products that are intuitive, user-centred, and built to last.
           </p>
         </div>
@@ -51,8 +51,8 @@ export function ServicesPage() {
       {/* Service Areas */}
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Service Areas</SectionLabel>
-        <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+        <div className="text-center mb-8">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
             Our five core service areas
           </h2>
         </div>
@@ -82,7 +82,7 @@ export function ServicesPage() {
             ].map((service, i) => (
               <div key={i}>
                 <div className="text-center mb-16">
-                  <h2 className="text-[32px] font-medium text-black leading-[36px] text-center mb-4">{service.title}</h2>
+                  <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center mb-4">{service.title}</h2>
                   <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
                     {service.description}
                   </p>
@@ -109,17 +109,15 @@ export function ServicesPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* How we work */}
-      <div className="flex justify-center py-16">
-        <div className="flex flex-col items-center">
-          <SectionLabel>How we work</SectionLabel>
-          <div className="text-center mb-16">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
-              A collaborative approach that puts you at the center.
-            </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
-              We believe the best results come from close collaboration. Throughout every project, you're involved in key decisions, receive regular updates, and have direct access to our team. Our transparent process ensures you're never in the dark about progress, timelines, or next steps.
-            </p>
-          </div>
+      <div className="flex flex-col items-center py-16">
+        <SectionLabel>How we work</SectionLabel>
+        <div className="text-center mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
+            A collaborative approach that puts you at the center.
+          </h2>
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
+            We believe the best results come from close collaboration. Throughout every project, you're involved in key decisions, receive regular updates, and have direct access to our team. Our transparent process ensures you're never in the dark about progress, timelines, or next steps.
+          </p>
         </div>
       </div>
 
@@ -135,7 +133,7 @@ export function ServicesPage() {
         <div className="flex flex-col items-center">
           <SectionLabel>FAQs</SectionLabel>
           <div className="text-center mb-16">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] text-center">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
               Frequently asked questions about our services
             </h2>
           </div>

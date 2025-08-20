@@ -22,7 +22,7 @@ export function FinalConversionPage() {
       />
 
       {/* Contact Methods */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Contact Methods (form, email, call, locations)</SectionLabel>
         
         <div className="grid grid-cols-2 gap-16">

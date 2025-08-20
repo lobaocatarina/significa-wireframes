@@ -25,7 +25,7 @@ export function CXPage() {
       />
 
       {/* Why We Track It */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Why We Track It</SectionLabel>
         <div className="grid grid-cols-2 gap-16 items-center">
           <div>
@@ -33,7 +33,7 @@ export function CXPage() {
               Why we measure CX
             </h2>
             <div className="space-y-6">
-              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center">
+              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
                 We believe that great work speaks for itself, but we also believe in being accountable for the experience we create for our clients.
               </p>
               <div className="space-y-4">
@@ -64,11 +64,11 @@ export function CXPage() {
 
       {/* How We Track It */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[1400px] mx-auto px-5">
+        <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>How We Track It</SectionLabel>
           <div className="text-center mb-16">
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">Our methodology</h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto">
+            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] ">
               We use a combination of quantitative surveys and qualitative interviews to gather comprehensive feedback.
             </p>
           </div>
@@ -99,14 +99,14 @@ export function CXPage() {
       </div>
 
       {/* Transparency */}
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col items-center py-16">
         <TitleDescription
           title="Complete transparency"
           description="We believe in sharing our results openly. All data is collected by an independent third party to ensure objectivity and accuracy."
         />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-5 pb-16">
+      <div className="max-w-[1400px] mx-auto px-6 pb-16">
         <SectionLabel>Transparency</SectionLabel>
         <div className="grid grid-cols-2 gap-16">
           <div className="space-y-8">
@@ -135,7 +135,7 @@ export function CXPage() {
 
       {/* Survey Data Snippets */}
       <div className="bg-[#f8f9fa] py-16">
-        <div className="max-w-[1400px] mx-auto px-5">
+        <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Survey Data Snippets</SectionLabel>
           <div className="text-center mb-16">
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Current metrics</h2>
@@ -180,10 +180,10 @@ export function CXPage() {
       </div>
 
       {/* FAQ */}
-      <div className="max-w-[800px] mx-auto px-5 py-16">
+      <div className="max-w-[800px] mx-auto px-6 py-16">
         <SectionLabel>FAQ</SectionLabel>
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-medium text-black leading-[36px] text-center">Frequently asked questions</h2>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Frequently asked questions</h2>
         </div>
         <div className="space-y-4">
           <FAQItem question="How often do you collect client feedback?" />

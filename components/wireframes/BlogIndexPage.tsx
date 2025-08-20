@@ -22,7 +22,7 @@ export function BlogIndexPage() {
       />
 
       {/* Filters */}
-      <div className="max-w-[1400px] mx-auto px-5 pb-8">
+      <div className="max-w-[1400px] mx-auto px-6 pb-8">
         <SectionLabel>Filters</SectionLabel>
         <div className="flex gap-3">
           <WireframeButton>All</WireframeButton>
@@ -34,7 +34,7 @@ export function BlogIndexPage() {
       </div>
 
       {/* Post List */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Post List</SectionLabel>
         <div className="grid grid-cols-3 gap-8">
           {[...Array(9)].map((_, i) => (
@@ -48,7 +48,7 @@ export function BlogIndexPage() {
       </div>
 
       {/* Logos Row */}
-      <div className="max-w-[1400px] mx-auto px-5 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Client Logos</SectionLabel>
         <div className="flex justify-center items-center gap-12">
           {[...Array(5)].map((_, i) => (
