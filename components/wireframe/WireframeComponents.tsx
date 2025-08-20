@@ -61,7 +61,7 @@ export function VideoPlaceholder({
 // Section label component
 export function SectionLabel({ children }: { children: string }) {
   return (
-    <div className="text-[12px] text-[#7A7A7A] mb-4 uppercase tracking-wide">
+    <div className="text-[12px] text-[#7A7A7A] mb-4 uppercase tracking-wide justify-self-center">
       {children}
     </div>
   );
@@ -191,7 +191,7 @@ export function TitleDescription({
   services?: number;
 }) {
   return (
-    <div className={`flex flex-col gap-6 w-[680px] ${alignment === "center" ? "items-center text-center" : "items-start text-left"}`}>
+    <div className={`flex flex-col gap-6 ${alignment === "center" ? "items-center text-center" : "items-start text-left"}`}>
       <div className="flex flex-col gap-2">
         <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px]">
           {title}
