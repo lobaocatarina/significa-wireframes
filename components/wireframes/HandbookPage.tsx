@@ -7,10 +7,7 @@ export function HandbookPage() {
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
 
       <main id="content">
         <Hero
@@ -60,7 +57,7 @@ export function HandbookPage() {
         <section data-block="handbook.billing" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Billing & Invoicing</SectionLabel>
-            <TitleDescription 
+            <TitleDescription
               title="Billing & Invoicing"
               description="Transparent pricing and payment processes"
             />
@@ -83,7 +80,7 @@ export function HandbookPage() {
                   <figcaption className="sr-only">Pricing structure visualization</figcaption>
                 </figure>
               </div>
-              
+
               <div className="border border-[#e0e0e0] p-6">
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3">
                   Payment Terms
@@ -170,7 +167,7 @@ export function HandbookPage() {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-12 text-center">
               <p data-field="paragraph" className="text-[16px] text-[rgba(0,0,0,0.8)] mb-6">
                 Need something specific? Can't find what you're looking for?
@@ -181,9 +178,7 @@ export function HandbookPage() {
         </section>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
+
     </div>
   );
 }

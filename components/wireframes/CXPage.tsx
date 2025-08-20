@@ -1,9 +1,8 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
-  TitleDescription, 
-  WireframeButton,
+import {
+  ImagePlaceholder,
+  SectionLabel,
+  TitleDescription,
   WireframeHeader,
   WireframeFooter,
   Metric,
@@ -15,8 +14,8 @@ import {
 export function CXPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="Customer Experience"
         description="Transparency is at the core of how we work. See what our clients really think about working with Significa."
@@ -72,7 +71,7 @@ export function CXPage() {
               We use a combination of quantitative surveys and qualitative interviews to gather comprehensive feedback.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-3 gap-8">
             {[
               {
@@ -146,7 +145,7 @@ export function CXPage() {
               <Metric value="4.8/5" label="Communication Score" />
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-8">
             {[
               {
@@ -195,13 +194,13 @@ export function CXPage() {
       </div>
 
       {/* Conversion */}
-      <MainCTA 
+      <MainCTA
         title="Experience the Significa difference"
         description="Ready to work with a team that truly cares about your success? Let's start a conversation."
         buttonText="Get Started"
       />
 
-      <WireframeFooter />
+
     </div>
   );
 }

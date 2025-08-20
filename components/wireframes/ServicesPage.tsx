@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -13,8 +13,8 @@ import {
 export function ServicesPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="Custom design and development services built to grow your business."
         variant="basic"
@@ -153,7 +153,7 @@ export function ServicesPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* Conversion CTA */}
-      <MainCTA 
+      <MainCTA
         title="Start a project."
         buttonText="Get in touch"
       />
@@ -161,7 +161,7 @@ export function ServicesPage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      <WireframeFooter />
+
     </div>
   );
 }

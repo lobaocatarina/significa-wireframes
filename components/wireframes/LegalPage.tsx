@@ -13,7 +13,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
         return {
           sections: [
             'Information We Collect',
-            'How We Use Your Information', 
+            'How We Use Your Information',
             'Data Sharing and Disclosure',
             'Data Security',
             'Your Rights',
@@ -59,10 +59,8 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
+
 
       <main id="content">
         <Hero
@@ -73,7 +71,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
 
         {/* Legal Content Section */}
         <section data-block="legal.content" className="py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="max-w-[800px]">
               <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
@@ -97,7 +95,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
                       <p data-field="paragraph" className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[24px]">
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                       </p>
-                      
+
                       {/* Add a media element for visual break */}
                       {index % 3 === 0 && (
                         <figure className="media my-8" data-field="media-label">
@@ -143,9 +141,6 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
         </section>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
     </div>
   );
 }

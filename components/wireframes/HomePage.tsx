@@ -1,27 +1,24 @@
 import React from 'react';
-import { 
-  VideoPlaceholder, 
-  ImagePlaceholder, 
-  SectionLabel, 
-  ProjectCard, 
-  BlogCard, 
-  Metric, 
-  FAQItem, 
-  TitleDescription, 
+import {
+  VideoPlaceholder,
+  ImagePlaceholder,
+  SectionLabel,
+  ProjectCard,
+  BlogCard,
+  Metric,
+  FAQItem,
+  TitleDescription,
   WireframeButton,
-  WireframeCTA,
   WireframeHeader,
   WireframeFooter,
-  MainCTA,
-  Hero
+  MainCTA
 } from '../wireframe/WireframeComponents';
 
 export function HomePage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* 1. Header */}
-      <WireframeHeader />
-      
+
+
       {/* 2. Hero */}
       <div className="flex flex-col items-center pt-16 pb-16">
         <SectionLabel>Hero</SectionLabel>
@@ -67,13 +64,13 @@ export function HomePage() {
       {/* Services */}
       <div className="flex flex-col items-center py-16">
         <div className="flex flex-col items-center max-w-[1200px] mx-auto px-6 w-full">
-        <SectionLabel>Services</SectionLabel>
-        <TitleDescription
-          title="We are a team of designers, developers, and product managers working as one."
-          description="When you work with us, you get the whole team to turn your ideas into seamless experiences. Whether it's an e-commerce platform, a mobile app, a SaaS product, we'll build it with care, curiosity, backed by 10 years of expertise, recognised by international awards."
-          services={4}
-          cta="Explore our services →"
-        />
+          <SectionLabel>Services</SectionLabel>
+          <TitleDescription
+            title="We are a team of designers, developers, and product managers working as one."
+            description="When you work with us, you get the whole team to turn your ideas into seamless experiences. Whether it's an e-commerce platform, a mobile app, a SaaS product, we'll build it with care, curiosity, backed by 10 years of expertise, recognised by international awards."
+            services={4}
+            cta="Explore our services →"
+          />
         </div>
       </div>
 
@@ -106,12 +103,12 @@ export function HomePage() {
       {/* Impact / B Corp */}
       <div className="flex justify-center py-16 max-w-[1200px] mx-auto px-6 w-full">
         <div className="flex flex-col items-center">
-        <SectionLabel>Impact / B Corp</SectionLabel>
-        <TitleDescription
-          title="We do business for good, building with impact in mind."
-          description="As a certified B Corp and member of 1% for the Planet, we are committed to designing and building ethically, inclusively, and sustainably."
-          cta="Learn more →"
-        />
+          <SectionLabel>Impact / B Corp</SectionLabel>
+          <TitleDescription
+            title="We do business for good, building with impact in mind."
+            description="As a certified B Corp and member of 1% for the Planet, we are committed to designing and building ethically, inclusively, and sustainably."
+            cta="Learn more →"
+          />
         </div>
       </div>
 
@@ -169,8 +166,9 @@ export function HomePage() {
         </div>
       </div>
 
+
       {/* 9. Main CTA */}
-      <MainCTA 
+      <MainCTA
         title="We are ready to grow your business. Are you?"
         buttonText="Get in touch"
       />
@@ -179,21 +177,21 @@ export function HomePage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* FAQ */}
-            <div className="max-w-[800px] mx-auto px-6 py-16">
-              <SectionLabel>FAQ</SectionLabel>
-              <div className="text-center mb-16">
-                <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Frequently asked questions</h2>
-              </div>
-              <div className="space-y-4">
-                <FAQItem question="How often do you collect client feedback?" />
-                <FAQItem question="Who conducts the customer satisfaction surveys?" />
-                <FAQItem question="Do you share negative feedback as well?" />
-                <FAQItem question="How do you use this feedback to improve?" />
-                <FAQItem question="Can I speak to previous clients?" />
-              </div>
-            </div>
-      {/* 11. Footer */}
-      <WireframeFooter />
+      <div className="max-w-[800px] mx-auto px-6 py-16">
+        <SectionLabel>FAQ</SectionLabel>
+        <div className="text-center mb-16">
+          <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Frequently asked questions</h2>
+        </div>
+        <div className="space-y-4">
+          <FAQItem question="How often do you collect client feedback?" />
+          <FAQItem question="Who conducts the customer satisfaction surveys?" />
+          <FAQItem question="Do you share negative feedback as well?" />
+          <FAQItem question="How do you use this feedback to improve?" />
+          <FAQItem question="Can I speak to previous clients?" />
+        </div>
+      </div>
+
+
     </div>
   );
 }

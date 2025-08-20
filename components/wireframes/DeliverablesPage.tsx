@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
-  ProjectCard, 
-  BlogCard, 
-  TitleDescription, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
+  ProjectCard,
+  BlogCard,
+  TitleDescription,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -15,8 +15,8 @@ import {
 export function DeliverablesPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="What we deliver"
         description="Comprehensive deliverables that drive business results and user satisfaction."
@@ -183,7 +183,7 @@ export function DeliverablesPage() {
         </div>
       </div>
 
-      <WireframeFooter />
+
     </div>
   );
 }

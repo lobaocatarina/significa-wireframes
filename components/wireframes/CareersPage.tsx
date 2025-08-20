@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -11,9 +11,9 @@ import {
 export function CareersPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
-      
+
+
+
       {/* Hero */}
       <section data-block="global.hero">
         <Hero
@@ -22,7 +22,7 @@ export function CareersPage() {
           variant="media"
           mediaHeight="h-[400px]"
         />
-       
+
       </section>
 
       {/* Open Positions */}
@@ -32,7 +32,7 @@ export function CareersPage() {
           <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
             Open positions
           </h2>
-          
+
           {/* Empty state */}
           <div className="text-center">
             <p className="text-[18px] text-black leading-[24px] mb-2">
@@ -45,7 +45,7 @@ export function CareersPage() {
               Submit your spontaneous application
             </WireframeButton>
           </div>
-          
+
           <figure className="media mt-8">
             <ImagePlaceholder className="w-24 h-24 mx-auto" />
             <figcaption className="sr-only">Small legend placeholder</figcaption>
@@ -60,12 +60,12 @@ export function CareersPage() {
           <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
             What we stand for
           </h2>
-          
+
           <div className="text-center mb-8">
             <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto mb-8">
               We believe in creating meaningful work experiences that foster growth, creativity, and collaboration.
             </p>
-            
+
             <ul className="space-y-2 text-[16px] text-black leading-[24px] max-w-[600px] mx-auto mb-12">
               <li>• Curiosity-driven approach to problem solving</li>
               <li>• Collaborative team environment</li>
@@ -104,7 +104,7 @@ export function CareersPage() {
           <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
             Benefits
           </h2>
-          
+
           <div className="grid grid-cols-3 gap-6">
             {[
               { title: "Welcome pack", description: "Hoodie and essentials on day one." },
@@ -151,13 +151,13 @@ export function CareersPage() {
           <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8 max-w-[600px] mx-auto">
             Ready to make an impact? We'd love to hear from you.
           </p>
-          <WireframeButton 
-            variant="primary" 
+          <WireframeButton
+            variant="primary"
             data-field="link-title|link-href"
           >
             Submit your application → careers@example.com
           </WireframeButton>
-          
+
           <figure className="media mt-8">
             <ImagePlaceholder className="w-32 h-32 mx-auto" />
             <figcaption className="sr-only">Small contact/booking placeholder</figcaption>
@@ -165,7 +165,7 @@ export function CareersPage() {
         </div>
       </section>
 
-      <WireframeFooter />
+
     </div>
   );
 }

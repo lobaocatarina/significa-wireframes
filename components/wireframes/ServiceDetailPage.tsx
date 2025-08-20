@@ -12,10 +12,8 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
+
 
       <main id="content">
         <Hero
@@ -26,17 +24,16 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
 
         {/* How We Work Section */}
         <section data-block="service.how-we-work" className="border-t border-[#e0e0e0] py-16">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <SectionLabel>How We Work</SectionLabel>
-            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
-              How we work.
-            </h2>
-            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6 ">
-              Our approach to {serviceName.toLowerCase()} combines proven methodologies with innovative thinking.
-            </p>
-            <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
-              Learn more in our Handbook: Working with Significa
-            </a>
+          <div className="max-w-[1200px] mx-auto items-center px-6">
+            <div className="flex flex-col items-center">
+              <SectionLabel>How we work.</SectionLabel>
+              <TitleDescription
+                title="How we work."
+                description="We follow a hands-on collaborative approach."
+                cta="Explore our handbook →"
+              />
+            </div>
+
             <figure className="media mt-8" data-field="media-label">
               <ImagePlaceholder className="w-full h-[300px]" />
               <figcaption className="sr-only">Our {serviceName.toLowerCase()} methodology</figcaption>
@@ -46,8 +43,8 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
 
         {/* Awards Section */}
         <section data-block="service.awards" className="border-t border-[#e0e0e0] py-16">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <SectionLabel>Awards & Recognition</SectionLabel>
+          <div className="flex flex-col items-center py-16 max-w-[1200px] mx-auto px-6 w-full">
+            <SectionLabel>Awards</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Awards & Recognition
             </h2>
@@ -67,15 +64,16 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         <section data-block="service.playground" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Playground Experiments</SectionLabel>
-            <TitleDescription 
+            <TitleDescription
               title="Playground Experiments"
               description="Related experiments and proof-of-concepts"
+              cta="Explore playground →"
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               {[1, 2, 3].map((poc) => (
                 <div key={poc} className="border border-[#e0e0e0] p-6">
                   <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
-                    POC Project {poc}
+                    PG Project {poc}
                   </h3>
                   <p data-field="item-excerpt" className="text-[14px] text-[rgba(0,0,0,0.8)] mb-4">
                     Experimental project related to {serviceName.toLowerCase()}
@@ -87,11 +85,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
                 </div>
               ))}
             </div>
-            <div className="mt-8">
-              <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
-                View all Playground projects →
-              </a>
-            </div>
+
           </div>
         </section>
 
@@ -131,9 +125,10 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
                 </div>
               ))}
             </div>
-            <div className="mt-8 text-center">
-              <WireframeButton variant="secondary" data-field="cta">View all articles</WireframeButton>
-            </div>
+          </div>
+
+          <div className="mt-8 text-center justify-items-center">
+            <WireframeButton variant="secondary" data-field="cta">View all articles</WireframeButton>
           </div>
         </section>
 
@@ -150,9 +145,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         </div>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
+
     </div>
   );
 }

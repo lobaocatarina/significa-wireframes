@@ -1,9 +1,8 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
-  ProjectCard, 
-  TitleDescription, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
+  ProjectCard,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -13,8 +12,8 @@ import {
 export function PlaygroundPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="Playground"
         description="Where we experiment, learn, and contribute to the open-source community."
@@ -132,7 +131,7 @@ export function PlaygroundPage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      <WireframeFooter />
+
     </div>
   );
 }

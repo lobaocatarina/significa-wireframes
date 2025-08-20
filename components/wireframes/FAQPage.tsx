@@ -1,7 +1,6 @@
 import React from 'react';
-import { 
-  SectionLabel, 
-  TitleDescription, 
+import {
+  SectionLabel,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -13,8 +12,8 @@ import {
 export function FAQPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="Frequently Asked Questions"
         description="Find answers to the most common questions about working with Significa and our process."
@@ -25,7 +24,7 @@ export function FAQPage() {
       {/* Grouped FAQs */}
       <div className="max-w-[800px] mx-auto px-6 py-16">
         <SectionLabel>Grouped FAQs</SectionLabel>
-        
+
         {/* General */}
         <div className="mb-16">
           <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">General</h2>
@@ -105,13 +104,13 @@ export function FAQPage() {
       </div>
 
       {/* Conversion */}
-      <MainCTA 
+      <MainCTA
         title="Ready to get started?"
         description="Let's discuss your project and see how we can help bring your vision to life."
         buttonText="Start a Project"
       />
 
-      <WireframeFooter />
+
     </div>
   );
 }

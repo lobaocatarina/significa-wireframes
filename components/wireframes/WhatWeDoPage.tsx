@@ -7,23 +7,21 @@ export function WhatWeDoPage() {
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
+
 
       <main id="content">
         <Hero
           title="Custom design and development services built to grow your business."
-      
+
         />
 
         {/* Services Section */}
         <section data-block="what-we-do.services" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1200px] mx-auto px-6">
             <SectionLabel>Our Services</SectionLabel>
-            <TitleDescription 
+            <TitleDescription
               title="Strategy-led. Design-driven. Clean code."
               description="We combine strategy, design and engineering to build digital products that are intuitive, user-centred, and built to last."
             />
@@ -54,17 +52,17 @@ export function WhatWeDoPage() {
 
         {/* Deliverables Section */}
         <section data-block="what-we-do.deliverables" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>What We Build</SectionLabel>
-            <TitleDescription 
+            <TitleDescription
               title="What We Build"
               description="Digital products tailored to your needs"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               {[
                 'Websites',
-                'Mobile App', 
+                'Mobile App',
                 'Web App',
                 'Watch App',
                 'Desktop App',
@@ -95,26 +93,26 @@ export function WhatWeDoPage() {
                 We follow a hands-on collaborative approach that ensures your project delivers results.
               </p>
             </div>
-              <div className="flex justify-center pb-16">
-                   <ImagePlaceholder width="800px" height="464px" />
-                 </div>
-    
+            <div className="flex justify-center pb-16">
+              <ImagePlaceholder width="800px" height="464px" />
+            </div>
+
           </div>
         </section>
 
         {/* Expertise Section */}
         <section data-block="what-we-do.expertise" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Industry Expertise</SectionLabel>
-            <TitleDescription 
+            <TitleDescription
               title="Industry Expertise"
               description="Deep experience across diverse sectors"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
               {[
                 'Health & Wellness',
-                'Hospitality', 
+                'Hospitality',
                 'Sports & Entertainment',
                 'Finance',
                 'Commerce',
@@ -165,9 +163,7 @@ export function WhatWeDoPage() {
         </div>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
+
     </div>
   );
 }

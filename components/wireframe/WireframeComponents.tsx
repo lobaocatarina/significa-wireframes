@@ -1,48 +1,48 @@
 import React from 'react';
 
 // Basic placeholder image component matching the imported style
-export function ImagePlaceholder({ 
-  width = "100%", 
+export function ImagePlaceholder({
+  width = "100%",
   height = "322px",
-  className = "" 
-}: { 
-  width?: string; 
-  height?: string; 
+  className = ""
+}: {
+  width?: string;
+  height?: string;
   className?: string;
 }) {
   return (
-    <div 
+    <div
       className={`relative border border-[#CCCCCC] bg-white overflow-hidden ${className}`}
       style={{ width, height }}
     >
       <svg className="absolute inset-0 w-full h-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 0L100 100" stroke="#CCCCCC" strokeWidth="0.5"/>
-        <path d="M100 0L0 100" stroke="#CCCCCC" strokeWidth="0.5"/>
+        <path d="M0 0L100 100" stroke="#CCCCCC" strokeWidth="0.5" />
+        <path d="M100 0L0 100" stroke="#CCCCCC" strokeWidth="0.5" />
       </svg>
     </div>
   );
 }
 
 // Video placeholder with play button
-export function VideoPlaceholder({ 
-  width = "100%", 
+export function VideoPlaceholder({
+  width = "100%",
   height = "616px",
   className = "",
   label = ""
-}: { 
-  width?: string; 
-  height?: string; 
+}: {
+  width?: string;
+  height?: string;
   className?: string;
   label?: string;
 }) {
   return (
-    <div 
+    <div
       className={`relative border border-[#CCCCCC] bg-white overflow-hidden ${className}`}
       style={{ width, height }}
     >
       <svg className="absolute inset-0 w-full h-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 0L100 100" stroke="#CCCCCC" strokeWidth="0.5"/>
-        <path d="M100 0L0 100" stroke="#CCCCCC" strokeWidth="0.5"/>
+        <path d="M0 0L100 100" stroke="#CCCCCC" strokeWidth="0.5" />
+        <path d="M100 0L0 100" stroke="#CCCCCC" strokeWidth="0.5" />
       </svg>
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-12 h-12 border border-[#7A7A7A] bg-white flex items-center justify-center">
@@ -68,7 +68,7 @@ export function SectionLabel({ children }: { children: string }) {
 }
 
 // Project card component
-export function ProjectCard({ 
+export function ProjectCard({
   title = "Project Title",
   description = "Description",
   industry = "Industry"
@@ -127,11 +127,11 @@ export function BlogCard({
 }
 
 // Metric component
-export function Metric({ 
-  value = "98%", 
-  label = "Metric" 
-}: { 
-  value?: string; 
+export function Metric({
+  value = "98%",
+  label = "Metric"
+}: {
+  value?: string;
   label?: string;
 }) {
   return (
@@ -147,12 +147,10 @@ export function Metric({
 }
 
 // FAQ item component
-export function FAQItem({ 
-  question = "Question text here",
-  isExpanded = false 
-}: { 
+export function FAQItem({
+  question = "Question text here"
+}: {
   question?: string;
-  isExpanded?: boolean;
 }) {
   return (
     <div className="flex flex-col">
@@ -162,10 +160,10 @@ export function FAQItem({
         </div>
         <div className="w-6 h-6 flex items-center justify-center">
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-            <path 
-              d="M7.19922 10.2002L11.9992 15.0002L16.7992 10.2002" 
-              stroke="#7A7A7A" 
-              strokeWidth="1.3" 
+            <path
+              d="M7.19922 10.2002L11.9992 15.0002L16.7992 10.2002"
+              stroke="#7A7A7A"
+              strokeWidth="1.3"
               strokeLinejoin="round"
             />
           </svg>
@@ -229,18 +227,18 @@ export function TitleDescription({
 }
 
 // Button component - consistent with wireframe style
-export function WireframeButton({ 
+export function WireframeButton({
   children = "Button Text",
   variant = "secondary",
   className = ""
-}: { 
+}: {
   children?: React.ReactNode;
   variant?: "primary" | "secondary";
   className?: string;
 }) {
   if (variant === "primary") {
     return (
-      <button 
+      <button
         data-field="cta"
         className={`bg-[#1f1f1f] border border-[#1f1f1f] px-3 py-1.5 h-9 flex items-center justify-center hover:bg-[#333] focus:outline-none focus:ring-2 focus:ring-[#1f1f1f] focus:ring-offset-2 ${className}`}
       >
@@ -250,9 +248,9 @@ export function WireframeButton({
       </button>
     );
   }
-  
+
   return (
-    <button 
+    <button
       data-field="cta"
       className={`border border-[#e0e0e0] px-3 py-1.5 h-9 flex items-center justify-center hover:bg-[#f5f5f5] focus:outline-none focus:ring-2 focus:ring-[#1f1f1f] focus:ring-offset-2 ${className}`}
     >
@@ -264,9 +262,9 @@ export function WireframeButton({
 }
 
 // CTA Link component - for text-based CTAs that should look like buttons
-export function WireframeCTA({ 
+export function WireframeCTA({
   children = "View all →"
-}: { 
+}: {
   children?: string;
 }) {
   return (
@@ -277,25 +275,43 @@ export function WireframeCTA({
 }
 
 // Navigation header component
-export function WireframeHeader() {
+export function WireframeHeader({ onPageChange }: {
+  onPageChange?: (page: string) => void;
+}) {
+  const pages = [
+    'Home',
+    'What We Do',
+    // 'Service Detail',
+    // 'Deliverables',
+    // 'Expertise Landing',
+    // 'Expertise Detail',
+    'CX',
+    'Work With Us',
+    // 'Contact',
+    'Projects Index',
+    // 'Project Page',
+    'Blog Index',
+    'Playground',
+    'About',
+    'Careers',
+    // 'B Corporation',
+    // 'FAQ',
+    // 'Legal',
+    // 'Handbook'
+  ];
+
   return (
     <div className="bg-white h-14 w-full border-b border-[#f0f0f0] z-50">
       <div className="flex items-center justify-between h-full px-6 max-w-[1400px] mx-auto">
         <div data-field="logo-text" className="text-[16px] font-medium text-[#1f1f1f] leading-[24px]">
           Significa
         </div>
-        <nav className="flex gap-10 text-[16px] text-black leading-[24px]" role="navigation">
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Home</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">What we do</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Projects</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Blog</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Work with us</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Careers</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Playground</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">About</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">CX</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Handbook</a>
-          <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Contact</a>
+
+        <nav className="flex gap-4 text-[16px] text-black leading-[24px] flex-wrap" role="navigation">
+          {pages.map((page) => (
+            <a key={page} className="hover:text-[#7A7A7A]" onClick={() => onPageChange?.(page)}>{page}</a>
+          ))}
+
         </nav>
         <WireframeButton variant="primary">Get in Touch</WireframeButton>
       </div>
@@ -304,7 +320,7 @@ export function WireframeHeader() {
 }
 
 // Main CTA component - reusable across all pages
-export function MainCTA({ 
+export function MainCTA({
   title = "Ready to get started?",
   description = "Let's discuss your project and see how we can help bring your vision to life.",
   buttonText = "Get in touch"
@@ -370,47 +386,111 @@ export function Hero({
 }
 
 // Footer component
-export function WireframeFooter() {
+export function WireframeFooter({ onPageChange }: {
+  onPageChange?: (page: string) => void;
+}) {
+  const pages1 = [
+    'Home',
+    'What We Do',
+    'Service Detail',
+    'Deliverables',
+    'Handbook'
+
+
+  ];
+  const pages2 = [
+
+    'Expertise Detail',
+    'CX',
+    'Work With Us',
+    'Contact',
+    'Projects Index',
+
+  ];
+  const pages3 = [
+
+    'Project Page',
+    'Blog Index',
+    'Playground',
+    'About',
+    'Careers',
+
+  ];
+  const pages4 = [
+
+    'B Corporation',
+    'FAQ',
+    'Legal',
+  ];
+
+
+
   return (
     <div className="bg-white border-t border-[#e0e0e0] py-16">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="grid grid-cols-4 gap-16 mb-16">
           <div className="flex flex-col gap-3">
-            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Quick Links</div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Pages</div>
             <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Home</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">What we do</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Projects</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Blog</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Work with us</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Careers</a>
+              {pages1.map((page) => (
+                <a
+                  key={page}
+                  href="#"
+                  data-field="link-title"
+                  className="hover:text-[#7A7A7A]"
+                  onClick={() => onPageChange?.(page)}
+                >
+                  {page}
+                </a>
+              ))}
             </nav>
           </div>
           <div className="flex flex-col gap-3">
-            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">More</div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Pages</div>
             <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Playground</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">About</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">CX</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Handbook</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Contact</a>
+              {pages2.map((page) => (
+                <a
+                  key={page}
+                  href="#"
+                  data-field="link-title"
+                  className="hover:text-[#7A7A7A]"
+                  onClick={() => onPageChange?.(page)}
+                >
+                  {page}
+                </a>
+              ))}
             </nav>
           </div>
           <div className="flex flex-col gap-3">
-            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Social</div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Pages</div>
             <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Twitter</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">LinkedIn</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Instagram</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Dribbble</a>
+              {pages3.map((page) => (
+                <a
+                  key={page}
+                  href="#"
+                  data-field="link-title"
+                  className="hover:text-[#7A7A7A]"
+                  onClick={() => onPageChange?.(page)}
+                >
+                  {page}
+                </a>
+              ))}
             </nav>
           </div>
           <div className="flex flex-col gap-3">
-            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Legal</div>
+            <div data-field="heading" className="text-[16px] font-medium text-black leading-[24px]">Pages</div>
             <nav className="flex flex-col gap-2 text-[16px] text-black leading-[24px]" role="navigation">
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Privacy Policy</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Terms of Service</a>
-              <a href="#" data-field="link-title" className="hover:text-[#7A7A7A]">Cookie Policy</a>
+              {pages4.map((page) => (
+                <a
+                  key={page}
+                  href="#"
+                  data-field="link-title"
+                  className="hover:text-[#7A7A7A]"
+                  onClick={() => onPageChange?.(page)}
+                >
+                  {page}
+                </a>
+              ))}
             </nav>
           </div>
         </div>

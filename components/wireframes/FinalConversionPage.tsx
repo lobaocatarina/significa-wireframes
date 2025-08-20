@@ -1,8 +1,7 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
-  TitleDescription, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -12,8 +11,8 @@ import {
 export function FinalConversionPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="I have a project"
         description="Ready to bring your digital product vision to life? Let's discuss how we can work together to create something exceptional."
@@ -24,7 +23,7 @@ export function FinalConversionPage() {
       {/* Contact Methods */}
       <div className="max-w-[1400px] mx-auto px-6 py-16">
         <SectionLabel>Contact Methods (form, email, call, locations)</SectionLabel>
-        
+
         <div className="grid grid-cols-2 gap-16">
           {/* Contact Form */}
           <div>
@@ -63,7 +62,7 @@ export function FinalConversionPage() {
           {/* Contact Information */}
           <div>
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Get in touch</h2>
-            
+
             {/* Email */}
             <div className="mb-8">
               <h3 className="text-[18px] font-medium text-black leading-[24px] mb-4 text-center">Email us</h3>
@@ -174,7 +173,7 @@ export function FinalConversionPage() {
         </div>
       </div>
 
-      <WireframeFooter />
+
     </div>
   );
 }

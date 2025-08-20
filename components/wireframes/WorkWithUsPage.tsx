@@ -7,10 +7,8 @@ export function WorkWithUsPage() {
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
+
 
       <main id="content">
         <Hero
@@ -20,7 +18,7 @@ export function WorkWithUsPage() {
 
         {/* Summary Section */}
         <section data-block="work-with-us.summary" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Working with Significa</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
@@ -41,7 +39,7 @@ export function WorkWithUsPage() {
 
         {/* Team Allocation Section */}
         <section data-block="work-with-us.team-allocation" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Team Allocation</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
@@ -53,7 +51,7 @@ export function WorkWithUsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 'Project Manager',
-                'Designer', 
+                'Designer',
                 'Developer',
                 'QA Specialist',
                 'Strategy Lead',
@@ -75,7 +73,7 @@ export function WorkWithUsPage() {
 
         {/* Pricing Section */}
         <section data-block="work-with-us.pricing" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Pricing & Rates</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
@@ -96,7 +94,7 @@ export function WorkWithUsPage() {
 
         {/* CX Preview Section */}
         <section data-block="global.cx-preview" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>CX Data</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
@@ -122,7 +120,7 @@ export function WorkWithUsPage() {
 
         {/* Testimonials Section */}
         <section data-block="work-with-us.testimonials" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Testimonials</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
@@ -191,9 +189,7 @@ export function WorkWithUsPage() {
         </div>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
+
     </div>
   );
 }

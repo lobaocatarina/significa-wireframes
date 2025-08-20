@@ -5,7 +5,6 @@ import { WhatWeDoPage } from './components/wireframes/WhatWeDoPage';
 import { ServiceDetailPage } from './components/wireframes/ServiceDetailPage';
 import { ServicesPage } from './components/wireframes/ServicesPage';
 import { DeliverablesPage } from './components/wireframes/DeliverablesPage';
-import { ExpertiseLandingPage } from './components/wireframes/ExpertiseLandingPage';
 import { ExpertiseDetailPage } from './components/wireframes/ExpertiseDetailPage';
 import { CXPage } from './components/wireframes/CXPage';
 import { WorkWithUsPage } from './components/wireframes/WorkWithUsPage';
@@ -21,6 +20,7 @@ import { FAQPage } from './components/wireframes/FAQPage';
 import { LegalPage } from './components/wireframes/LegalPage';
 import { HandbookPage } from './components/wireframes/HandbookPage';
 import { FinalConversionPage } from './components/wireframes/FinalConversionPage';
+import { WireframeFooter, WireframeHeader } from './components/wireframe/WireframeComponents';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -37,8 +37,6 @@ export default function App() {
         return <ServicesPage />;
       case 'Deliverables':
         return <DeliverablesPage />;
-      case 'Expertise Landing':
-        return <ExpertiseLandingPage />;
       case 'Expertise Detail':
         return <ExpertiseDetailPage />;
       case 'CX':
@@ -76,13 +74,11 @@ export default function App() {
 
   return (
     <div className="size-full">
-      <WireframeNavigation 
-        currentPage={currentPage} 
-        onPageChange={setCurrentPage} 
-      />
+      <WireframeHeader onPageChange={setCurrentPage} />
       <div id="wireframe-content">
         {renderPage()}
       </div>
+      <WireframeFooter onPageChange={setCurrentPage} />
     </div>
   );
 }

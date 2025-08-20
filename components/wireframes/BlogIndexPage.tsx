@@ -1,8 +1,8 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
-  BlogCard, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
+  BlogCard,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -12,8 +12,8 @@ import {
 export function BlogIndexPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="Insights & Ideas"
         description="Thoughts on design, development, and digital product strategy from our team."
@@ -41,7 +41,7 @@ export function BlogIndexPage() {
             <BlogCard key={i} />
           ))}
         </div>
-        
+
         <div className="flex justify-center mt-12">
           <WireframeButton variant="secondary">Load More Posts</WireframeButton>
         </div>
@@ -57,7 +57,7 @@ export function BlogIndexPage() {
         </div>
       </div>
 
-      <WireframeFooter />
+
     </div>
   );
 }

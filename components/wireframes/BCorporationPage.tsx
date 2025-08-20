@@ -7,10 +7,8 @@ export function BCorporationPage() {
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
+
 
       <main id="content">
         <Hero
@@ -27,21 +25,21 @@ export function BCorporationPage() {
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Overview
             </h2>
-            <div className = "items-center">
+            <div className="items-center">
               <div>
                 <p data-field="paragraph" className="text-[18px] text-center text-[rgba(0,0,0,0.8)] mb-6">
                   As a certified B Corporation, we balance profit and purpose, using business as a force for good. We're part of a global movement of companies committed to redefining success in business. Our certification demonstrates our commitment to meeting the highest standards of verified social and environmental performance, public transparency, and legal accountability.
                 </p>
-               
+
               </div>
-              <figure className= "pb-8 media" data-field="media-label">
+              <figure className="pb-8 media" data-field="media-label">
                 <ImagePlaceholder className="w-full h-[300px]" />
                 <figcaption className="sr-only">B Corp community and movement</figcaption>
               </figure>
-               <div className="grid grid-cols-2 gap-6">
-                  <Metric value="2021" label="Certified Since" />
-                  <Metric value="80+" label="Overall Score" />
-                </div>
+              <div className="grid grid-cols-2 gap-6">
+                <Metric value="2021" label="Certified Since" />
+                <Metric value="80+" label="Overall Score" />
+              </div>
             </div>
           </div>
         </section>
@@ -50,7 +48,7 @@ export function BCorporationPage() {
         <section data-block="bcorp.commitments" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>Impact Commitments</SectionLabel>
-            <TitleDescription 
+            <TitleDescription
               title="Impact commitments"
               description="Our ongoing commitments to social and environmental responsibility"
             />
@@ -67,7 +65,7 @@ export function BCorporationPage() {
                   <figcaption className="sr-only">1% for the Planet initiative</figcaption>
                 </figure>
               </div>
-              
+
               <div className="border border-[#e0e0e0] p-6">
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Carbon Neutral
@@ -80,7 +78,7 @@ export function BCorporationPage() {
                   <figcaption className="sr-only">Carbon neutral commitment</figcaption>
                 </figure>
               </div>
-              
+
               <div className="border border-[#e0e0e0] p-6">
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Fair Employment
@@ -93,7 +91,7 @@ export function BCorporationPage() {
                   <figcaption className="sr-only">Fair employment practices</figcaption>
                 </figure>
               </div>
-              
+
               <div className="border border-[#e0e0e0] p-6">
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Community Support
@@ -106,7 +104,7 @@ export function BCorporationPage() {
                   <figcaption className="sr-only">Community support initiatives</figcaption>
                 </figure>
               </div>
-              
+
               <div className="border border-[#e0e0e0] p-6">
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Ethical Business
@@ -119,7 +117,7 @@ export function BCorporationPage() {
                   <figcaption className="sr-only">Ethical business practices</figcaption>
                 </figure>
               </div>
-              
+
               <div className="border border-[#e0e0e0] p-6">
                 <h3 data-field="item-title" className="text-[20px] font-semibold text-[#1f1f1f] mb-3 text-center">
                   Digital Accessibility
@@ -245,9 +243,7 @@ export function BCorporationPage() {
         </div>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
+
     </div>
   );
 }

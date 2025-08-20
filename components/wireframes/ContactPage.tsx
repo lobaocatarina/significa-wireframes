@@ -7,10 +7,8 @@ export function ContactPage() {
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1f1f1f] text-white px-4 py-2">
         Skip to main content
       </a>
-      
-      <header data-block="global.site-header">
-        <WireframeHeader />
-      </header>
+
+
 
       <main id="content">
         <Hero
@@ -21,7 +19,7 @@ export function ContactPage() {
 
         {/* Contact Form Section */}
         <section data-block="contact.form" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Contact form
@@ -36,7 +34,7 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Your full name</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Email *
@@ -45,7 +43,7 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">your@email.com</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Company
@@ -54,7 +52,7 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Company name</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Project Summary *
@@ -63,7 +61,7 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Tell us about your project...</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Budget Range
@@ -72,7 +70,7 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Select budget range</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Timeline
@@ -81,7 +79,7 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">When do you need this?</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Attachment
@@ -90,17 +88,17 @@ export function ContactPage() {
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Drop files or click to upload</span>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 border border-[#e0e0e0] mt-0.5"></div>
                   <p className="text-[14px] text-[rgba(0,0,0,0.8)]">
                     I consent to processing of my personal data according to the Privacy Policy.
                   </p>
                 </div>
-                
+
                 <WireframeButton variant="primary" data-field="cta" className="w-full">Send Message</WireframeButton>
               </div>
-              
+
               <div>
                 <figure className="media" data-field="media-label">
                   <ImagePlaceholder className="w-full h-[400px]" />
@@ -113,7 +111,7 @@ export function ContactPage() {
 
         {/* Email Section */}
         <section data-block="contact.email" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -137,7 +135,7 @@ export function ContactPage() {
 
         {/* Call Section */}
         <section data-block="contact.call" className="border-t border-[#e0e0e0] py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <figure className="media" data-field="media-label">
@@ -159,7 +157,7 @@ export function ContactPage() {
 
         {/* Locations Section */}
         <section data-block="contact.locations" className="py-16">
-        
+
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Locations
@@ -194,9 +192,7 @@ export function ContactPage() {
         </section>
       </main>
 
-      <footer data-block="global.site-footer">
-        <WireframeFooter />
-      </footer>
+
     </div>
   );
 }
