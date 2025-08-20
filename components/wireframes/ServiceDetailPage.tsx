@@ -25,8 +25,9 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         />
 
         {/* How We Work Section */}
-        <section data-block="service.how-we-work" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="service.how-we-work" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>How We Work</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               How we work.
             </h2>
@@ -44,8 +45,9 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         </section>
 
         {/* Awards Section */}
-        <section data-block="service.awards" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="service.awards" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Awards & Recognition</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Awards & Recognition
             </h2>
@@ -62,8 +64,9 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         </section>
 
         {/* Playground Section */}
-        <section data-block="service.playground" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="service.playground" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Playground Experiments</SectionLabel>
             <TitleDescription 
               title="Playground Experiments"
               description="Related experiments and proof-of-concepts"
@@ -93,7 +96,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         </section>
 
         {/* Selected Work Grid */}
-        <section data-block="global.selected-work-grid" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="global.selected-work-grid" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Selected projects
@@ -107,7 +110,7 @@ export function ServiceDetailPage({ serviceName = "Think", serviceDescription = 
         </section>
 
         {/* Related Articles */}
-        <section data-block="service.related-articles" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="service.related-articles" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Related articles

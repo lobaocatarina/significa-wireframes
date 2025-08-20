@@ -73,6 +73,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
 
         {/* Legal Content Section */}
         <section data-block="legal.content" className="py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="max-w-[800px]">
               <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
@@ -110,7 +111,7 @@ export function LegalPage({ pageTitle = "Privacy Policy", pageType = 'privacy' }
               </div>
 
               {/* Contact Information */}
-              <div className="mt-16 p-6 border border-[#e0e0e0] bg-[#f8f9fa]">
+              <div className="mt-16 p-6 border border-[#e0e0e0] ">
                 <h3 className="text-[20px] font-semibold text-[#1f1f1f] mb-4">
                   Questions or Concerns?
                 </h3>

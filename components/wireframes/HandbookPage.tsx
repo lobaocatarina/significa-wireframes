@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Hero } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, SectionLabel, Hero } from '../wireframe/WireframeComponents';
 
 export function HandbookPage() {
   return (
@@ -19,8 +19,9 @@ export function HandbookPage() {
         />
 
         {/* Overview Section */}
-        <section data-block="handbook.overview" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="handbook.overview" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Overview</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Working with Significa
             </h2>
@@ -56,8 +57,9 @@ export function HandbookPage() {
         </section>
 
         {/* Billing Section */}
-        <section data-block="handbook.billing" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="handbook.billing" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Billing & Invoicing</SectionLabel>
             <TitleDescription 
               title="Billing & Invoicing"
               description="Transparent pricing and payment processes"
@@ -107,6 +109,7 @@ export function HandbookPage() {
         {/* All Sections */}
         <section data-block="handbook.links" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>All Sections</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               All sections
             </h2>

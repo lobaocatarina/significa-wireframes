@@ -19,8 +19,10 @@ export function WhatWeDoPage() {
         />
 
         {/* Services Section */}
-        <section data-block="what-we-do.services" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="what-we-do.services" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Our Services</SectionLabel>
             <TitleDescription 
               title="Our Services"
               description="Five core services that drive your business forward"
@@ -51,8 +53,10 @@ export function WhatWeDoPage() {
         </section>
 
         {/* Deliverables Section */}
-        <section data-block="what-we-do.deliverables" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="what-we-do.deliverables" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>What We Build</SectionLabel>
             <TitleDescription 
               title="What We Build"
               description="Digital products tailored to your needs"
@@ -81,7 +85,7 @@ export function WhatWeDoPage() {
         </section>
 
         {/* How We Work Section */}
-        <section data-block="what-we-do.how-we-work" className="border-b border-[#e0e0e0]">
+        <section data-block="what-we-do.how-we-work" className="border-t border-[#e0e0e0]">
           <div className="flex flex-col items-center py-16">
             <div className="text-center mb-16">
               <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
@@ -99,8 +103,10 @@ export function WhatWeDoPage() {
         </section>
 
         {/* Expertise Section */}
-        <section data-block="what-we-do.expertise" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="what-we-do.expertise" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Industry Expertise</SectionLabel>
             <TitleDescription 
               title="Industry Expertise"
               description="Deep experience across diverse sectors"
@@ -130,7 +136,7 @@ export function WhatWeDoPage() {
         </section>
 
         {/* FAQ Section */}
-        <section data-block="global.faq-accordion" className="border-b border-[#e0e0e0]">
+        <section data-block="global.faq-accordion" className="border-t border-[#e0e0e0]">
           <div className="flex flex-col items-center py-16">
             <div className="text-center mb-8">
               <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">

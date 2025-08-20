@@ -63,7 +63,7 @@ export function CXPage() {
       </div>
 
       {/* How We Track It */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>How We Track It</SectionLabel>
           <div className="text-center mb-16">
@@ -134,7 +134,7 @@ export function CXPage() {
       </div>
 
       {/* Survey Data Snippets */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Survey Data Snippets</SectionLabel>
           <div className="text-center mb-16">

@@ -33,28 +33,28 @@ export function FinalConversionPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="text-[16px] font-medium text-black leading-[24px] mb-2 block">First Name</label>
-                  <div className="h-10 border border-[#e0e0e0] bg-[#f8f9fa]"></div>
+                  <div className="h-10 border border-[#e0e0e0] "></div>
                 </div>
                 <div>
                   <label className="text-[16px] font-medium text-black leading-[24px] mb-2 block">Last Name</label>
-                  <div className="h-10 border border-[#e0e0e0] bg-[#f8f9fa]"></div>
+                  <div className="h-10 border border-[#e0e0e0] "></div>
                 </div>
               </div>
               <div>
                 <label className="text-[16px] font-medium text-black leading-[24px] mb-2 block">Email</label>
-                <div className="h-10 border border-[#e0e0e0] bg-[#f8f9fa]"></div>
+                <div className="h-10 border border-[#e0e0e0] "></div>
               </div>
               <div>
                 <label className="text-[16px] font-medium text-black leading-[24px] mb-2 block">Company</label>
-                <div className="h-10 border border-[#e0e0e0] bg-[#f8f9fa]"></div>
+                <div className="h-10 border border-[#e0e0e0] "></div>
               </div>
               <div>
                 <label className="text-[16px] font-medium text-black leading-[24px] mb-2 block">Project Budget</label>
-                <div className="h-10 border border-[#e0e0e0] bg-[#f8f9fa]"></div>
+                <div className="h-10 border border-[#e0e0e0] "></div>
               </div>
               <div>
                 <label className="text-[16px] font-medium text-black leading-[24px] mb-2 block">Project Description</label>
-                <div className="h-32 border border-[#e0e0e0] bg-[#f8f9fa]"></div>
+                <div className="h-32 border border-[#e0e0e0] "></div>
               </div>
               <WireframeButton variant="primary" data-field="cta">Send Message</WireframeButton>
             </div>
@@ -142,7 +142,7 @@ export function FinalConversionPage() {
         </div>
 
         {/* What happens next */}
-        <div className="mt-16 bg-[#f8f9fa] p-8 text-center">
+        <div className="mt-16  p-8 text-center">
           <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">What happens next?</h2>
           <div className="grid grid-cols-3 gap-8">
             {[

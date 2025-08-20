@@ -60,7 +60,7 @@ export function AboutPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* Locations */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Locations</SectionLabel>
           <div className="text-center mb-16">
@@ -143,6 +143,7 @@ export function AboutPage() {
 
       {/* Continuous Improvement */}
       <div className="flex flex-col items-center py-16">
+        <SectionLabel>Continuous Improvement</SectionLabel>
         <TitleDescription
           title="Always improving"
           description="We believe in continuous improvement, regularly gathering feedback and refining our processes to deliver even better results."
@@ -153,7 +154,7 @@ export function AboutPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* B-Corp */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>B-Corp</SectionLabel>
           <div className="grid grid-cols-2 gap-16 items-center">

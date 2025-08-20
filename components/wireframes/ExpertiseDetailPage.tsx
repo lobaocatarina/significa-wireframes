@@ -65,7 +65,8 @@ export function ExpertiseDetailPage() {
       </div>
 
       {/* Deep Content Sections */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
+        
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Deep Content</SectionLabel>
           

@@ -2,11 +2,9 @@ import React from 'react';
 import { 
   ImagePlaceholder, 
   SectionLabel, 
-  TitleDescription, 
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
-  MainCTA,
   Hero
 } from '../wireframe/WireframeComponents';
 
@@ -15,170 +13,157 @@ export function CareersPage() {
     <div className="bg-white min-h-screen">
       <WireframeHeader />
       
-      <Hero
-        title="Join our team"
-        description="We're looking for talented individuals who share our passion for creating exceptional digital experiences."
-        variant="media"
-        mediaHeight="h-[400px]"
-      />
-
-      {/* Life at Significa */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
-        <SectionLabel>Life at Significa</SectionLabel>
-        <div className="grid grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
-              Life at Significa
-            </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8 text-center">
-              Our culture is built on collaboration, creativity, and continuous learning. We believe in work-life balance and creating an environment where everyone can thrive.
-            </p>
-          </div>
-          <ImagePlaceholder height="400px" />
-        </div>
-        
-        <div className="grid grid-cols-3 gap-8">
-          {[
-            'Remote-first culture',
-            'Professional development',
-            'Flexible hours',
-            'Health benefits',
-            'Team retreats',
-            'Creative freedom'
-          ].map((benefit, i) => (
-            <div key={i} className="flex flex-col gap-4">
-              <ImagePlaceholder width="80px" height="80px" />
-              <h3 className="text-[18px] font-medium text-black leading-[24px] text-center">{benefit}</h3>
-              <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">
-                Description of this benefit and how it contributes to our team culture.
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Teams & Roles */}
-      <div className="flex flex-col items-center py-16">
-        <TitleDescription
-          title="Our teams"
-          description="We're organized into collaborative teams that work together to deliver exceptional results."
+      
+      {/* Hero */}
+      <section data-block="global.hero">
+        <Hero
+          title="Careers at Significa."
+          description="We are a team of curiosity-driven go-getters. Our office in downtown Porto is a jungle-like haven for our designers, developers, product managers, and digital strategists, and we like to party. We are office-first."
+          variant="media"
+          mediaHeight="h-[400px]"
         />
-      </div>
-
-      <div className="max-w-[1400px] mx-auto px-6 pb-16">
-        <SectionLabel>Teams & Roles</SectionLabel>
-        <div className="grid grid-cols-4 gap-8">
-          {['Design Team', 'Development Team', 'Strategy Team', 'Operations Team'].map((team, i) => (
-            <div key={i} className="flex flex-col gap-4">
-              <ImagePlaceholder height="200px" />
-              <h3 className="text-[18px] font-medium text-black leading-[24px] text-center">{team}</h3>
-              <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">
-                Overview of team responsibilities and typical roles within this department.
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* What Defines Us */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
-        <SectionLabel>What Defines Us</SectionLabel>
-        <h2 className="text-[32px] font-medium text-black leading-[36px] mb-16 text-center">
-          Our values
-        </h2>
-        <div className="grid grid-cols-3 gap-12">
-          {[
-            { title: 'Curiosity', description: 'We ask questions, explore possibilities, and never stop learning.' },
-            { title: 'Collaboration', description: 'We work together, share knowledge, and support each other.' },
-            { title: 'Craft', description: 'We take pride in our work and strive for excellence in everything we do.' }
-          ].map((value, i) => (
-            <div key={i} className="text-center">
-              <ImagePlaceholder width="120px" height="120px" className="mx-auto mb-6" />
-              <h3 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">{value.title}</h3>
-              <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">{value.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Benefits */}
-      <div className="flex flex-col items-center py-16">
-        <TitleDescription
-          title="Benefits & perks"
-          description="We offer comprehensive benefits and perks designed to support your wellbeing and growth."
-        />
-      </div>
-
-      <div className="max-w-[1400px] mx-auto px-6 pb-16">
-        <SectionLabel>Benefits</SectionLabel>
-        <div className="grid grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="flex gap-4">
-              <ImagePlaceholder width="60px" height="60px" />
-              <div>
-                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Health & Wellness</h4>
-                <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">Comprehensive health insurance and wellness programs.</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <ImagePlaceholder width="60px" height="60px" />
-              <div>
-                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Learning Budget</h4>
-                <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">Annual budget for courses, conferences, and skill development.</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <ImagePlaceholder width="60px" height="60px" />
-              <div>
-                <h4 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Equipment</h4>
-                <p className="text-[16px] text-black opacity-50 leading-[24px] text-center">Top-tier equipment and tools to do your best work.</p>
-              </div>
-            </div>
-          </div>
-          <ImagePlaceholder height="300px" />
-        </div>
-      </div>
+       
+      </section>
 
       {/* Open Positions */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
-        <SectionLabel>Open Positions</SectionLabel>
-        <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
-          Current openings
-        </h2>
-        <div className="space-y-6">
-          {[
-            { title: 'Senior Product Designer', type: 'Full-time', location: 'Remote' },
-            { title: 'Frontend Developer', type: 'Full-time', location: 'Remote' },
-            { title: 'Product Manager', type: 'Full-time', location: 'Porto, Portugal' },
-            { title: 'UX Researcher', type: 'Contract', location: 'Remote' }
-          ].map((job, i) => (
-            <div key={i} className="border border-[#e0e0e0] p-6 flex justify-between items-center">
-              <div>
-                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">{job.title}</h3>
-                <div className="flex gap-4 text-[16px] text-black opacity-50">
-                  <span>{job.type}</span>
-                  <span>{job.location}</span>
-                </div>
-              </div>
-              <WireframeButton variant="secondary">View Details</WireframeButton>
+      <section data-block="careers.open-positions" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <SectionLabel>Open Positions</SectionLabel>
+          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
+            Open positions
+          </h2>
+          
+          {/* Empty state */}
+          <div className="text-center">
+            <p className="text-[18px] text-black leading-[24px] mb-2">
+              There are no open positions right now.
+            </p>
+            <p className="text-[18px] text-black leading-[24px] mb-8">
+              But we are always on the lookout for talented folks!
+            </p>
+            <WireframeButton variant="secondary" data-field="link-href">
+              Submit your spontaneous application
+            </WireframeButton>
+          </div>
+          
+          <figure className="media mt-8">
+            <ImagePlaceholder className="w-24 h-24 mx-auto" />
+            <figcaption className="sr-only">Small legend placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section data-block="careers.values" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <SectionLabel>Values</SectionLabel>
+          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
+            What we stand for
+          </h2>
+          
+          <div className="text-center mb-8">
+            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto mb-8">
+              We believe in creating meaningful work experiences that foster growth, creativity, and collaboration.
+            </p>
+            
+            <ul className="space-y-2 text-[16px] text-black leading-[24px] max-w-[600px] mx-auto mb-12">
+              <li>• Curiosity-driven approach to problem solving</li>
+              <li>• Collaborative team environment</li>
+              <li>• Continuous learning and growth</li>
+              <li>• Work-life balance and flexibility</li>
+            </ul>
+          </div>
+
+          {/* Teams sub-strip */}
+          <div className="grid grid-cols-3 gap-8 mb-12">
+            <div className="text-center p-6 border border-[#e0e0e0]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Design</h3>
+              <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px]">Creating beautiful, user-centered experiences</p>
             </div>
-          ))}
+            <div className="text-center p-6 border border-[#e0e0e0]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Development</h3>
+              <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px]">Building robust, scalable solutions</p>
+            </div>
+            <div className="text-center p-6 border border-[#e0e0e0]">
+              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Operations</h3>
+              <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px]">Supporting teams and client success</p>
+            </div>
+          </div>
+
+          <figure className="media">
+            <ImagePlaceholder className="w-full h-[400px]" />
+            <figcaption className="sr-only">16:9 poster/diagram placeholder</figcaption>
+          </figure>
         </div>
-        
-        <div className="text-center mt-12">
-          <p className="text-[16px] text-black opacity-80 leading-[24px] mb-6">
-            Don't see a role that fits? We're always looking for exceptional talent.
-          </p>
-          <WireframeButton variant="primary" data-field="cta">Send us your CV</WireframeButton>
+      </section>
+
+      {/* Benefits */}
+      <section data-block="careers.benefits" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <SectionLabel>Benefits</SectionLabel>
+          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
+            Benefits
+          </h2>
+          
+          <div className="grid grid-cols-3 gap-6">
+            {[
+              { title: "Welcome pack", description: "Hoodie and essentials on day one." },
+              { title: "Flexible hours and location", description: "Office-first, with freedom to come and go." },
+              { title: "Unlimited learning stipend", description: "We cover courses and learning you choose." },
+              { title: "All the equipment you need", description: "Whatever you need to excel." },
+              { title: "Career plan & growth", description: "1:1s, workshops, OKRs to support your goals." },
+              { title: "Annual company retreat", description: "Three-night offsite focused on team time." },
+              { title: "Health insurance", description: "Coverage for you (and kids)." },
+              { title: "Public transport subsidy", description: "We reimburse your commute." },
+              { title: "Corporate Social Responsibility", description: "1% for the Planet member." },
+              { title: "Gym membership", description: "Gym a few meters from the office." },
+              { title: "25 vacation days", description: "22 of choice + birthday + Dec 24 & 31." },
+              { title: "Baby kit", description: "A box of goodies for new arrivals." },
+              { title: "Referral bonus programme", description: "€1000 on hire + €1000 after 1 year." },
+              { title: "1 extra vacation day per year", description: "From year two; up to 30 days." },
+              { title: "Period leave", description: "1 day per month." },
+              { title: "Support structures", description: "24/7 assistance for you and family (legal, fiscal, nutrition, mental health)." }
+            ].map((benefit, i) => (
+              <div key={i} className="border border-[#e0e0e0] p-6">
+                <figure className="media mb-4">
+                  <ImagePlaceholder width="100%" height="200px" className="aspect-square" />
+                  <figcaption className="sr-only">{benefit.title} illustration</figcaption>
+                </figure>
+                <h3 data-field="item-title" className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">
+                  {benefit.title}
+                </h3>
+                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px] text-center">
+                  {benefit.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Final CTA */}
-      <MainCTA 
-        title="Ready to join us?"
-        description="Start your journey with Significa and help us build the future of digital experiences."
-        buttonText="View Open Roles"
-      />
+      <section data-block="global.final-cta" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1400px] mx-auto px-6 text-center">
+          <SectionLabel>Final CTA</SectionLabel>
+          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
+            Interested in joining us?
+          </h2>
+          <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8 max-w-[600px] mx-auto">
+            Ready to make an impact? We'd love to hear from you.
+          </p>
+          <WireframeButton 
+            variant="primary" 
+            data-field="link-title|link-href"
+          >
+            Submit your application → careers@example.com
+          </WireframeButton>
+          
+          <figure className="media mt-8">
+            <ImagePlaceholder className="w-32 h-32 mx-auto" />
+            <figcaption className="sr-only">Small contact/booking placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
 
       <WireframeFooter />
     </div>

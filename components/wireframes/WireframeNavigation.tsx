@@ -29,7 +29,7 @@ export function WireframeNavigation({ currentPage, onPageChange }: WireframeNavi
   ];
 
   return (
-    <div className="bg-[#f8f9fa] border-b border-[#e0e0e0] p-4 sticky top-0 z-50">
+    <div className=" border-t border-[#e0e0e0] p-4 sticky top-0 z-50">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2 flex-wrap">
           <span className="text-[14px] font-medium text-[rgba(0,0,0,0.8)] mr-4">

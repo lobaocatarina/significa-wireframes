@@ -19,8 +19,10 @@ export function WorkWithUsPage() {
         />
 
         {/* Summary Section */}
-        <section data-block="work-with-us.summary" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="work-with-us.summary" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Working with Significa</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Working with Significa
             </h2>
@@ -38,8 +40,10 @@ export function WorkWithUsPage() {
         </section>
 
         {/* Team Allocation Section */}
-        <section data-block="work-with-us.team-allocation" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="work-with-us.team-allocation" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Team Allocation</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Team allocation
             </h2>
@@ -70,8 +74,10 @@ export function WorkWithUsPage() {
         </section>
 
         {/* Pricing Section */}
-        <section data-block="work-with-us.pricing" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="work-with-us.pricing" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Pricing & Rates</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Pricing & rates
             </h2>
@@ -89,8 +95,10 @@ export function WorkWithUsPage() {
         </section>
 
         {/* CX Preview Section */}
-        <section data-block="global.cx-preview" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="global.cx-preview" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>CX Data</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               CX Data
             </h2>
@@ -113,8 +121,10 @@ export function WorkWithUsPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section data-block="work-with-us.testimonials" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="work-with-us.testimonials" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Testimonials</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Testimonials
             </h2>
@@ -145,8 +155,9 @@ export function WorkWithUsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section data-block="global.faq-accordion" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="global.faq-accordion" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>FAQ</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               FAQs
             </h2>

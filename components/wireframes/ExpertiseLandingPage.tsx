@@ -84,7 +84,7 @@ export function ExpertiseLandingPage() {
       </div>
 
       {/* Why Industry Expertise Matters */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Why Industry Expertise Matters</SectionLabel>
           <div className="text-center mb-16">

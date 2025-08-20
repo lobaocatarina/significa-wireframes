@@ -88,7 +88,7 @@ export function FAQPage() {
       </div>
 
       {/* Still have questions */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
         <div className=" px-6 text-center">
           <SectionLabel>Still Have Questions</SectionLabel>
           <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">

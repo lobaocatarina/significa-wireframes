@@ -20,7 +20,8 @@ export function ContactPage() {
         />
 
         {/* Contact Form Section */}
-        <section data-block="contact.form" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="contact.form" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Contact form
@@ -31,7 +32,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Name *
                   </label>
-                  <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] p-3 h-[48px] ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Your full name</span>
                   </div>
                 </div>
@@ -40,7 +41,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Email *
                   </label>
-                  <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] p-3 h-[48px] ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">your@email.com</span>
                   </div>
                 </div>
@@ -49,7 +50,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Company
                   </label>
-                  <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] p-3 h-[48px] ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Company name</span>
                   </div>
                 </div>
@@ -58,7 +59,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Project Summary *
                   </label>
-                  <div className="border border-[#e0e0e0] p-3 h-[120px] bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] p-3 h-[120px] ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Tell us about your project...</span>
                   </div>
                 </div>
@@ -67,7 +68,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Budget Range
                   </label>
-                  <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] p-3 h-[48px] ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Select budget range</span>
                   </div>
                 </div>
@@ -76,7 +77,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Timeline
                   </label>
-                  <div className="border border-[#e0e0e0] p-3 h-[48px] bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] p-3 h-[48px] ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">When do you need this?</span>
                   </div>
                 </div>
@@ -85,7 +86,7 @@ export function ContactPage() {
                   <label className="block text-[16px] font-medium text-[#1f1f1f]">
                     Attachment
                   </label>
-                  <div className="border border-[#e0e0e0] border-dashed p-6 text-center bg-[#f8f9fa]">
+                  <div className="border border-[#e0e0e0] border-dashed p-6 text-center ">
                     <span className="text-[14px] text-[rgba(0,0,0,0.8)]">Drop files or click to upload</span>
                   </div>
                 </div>
@@ -111,7 +112,8 @@ export function ContactPage() {
         </section>
 
         {/* Email Section */}
-        <section data-block="contact.email" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="contact.email" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -134,7 +136,8 @@ export function ContactPage() {
         </section>
 
         {/* Call Section */}
-        <section data-block="contact.call" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="contact.call" className="border-t border-[#e0e0e0] py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <figure className="media" data-field="media-label">
@@ -156,6 +159,7 @@ export function ContactPage() {
 
         {/* Locations Section */}
         <section data-block="contact.locations" className="py-16">
+        
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Locations

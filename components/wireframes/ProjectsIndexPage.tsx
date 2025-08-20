@@ -77,7 +77,8 @@ export function ProjectsIndexPage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* Stats Section */}
-      <div className="bg-[#f8f9fa] py-16">
+      <div className=" py-16">
+        
         <div className="max-w-[1400px] mx-auto px-6 text-center">
           <SectionLabel>Project Statistics</SectionLabel>
           <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">

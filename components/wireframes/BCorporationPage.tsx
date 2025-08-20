@@ -21,8 +21,9 @@ export function BCorporationPage() {
         />
 
         {/* Overview Section */}
-        <section data-block="bcorp.overview" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="bcorp.overview" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Overview</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Overview
             </h2>
@@ -48,8 +49,9 @@ export function BCorporationPage() {
         </section>
 
         {/* Impact Commitments Section */}
-        <section data-block="bcorp.commitments" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="bcorp.commitments" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Impact Commitments</SectionLabel>
             <TitleDescription 
               title="Impact commitments"
               description="Our ongoing commitments to social and environmental responsibility"
@@ -137,8 +139,9 @@ export function BCorporationPage() {
         </section>
 
         {/* Impact Reports Section */}
-        <section data-block="bcorp.impact-reports" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="bcorp.impact-reports" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Impact Reports</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Impact Reports
             </h2>
@@ -168,8 +171,9 @@ export function BCorporationPage() {
         </section>
 
         {/* Transparency Section */}
-        <section data-block="bcorp.transparency" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="bcorp.transparency" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
+            <SectionLabel>Transparency</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Transparency
             </h2>
@@ -202,7 +206,7 @@ export function BCorporationPage() {
         </section>
 
         {/* Related Articles (Optional) */}
-        <section data-block="blog.related-articles" className="border-b border-[#e0e0e0] py-16">
+        <section data-block="blog.related-articles" className="border-t border-[#e0e0e0] py-16">
           <div className="max-w-[1400px] mx-auto px-6">
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Related articles
