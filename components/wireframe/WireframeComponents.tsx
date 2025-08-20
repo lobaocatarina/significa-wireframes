@@ -307,7 +307,7 @@ export function WireframeHeader({ onPageChange }: {
           Significa
         </div>
 
-        <nav className="flex gap-4 text-[16px] text-black leading-[24px] flex-wrap" role="navigation">
+        <nav className="flex gap-8 text-[16px] text-black leading-[24px] flex-wrap" role="navigation">
           {pages.map((page) => (
             <a key={page} className="hover:text-[#7A7A7A]" onClick={() => onPageChange?.(page)}>{page}</a>
           ))}
@@ -321,8 +321,8 @@ export function WireframeHeader({ onPageChange }: {
 
 // Main CTA component - reusable across all pages
 export function MainCTA({
-  title = "Ready to get started?",
-  description = "Let's discuss your project and see how we can help bring your vision to life.",
+  title = "We are ready to grow your business. Are you?",
+  description = "Let’s get the conversation going… or keep browsing and see if we’re the right fit!",
   buttonText = "Get in touch"
 }: {
   title?: string;

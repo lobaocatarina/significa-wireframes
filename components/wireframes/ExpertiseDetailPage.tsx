@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-  ImagePlaceholder, 
-  SectionLabel, 
-  ProjectCard, 
-  BlogCard, 
-  TitleDescription, 
+import {
+  ImagePlaceholder,
+  SectionLabel,
+  ProjectCard,
+  BlogCard,
+  TitleDescription,
   WireframeButton,
   WireframeHeader,
   WireframeFooter,
@@ -15,8 +15,8 @@ import {
 export function ExpertiseDetailPage() {
   return (
     <div className="bg-white min-h-screen">
-      <WireframeHeader />
-      
+
+
       <Hero
         title="E-commerce & Retail Expertise"
         description="Building scalable e-commerce platforms that drive sales, enhance customer experiences, and grow your business."
@@ -55,7 +55,7 @@ export function ExpertiseDetailPage() {
           </div>
           <ImagePlaceholder height="500px" />
         </div>
-        
+
         <div className="grid grid-cols-4 gap-8 text-center">
           <Metric value="25+" label="E-commerce Projects" />
           <Metric value="$50M+" label="Revenue Generated" />
@@ -66,10 +66,10 @@ export function ExpertiseDetailPage() {
 
       {/* Deep Content Sections */}
       <div className=" py-16">
-        
+
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Deep Content</SectionLabel>
-          
+
           {/* Services for this industry */}
           <div className="mb-16">
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">Our e-commerce services</h2>
@@ -142,7 +142,7 @@ export function ExpertiseDetailPage() {
             We work with the latest e-commerce technologies to ensure your platform is fast, secure, and scalable.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-6 gap-8">
           {['Shopify', 'WooCommerce', 'Magento', 'React', 'Node.js', 'Stripe'].map((tech, i) => (
             <div key={i} className="text-center">
@@ -166,8 +166,8 @@ export function ExpertiseDetailPage() {
         <SectionLabel>Selected Projects/Playground</SectionLabel>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
-            <ProjectCard 
-              key={i} 
+            <ProjectCard
+              key={i}
               title={`E-commerce Project ${i + 1}`}
               description="Custom e-commerce platform"
               industry="Retail"
@@ -182,8 +182,8 @@ export function ExpertiseDetailPage() {
         <h2 className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">E-commerce insights</h2>
         <div className="grid grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
-            <BlogCard 
-              key={i} 
+            <BlogCard
+              key={i}
               title="E-commerce Best Practices"
               description="Tips for building successful online stores"
             />
@@ -203,7 +203,7 @@ export function ExpertiseDetailPage() {
         </div>
       </div>
 
-      <WireframeFooter />
+
     </div>
   );
 }

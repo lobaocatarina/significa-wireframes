@@ -24,15 +24,15 @@ export function CXPage() {
       />
 
       {/* Why We Track It */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
+      <div className="max-w-[1200px] mx-auto px-6 py-16">
         <SectionLabel>Why We Track It</SectionLabel>
-        <div className="grid grid-cols-2 gap-16 items-center">
+        <div className="items-center">
           <div>
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Why we measure CX
             </h2>
             <div className="space-y-6">
-              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
+              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto mb-20">
                 We believe that great work speaks for itself, but we also believe in being accountable for the experience we create for our clients.
               </p>
               <div className="space-y-4">
@@ -50,20 +50,23 @@ export function CXPage() {
                 </div>
                 <div>
                   <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2 text-center">Accountability</h3>
-                  <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
+                  <p className="text-[16px] text-black opacity-80 leading-[24px] mb-16 text-center">
                     Measuring client satisfaction keeps us focused on delivering exceptional experiences.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <ImagePlaceholder height="500px" />
+
         </div>
       </div>
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* How We Track It */}
       <div className=" py-16">
-        <div className="max-w-[1400px] mx-auto px-6">
+        <div className="max-w-[1200px] mx-auto px-6">
           <SectionLabel>How We Track It</SectionLabel>
           <div className="text-center mb-16">
             <h2 className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">Our methodology</h2>
@@ -72,7 +75,7 @@ export function CXPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-8">
+          <div className="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: 'Post-Project Surveys',
@@ -97,8 +100,12 @@ export function CXPage() {
         </div>
       </div>
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* Transparency */}
-      <div className="flex flex-col items-center py-16">
+      <div className="items-center py-16">
+        <SectionLabel>Transparency</SectionLabel>
         <TitleDescription
           title="Complete transparency"
           description="We believe in sharing our results openly. All data is collected by an independent third party to ensure objectivity and accuracy."
@@ -106,8 +113,8 @@ export function CXPage() {
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 pb-16">
-        <SectionLabel>Transparency</SectionLabel>
-        <div className="grid grid-cols-2 gap-16">
+
+        <div className="items-center">
           <div className="space-y-8">
             <div>
               <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">Independent Collection</h3>
@@ -123,7 +130,7 @@ export function CXPage() {
             </div>
             <div>
               <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">Regular Updates</h3>
-              <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">
+              <p className="text-[16px] text-black opacity-80 leading-[24px] mb-16 text-center">
                 Our CX metrics are updated quarterly and shared publicly on this page.
               </p>
             </div>
@@ -131,6 +138,9 @@ export function CXPage() {
           <ImagePlaceholder height="400px" />
         </div>
       </div>
+
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
 
       {/* Survey Data Snippets */}
       <div className=" py-16">
@@ -178,6 +188,9 @@ export function CXPage() {
         </div>
       </div>
 
+      {/* Section Separator */}
+      <div className="border-t border-[#e0e0e0]"></div>
+
       {/* FAQ */}
       <div className="max-w-[800px] mx-auto px-6 py-16">
         <SectionLabel>FAQ</SectionLabel>
@@ -193,13 +206,12 @@ export function CXPage() {
         </div>
       </div>
 
-      {/* Conversion */}
-      <MainCTA
-        title="Experience the Significa difference"
-        description="Ready to work with a team that truly cares about your success? Let's start a conversation."
-        buttonText="Get Started"
-      />
 
+      {/* Main CTA */}
+      <MainCTA
+        title="We are ready to grow your business. Are you?"
+        buttonText="Get in touch"
+      />
 
     </div>
   );

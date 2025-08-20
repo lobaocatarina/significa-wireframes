@@ -167,7 +167,7 @@ export function HomePage() {
       </div>
 
 
-      {/* 9. Main CTA */}
+      {/* Main CTA */}
       <MainCTA
         title="We are ready to grow your business. Are you?"
         buttonText="Get in touch"
