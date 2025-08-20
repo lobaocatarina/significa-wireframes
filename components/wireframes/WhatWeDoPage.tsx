@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero, FAQItem } from '../wireframe/WireframeComponents';
 
 export function WhatWeDoPage() {
   return (
@@ -14,20 +14,20 @@ export function WhatWeDoPage() {
 
       <main id="content">
         <Hero
-          title="What we do."
-          description="Custom design and development services built to grow your business."
+          title="Custom design and development services built to grow your business."
+      
         />
 
         {/* Services Section */}
         <section data-block="what-we-do.services" className="border-t border-[#e0e0e0] py-16">
         
-          <div className="max-w-[1400px] mx-auto px-6">
+          <div className="max-w-[1200px] mx-auto px-6">
             <SectionLabel>Our Services</SectionLabel>
             <TitleDescription 
-              title="Our Services"
-              description="Five core services that drive your business forward"
+              title="Strategy-led. Design-driven. Clean code."
+              description="We combine strategy, design and engineering to build digital products that are intuitive, user-centred, and built to last."
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center gap-6 mt-8">
               {[
                 { name: 'Think', description: 'Strategy & Discovery' },
                 { name: 'Design', description: 'Visual design & prototyping' },
@@ -95,10 +95,10 @@ export function WhatWeDoPage() {
                 We follow a hands-on collaborative approach that ensures your project delivers results.
               </p>
             </div>
-            <figure className="media" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[300px]" />
-              <figcaption className="sr-only">Our collaborative work process</figcaption>
-            </figure>
+              <div className="flex justify-center pb-16">
+                   <ImagePlaceholder width="800px" height="464px" />
+                 </div>
+    
           </div>
         </section>
 
@@ -136,21 +136,18 @@ export function WhatWeDoPage() {
         </section>
 
         {/* FAQ Section */}
-        <section data-block="global.faq-accordion" className="border-t border-[#e0e0e0]">
-          <div className="flex flex-col items-center py-16">
-            <div className="text-center mb-8">
-              <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
-                Frequently Asked Questions
-              </h2>
+        <section data-block="global.faq-accordion" className="border-t border-[#e0e0e0] py-16">
+          <div className="max-w-[800px] mx-auto px-6">
+            <SectionLabel>FAQ</SectionLabel>
+            <div className="text-center mb-16">
+              <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Frequently asked questions</h2>
             </div>
             <div className="space-y-4">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="border border-[#e0e0e0] p-6">
-                  <p data-field="item-title" className="text-[18px] font-medium text-[#1f1f1f]">
-                    FAQ Question {item}
-                  </p>
-                </div>
-              ))}
+              <FAQItem question="How often do you collect client feedback?" />
+              <FAQItem question="Who conducts the customer satisfaction surveys?" />
+              <FAQItem question="Do you share negative feedback as well?" />
+              <FAQItem question="How do you use this feedback to improve?" />
+              <FAQItem question="Can I speak to previous clients?" />
             </div>
           </div>
         </section>

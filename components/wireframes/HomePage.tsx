@@ -52,7 +52,7 @@ export function HomePage() {
             From strategy to code, we deliver user-centred platforms for ambitious businesses.
           </h2>
         </div>
-        <div className="max-w-[1400px] mx-auto px-6 w-full">
+        <div className="max-w-[1200px] mx-auto px-6 w-full">
           <div className="grid grid-cols-3 gap-6">
             {[...Array(3)].map((_, i) => (
               <ProjectCard key={i} />
@@ -64,10 +64,10 @@ export function HomePage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* 4. About us snippet */}
-      <div className="flex justify-center py-16">
-        <div className="flex flex-col items-center">
-        <SectionLabel>About us snippet</SectionLabel>
+      {/* Services */}
+      <div className="flex flex-col items-center py-16">
+        <div className="flex flex-col items-center max-w-[1200px] mx-auto px-6 w-full">
+        <SectionLabel>Services</SectionLabel>
         <TitleDescription
           title="We are a team of designers, developers, and product managers working as one."
           description="When you work with us, you get the whole team to turn your ideas into seamless experiences. Whether it's an e-commerce platform, a mobile app, a SaaS product, we'll build it with care, curiosity, backed by 10 years of expertise, recognised by international awards."
@@ -103,8 +103,8 @@ export function HomePage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* 6. Impact / B Corp */}
-      <div className="flex justify-center py-16">
+      {/* Impact / B Corp */}
+      <div className="flex justify-center py-16 max-w-[1200px] mx-auto px-6 w-full">
         <div className="flex flex-col items-center">
         <SectionLabel>Impact / B Corp</SectionLabel>
         <TitleDescription
@@ -149,7 +149,7 @@ export function HomePage() {
       <div className="border-t border-[#e0e0e0]"></div>
 
       {/* 8. Client Experience */}
-      <div className="flex flex-col items-center py-16">
+      <div className="flex flex-col items-center py-16 max-w-[1200px] mx-auto px-6 w-full">
         <SectionLabel>Client Experience</SectionLabel>
         <TitleDescription
           title="We love what we do, and so do our clients."
@@ -169,9 +169,6 @@ export function HomePage() {
         </div>
       </div>
 
-      {/* Section Separator */}
-      <div className="border-t border-[#e0e0e0]"></div>
-
       {/* 9. Main CTA */}
       <MainCTA 
         title="We are ready to grow your business. Are you?"
@@ -181,20 +178,20 @@ export function HomePage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* 10. FAQs */}
-      <div className="flex justify-center pb-16">
-        <div className="flex flex-col items-center">
-          <SectionLabel>FAQs</SectionLabel>
-          <div className="w-[800px] space-y-0">
-            <FAQItem question="Why should I work with Significa?" />
-            <FAQItem question="What is it like to collaborate with Significa?" />
-            <FAQItem question="How long does a project take from start until launch?" />
-            <FAQItem question="What's your process for new projects?" />
-            <FAQItem question="Do you work with startups or just established companies?" />
-          </div>
-        </div>
-      </div>
-
+      {/* FAQ */}
+            <div className="max-w-[800px] mx-auto px-6 py-16">
+              <SectionLabel>FAQ</SectionLabel>
+              <div className="text-center mb-16">
+                <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Frequently asked questions</h2>
+              </div>
+              <div className="space-y-4">
+                <FAQItem question="How often do you collect client feedback?" />
+                <FAQItem question="Who conducts the customer satisfaction surveys?" />
+                <FAQItem question="Do you share negative feedback as well?" />
+                <FAQItem question="How do you use this feedback to improve?" />
+                <FAQItem question="Can I speak to previous clients?" />
+              </div>
+            </div>
       {/* 11. Footer */}
       <WireframeFooter />
     </div>

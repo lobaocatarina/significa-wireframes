@@ -27,23 +27,21 @@ export function BCorporationPage() {
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Overview
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className = "items-center">
               <div>
-                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6">
-                  As a certified B Corporation, we balance profit and purpose, using business as a force for good. We're part of a global movement of companies committed to redefining success in business.
+                <p data-field="paragraph" className="text-[18px] text-center text-[rgba(0,0,0,0.8)] mb-6">
+                  As a certified B Corporation, we balance profit and purpose, using business as a force for good. We're part of a global movement of companies committed to redefining success in business. Our certification demonstrates our commitment to meeting the highest standards of verified social and environmental performance, public transparency, and legal accountability.
                 </p>
-                <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8">
-                  Our certification demonstrates our commitment to meeting the highest standards of verified social and environmental performance, public transparency, and legal accountability.
-                </p>
-                <div className="grid grid-cols-2 gap-6">
-                  <Metric value="2021" label="Certified Since" />
-                  <Metric value="80+" label="Overall Score" />
-                </div>
+               
               </div>
-              <figure className="media" data-field="media-label">
+              <figure className= "pb-8 media" data-field="media-label">
                 <ImagePlaceholder className="w-full h-[300px]" />
                 <figcaption className="sr-only">B Corp community and movement</figcaption>
               </figure>
+               <div className="grid grid-cols-2 gap-6">
+                  <Metric value="2021" label="Certified Since" />
+                  <Metric value="80+" label="Overall Score" />
+                </div>
             </div>
           </div>
         </section>
