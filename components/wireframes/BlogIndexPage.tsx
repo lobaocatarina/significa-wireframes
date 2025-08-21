@@ -4,8 +4,6 @@ import {
   SectionLabel,
   BlogCard,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   Hero
 } from '../wireframe/WireframeComponents';
 

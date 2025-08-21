@@ -9,67 +9,33 @@ export function WorkWithUsPage() {
       </a>
 
 
-
       <main id="content">
         <Hero
-          title="Work with us."
+          title="Working with Significa."
           description="Learn how we collaborate, assemble teams, and structure our engagement to deliver exceptional results."
+          showMedia={false}
         />
 
-        {/* Summary Section */}
-        <section data-block="work-with-us.summary" className="border-t border-[#e0e0e0] py-16">
 
-          <div className="max-w-[1400px] mx-auto px-6">
-            <SectionLabel>Working with Significa</SectionLabel>
-            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
-              Working with Significa
-            </h2>
-            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6 ">
-              We believe in building lasting partnerships with our clients through transparency, collaboration, and shared success.
-            </p>
-            <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
-              Read our full Handbook: Working with Significa
-            </a>
-            <figure className="media mt-8" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[250px]" />
-              <figcaption className="sr-only">Our collaborative working approach</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        {/* Team Allocation Section */}
-        <section data-block="work-with-us.team-allocation" className="border-t border-[#e0e0e0] py-16">
-
-          <div className="max-w-[1400px] mx-auto px-6">
-            <SectionLabel>Team Allocation</SectionLabel>
-            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
-              Team allocation
-            </h2>
-            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8 ">
-              We are not body leasing; we assemble a dedicated team.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                'Project Manager',
-                'Designer',
-                'Developer',
-                'QA Specialist',
-                'Strategy Lead',
-                'Client Success'
-              ].map((role, index) => (
-                <div key={index} className="border border-[#e0e0e0] p-6 text-center">
-                  <h3 data-field="item-title" className="text-[18px] font-semibold text-[#1f1f1f] mb-3 text-center">
-                    {role}
-                  </h3>
-                  <figure className="media" data-field="media-label">
-                    <ImagePlaceholder className="w-full h-[100px]" />
-                    <figcaption className="sr-only">{role} team member</figcaption>
-                  </figure>
-                </div>
-              ))}
+        {/* Working with Significa */}
+        <section data-block="work-with-us.summary" className="border-t border-[#e0e0e0]">
+          <div className="flex flex-col items-center py-16">
+            <div className="text-center mb-16">
+              <SectionLabel>Working with Significa</SectionLabel>
+              <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
+                Working with Significa
+              </h2>
+              <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
+                We follow a hands-on collaborative approach that ensures your project delivers results.
+              </p>
             </div>
+            <div className="flex justify-center pb-16">
+              <ImagePlaceholder width="800px" height="464px" />
+            </div>
+
           </div>
         </section>
+
 
         {/* Pricing Section */}
         <section data-block="work-with-us.pricing" className="border-t border-[#e0e0e0] py-16">

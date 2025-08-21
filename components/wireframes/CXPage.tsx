@@ -3,8 +3,6 @@ import {
   ImagePlaceholder,
   SectionLabel,
   TitleDescription,
-  WireframeHeader,
-  WireframeFooter,
   Metric,
   FAQItem,
   MainCTA,

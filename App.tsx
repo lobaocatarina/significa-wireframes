@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { WireframeNavigation } from './components/wireframes/WireframeNavigation';
 import { HomePage } from './components/wireframes/HomePage';
 import { WhatWeDoPage } from './components/wireframes/WhatWeDoPage';
 import { ServiceDetailPage } from './components/wireframes/ServiceDetailPage';

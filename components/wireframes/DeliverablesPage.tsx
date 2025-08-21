@@ -6,8 +6,6 @@ import {
   BlogCard,
   TitleDescription,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   Metric,
   Hero
 } from '../wireframe/WireframeComponents';

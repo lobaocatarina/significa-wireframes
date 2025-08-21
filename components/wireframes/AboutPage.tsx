@@ -4,8 +4,6 @@ import {
   SectionLabel,
   TitleDescription,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   Metric,
   MainCTA,
   Hero

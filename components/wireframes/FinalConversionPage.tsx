@@ -3,8 +3,6 @@ import {
   ImagePlaceholder,
   SectionLabel,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   Hero
 } from '../wireframe/WireframeComponents';
 

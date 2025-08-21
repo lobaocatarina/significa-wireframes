@@ -2,10 +2,9 @@ import React from 'react';
 import {
   ImagePlaceholder,
   SectionLabel,
-  WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
-  Hero
+  Hero,
+  TitleDescription,
+  MainCTA
 } from '../wireframe/WireframeComponents';
 
 export function CareersPage() {
@@ -13,127 +12,52 @@ export function CareersPage() {
     <div className="bg-white min-h-screen">
 
 
-
-      {/* Hero */}
+      {/* Hero/Intro */}
       <section data-block="global.hero">
         <Hero
-          title="Careers at Significa."
-          description="We are a team of curiosity-driven go-getters. Our office in downtown Porto is a jungle-like haven for our designers, developers, product managers, and digital strategists, and we like to party. We are office-first."
+          title="We are team of curiosity-driven go-getters."
+          description="Our office in down town Porto is a jungle-like haven for our designers, developers, product managers, and digital strategists, and we like to party."
           variant="media"
-          mediaHeight="h-[400px]"
+          mediaHeight="h-[600px]"
         />
 
       </section>
 
+      {/* Culture Note */}
+      <section data-block="careers.culture-note">
+        <div className="max-w-[1400px] mx-auto py-16 px-6">
+          <SectionLabel>Our office</SectionLabel>
+          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
+            We are office-first.
+          </h2>
+          <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[600px] mx-auto mb-8 text-center">
+            While we embrace flexibility, we believe the best work happens when we're together in our Porto office, collaborating face-to-face.
+          </p>
+          <div className="flex justify-center pb-6">
+            <ImagePlaceholder width="800px" height="464px" />
+          </div>
+
+        </div>
+
+      </section>
+
       {/* Open Positions */}
-      <section data-block="careers.open-positions" className="border-t border-[#e0e0e0] py-16">
+      <section data-block="global.faq-accordion" className="border-t border-[#e0e0e0] py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <SectionLabel>Open Positions</SectionLabel>
-          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
-            Open positions
-          </h2>
-
-          {/* Empty state */}
-          <div className="text-center">
-            <p className="text-[18px] text-black leading-[24px] mb-2">
-              There are no open positions right now.
-            </p>
-            <p className="text-[18px] text-black leading-[24px] mb-8">
-              But we are always on the lookout for talented folks!
-            </p>
-            <WireframeButton variant="secondary" data-field="link-href">
-              Submit your spontaneous application
-            </WireframeButton>
-          </div>
-
-          <figure className="media mt-8">
-            <ImagePlaceholder className="w-24 h-24 mx-auto" />
-            <figcaption className="sr-only">Small legend placeholder</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section data-block="careers.values" className="border-t border-[#e0e0e0] py-16">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <SectionLabel>Values</SectionLabel>
           <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
-            What we stand for
+            Open Positions
           </h2>
-
-          <div className="text-center mb-8">
-            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto mb-8">
-              We believe in creating meaningful work experiences that foster growth, creativity, and collaboration.
-            </p>
-
-            <ul className="space-y-2 text-[16px] text-black leading-[24px] max-w-[600px] mx-auto mb-12">
-              <li>• Curiosity-driven approach to problem solving</li>
-              <li>• Collaborative team environment</li>
-              <li>• Continuous learning and growth</li>
-              <li>• Work-life balance and flexibility</li>
-            </ul>
-          </div>
-
-          {/* Teams sub-strip */}
-          <div className="grid grid-cols-3 gap-8 mb-12">
-            <div className="text-center p-6 border border-[#e0e0e0]">
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Design</h3>
-              <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px]">Creating beautiful, user-centered experiences</p>
-            </div>
-            <div className="text-center p-6 border border-[#e0e0e0]">
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Development</h3>
-              <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px]">Building robust, scalable solutions</p>
-            </div>
-            <div className="text-center p-6 border border-[#e0e0e0]">
-              <h3 className="text-[18px] font-medium text-black leading-[24px] mb-2">Operations</h3>
-              <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px]">Supporting teams and client success</p>
-            </div>
-          </div>
-
-          <figure className="media">
-            <ImagePlaceholder className="w-full h-[400px]" />
-            <figcaption className="sr-only">16:9 poster/diagram placeholder</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      {/* Benefits */}
-      <section data-block="careers.benefits" className="border-t border-[#e0e0e0] py-16">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <SectionLabel>Benefits</SectionLabel>
-          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">
-            Benefits
-          </h2>
-
-          <div className="grid grid-cols-3 gap-6">
+          <div className="space-y-4">
             {[
-              { title: "Welcome pack", description: "Hoodie and essentials on day one." },
-              { title: "Flexible hours and location", description: "Office-first, with freedom to come and go." },
-              { title: "Unlimited learning stipend", description: "We cover courses and learning you choose." },
-              { title: "All the equipment you need", description: "Whatever you need to excel." },
-              { title: "Career plan & growth", description: "1:1s, workshops, OKRs to support your goals." },
-              { title: "Annual company retreat", description: "Three-night offsite focused on team time." },
-              { title: "Health insurance", description: "Coverage for you (and kids)." },
-              { title: "Public transport subsidy", description: "We reimburse your commute." },
-              { title: "Corporate Social Responsibility", description: "1% for the Planet member." },
-              { title: "Gym membership", description: "Gym a few meters from the office." },
-              { title: "25 vacation days", description: "22 of choice + birthday + Dec 24 & 31." },
-              { title: "Baby kit", description: "A box of goodies for new arrivals." },
-              { title: "Referral bonus programme", description: "€1000 on hire + €1000 after 1 year." },
-              { title: "1 extra vacation day per year", description: "From year two; up to 30 days." },
-              { title: "Period leave", description: "1 day per month." },
-              { title: "Support structures", description: "24/7 assistance for you and family (legal, fiscal, nutrition, mental health)." }
-            ].map((benefit, i) => (
-              <div key={i} className="border border-[#e0e0e0] p-6">
-                <figure className="media mb-4">
-                  <ImagePlaceholder width="100%" height="200px" className="aspect-square" />
-                  <figcaption className="sr-only">{benefit.title} illustration</figcaption>
-                </figure>
-                <h3 data-field="item-title" className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">
-                  {benefit.title}
-                </h3>
-                <p data-field="item-excerpt" className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[20px] text-center">
-                  {benefit.description}
+              'Position 1',
+              'Position 2',
+              'Position 3',
+              'Position 4'
+            ].map((question, index) => (
+              <div key={index} className="border border-[#e0e0e0] p-6">
+                <p data-field="item-title" className="text-[18px] font-medium text-[#1f1f1f]">
+                  {question}
                 </p>
               </div>
             ))}
@@ -141,30 +65,155 @@ export function CareersPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section data-block="global.final-cta" className="border-t border-[#e0e0e0] py-16">
-        <div className="max-w-[1400px] mx-auto px-6 text-center">
-          <SectionLabel>Final CTA</SectionLabel>
-          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
-            Interested in joining us?
-          </h2>
-          <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] mb-8 max-w-[600px] mx-auto">
-            Ready to make an impact? We'd love to hear from you.
-          </p>
-          <WireframeButton
-            variant="primary"
-            data-field="link-title|link-href"
-          >
-            Submit your application → careers@example.com
-          </WireframeButton>
+      {/* Spontaneous Application */}
+      <div className="flex flex-col items-center max-w-[1200px] mx-auto px-6 mb-16 w-full">
+        <TitleDescription
+          title="There are no open positions right now."
+          description="But we are always on the lookout for talented folks! Submit your spontaneous application."
+          cta="View full CX page →"
+        />
+      </div>
 
-          <figure className="media mt-8">
-            <ImagePlaceholder className="w-32 h-32 mx-auto" />
-            <figcaption className="sr-only">Small contact/booking placeholder</figcaption>
-          </figure>
+      {/* What We Stand For */}
+      <section data-block="careers.what-we-stand-for" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <SectionLabel>What We Stand For</SectionLabel>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-2 text-center">Guiding principles</h2>
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto mb-12 text-center">
+            Our values guide everything we do, from how we work with clients to how we support each other as a team.
+          </p>
+
+          <div className="grid grid-cols-2 gap-12 mb-16">
+            {[
+              {
+                title: "Curiosity-driven approach",
+                description: "We ask questions, explore possibilities, and never stop learning. Every challenge is an opportunity to grow and discover something new.",
+                image: "Curiosity icon/illustration"
+              },
+              {
+                title: "Collaborative team environment",
+                description: "We believe the best work happens when diverse minds come together. Everyone's voice matters and contributes to our collective success.",
+                image: "Collaboration icon/illustration"
+              },
+              {
+                title: "Continuous learning and growth",
+                description: "We invest in our people's development through training, conferences, workshops, and dedicated time for skill building.",
+                image: "Growth icon/illustration"
+              },
+              {
+                title: "Work-life balance and flexibility",
+                description: "While we're office-first, we understand life happens. We offer flexibility when you need it and respect your time outside work.",
+                image: "Balance icon/illustration"
+              }
+            ].map((value, i) => (
+              <div key={i} className="flex gap-6">
+                <div className="flex-shrink-0">
+                  <ImagePlaceholder width="80px" height="80px" />
+                </div>
+                <div>
+                  <h3 className="text-[20px] font-medium text-black leading-[24px] mb-3">{value.title}</h3>
+                  <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[24px]">{value.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
+      {/* Benefits */}
+      <section data-block="careers.benefits" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <SectionLabel>Benefits</SectionLabel>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">Benefits beyond paycheck.</h2>
+          <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[823px] mx-auto mb-12 text-center">
+            We believe in taking care of our team with comprehensive benefits that support your work, health, and personal growth.
+          </p>
+
+          <div className="grid grid-cols-3 gap-6">
+            {[
+              { title: "Welcome pack", description: "Hoodie and essentials on day one.", eligibility: null },
+              { title: "Flexible hours & location", description: "Office-first, with freedom to come and go.", eligibility: null },
+              { title: "Learning stipend", description: "We cover courses and learning you choose.", eligibility: "Unlimited" },
+              { title: "Equipment", description: "Whatever you need to excel.", eligibility: null },
+              { title: "Career plan & growth", description: "1:1s, workshops, OKRs to support your goals.", eligibility: null },
+              { title: "Annual retreat", description: "Three-night offsite focused on team time.", eligibility: null },
+              { title: "Health insurance", description: "Coverage for you (and kids).", eligibility: null },
+              { title: "Public transport subsidy", description: "We reimburse your commute.", eligibility: null },
+              { title: "1% for the Planet", description: "Member of 1% for the Planet.", eligibility: null },
+              { title: "Gym membership", description: "Gym a few meters from the office.", eligibility: null },
+              { title: "25 vacation days", description: "22 of choice + birthday + Dec 24 & 31.", eligibility: null },
+              { title: "Baby kit", description: "A box of goodies for new arrivals.", eligibility: null },
+              { title: "Referral bonus", description: "€1000 on hire + €1000 after 1 year.", eligibility: null },
+              { title: "Extra vacation day per year", description: "From year two; up to 30 days.", eligibility: "After year 2" },
+              { title: "Period leave", description: "1 day per month.", eligibility: null },
+              { title: "24/7 support", description: "Legal, fiscal, nutrition, mental health.", eligibility: null }
+            ].map((benefit, i) => (
+              <div key={i} className="p-6">
+                <div className="mb-4">
+                  <ImagePlaceholder width="60px" height="60px" className="mx-auto" />
+                </div>
+                <h3 className="text-[18px] font-medium text-black leading-[24px] mb-3 text-center">
+                  {benefit.title}
+                </h3>
+                <p className="text-[14px] text-[rgba(0,0,0,0.8)] leading-[20px] mb-2 text-center">
+                  {benefit.description}
+                </p>
+                {benefit.eligibility && (
+                  <p className="text-[12px] text-[rgba(0,0,0,0.6)] leading-[16px] text-center italic">
+                    {benefit.eligibility}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Optional: Quotes */}
+      <section data-block="careers.quotes" className="border-t border-[#e0e0e0] py-16">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <SectionLabel>Employee Quotes</SectionLabel>
+          <h2 className="text-[32px] font-medium text-black leading-[36px] mb-12 text-center">What our team says</h2>
+
+          <div className="grid grid-cols-2 gap-12">
+            {[
+              {
+                quote: "Working at Significa has been transformative for my career. The learning opportunities are endless and the team truly cares about each other's growth.",
+                name: "Maria Santos",
+                role: "Senior Designer",
+                hasHeadshot: true
+              },
+              {
+                quote: "The collaborative environment here is unlike anywhere I've worked before. Every project feels like a team effort where everyone's expertise contributes to the final result.",
+                name: "João Silva",
+                role: "Lead Developer",
+                hasHeadshot: true
+              }
+            ].map((testimonial, i) => (
+              <div key={i} className="bg-white p-8 border border-[#e0e0e0]">
+                <p className="text-[16px] text-black leading-[24px] mb-6 italic">
+                  "{testimonial.quote}"
+                </p>
+                <div className="flex items-center gap-4">
+                  {testimonial.hasHeadshot && (
+                    <ImagePlaceholder width="50px" height="50px" className="rounded-full" />
+                  )}
+                  <div>
+                    <p className="text-[16px] font-medium text-black leading-[20px]">{testimonial.name}</p>
+                    <p className="text-[14px] text-[rgba(0,0,0,0.6)] leading-[20px]">{testimonial.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Main CTA */}
+      <MainCTA
+        title="We are ready to grow your business. Are you?"
+        buttonText="Get in touch"
+      />
 
     </div>
   );

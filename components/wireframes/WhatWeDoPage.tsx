@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero, FAQItem } from '../wireframe/WireframeComponents';
+import { ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero, FAQItem } from '../wireframe/WireframeComponents';
 
 export function WhatWeDoPage() {
   return (
@@ -84,7 +84,9 @@ export function WhatWeDoPage() {
 
         {/* How We Work Section */}
         <section data-block="what-we-do.how-we-work" className="border-t border-[#e0e0e0]">
+
           <div className="flex flex-col items-center py-16">
+            <SectionLabel>How We Work</SectionLabel>
             <div className="text-center mb-16">
               <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
                 How we work.

@@ -353,13 +353,15 @@ export function Hero({
   description,
   variant = "compact",
   showMedia = true,
-  mediaHeight = "h-[300px]"
+  mediaHeight = "h-[600px]",
+  cta
 }: {
   title: string;
   description?: string;
   variant?: "basic" | "media" | "media-metrics" | "compact";
   showMedia?: boolean;
   mediaHeight?: string;
+  cta?: string;
 }) {
   return (
     <section data-block="global.hero" data-variant={variant} className="border-b border-[#e0e0e0] py-12">
@@ -380,6 +382,12 @@ export function Hero({
             <figcaption className="sr-only">{title} hero image</figcaption>
           </figure>
         )}
+        {cta && (
+          <WireframeButton variant="secondary" data-field="cta" className="mt-4 mx-auto">
+            {cta}
+          </WireframeButton>
+        )}
+
       </div>
     </section>
   );

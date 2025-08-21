@@ -6,8 +6,6 @@ import {
   ProjectCard,
   TitleDescription,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   Hero
 } from '../wireframe/WireframeComponents';
 

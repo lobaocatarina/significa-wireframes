@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, Hero } from '../wireframe/WireframeComponents';
+import { ImagePlaceholder, Hero } from '../wireframe/WireframeComponents';
 
 interface LegalPageProps {
   pageTitle: string;

@@ -3,8 +3,6 @@ import {
   SectionLabel,
   ProjectCard,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   MainCTA,
   Hero
 } from '../wireframe/WireframeComponents';

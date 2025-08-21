@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, ProjectCard, SectionLabel, Hero } from '../wireframe/WireframeComponents';
+import { ImagePlaceholder, WireframeButton, TitleDescription, ProjectCard, SectionLabel, Hero } from '../wireframe/WireframeComponents';
 
 interface ServiceDetailPageProps {
   serviceName: string;

@@ -9,8 +9,6 @@ import {
   FAQItem,
   TitleDescription,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   MainCTA
 } from '../wireframe/WireframeComponents';
 
@@ -151,7 +149,7 @@ export function HomePage() {
         <TitleDescription
           title="We love what we do, and so do our clients."
           description="Our clients don't just get great products, they enjoy the process too. An independent entity runs customer satisfaction surveys and interviews to help us understand how we can keep continuously improving."
-          cta="View full CX page →"
+          cta="Apply →"
         />
       </div>
 

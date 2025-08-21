@@ -2,8 +2,6 @@ import React from 'react';
 import {
   SectionLabel,
   WireframeButton,
-  WireframeHeader,
-  WireframeFooter,
   FAQItem,
   MainCTA,
   Hero
