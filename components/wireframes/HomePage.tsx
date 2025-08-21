@@ -17,7 +17,7 @@ export function HomePage() {
     <div className="bg-white min-h-screen">
 
 
-      {/* 2. Hero */}
+      {/* Hero */}
       <div className="flex flex-col items-center pt-16 pb-16">
         <SectionLabel>Hero</SectionLabel>
         <div className="max-w-[823px] text-center mb-16">
@@ -39,7 +39,7 @@ export function HomePage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* 3. Highlights / Selected Projects */}
+      {/* Highlights / Selected Projects */}
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Highlights / Selected Projects</SectionLabel>
         <div className="text-center mb-8">
@@ -75,7 +75,7 @@ export function HomePage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* 5. Blog / Insights */}
+      {/* Blog / Insights */}
       <div className="flex flex-col items-center py-16">
         <SectionLabel>Blog / Insights</SectionLabel>
         <div className="text-center mb-16">
@@ -143,7 +143,7 @@ export function HomePage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* 8. Client Experience */}
+      {/* Client Experience */}
       <div className="flex flex-col items-center py-16 max-w-[1200px] mx-auto px-6 w-full">
         <SectionLabel>Client Experience</SectionLabel>
         <TitleDescription

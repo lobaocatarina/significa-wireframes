@@ -1,5 +1,5 @@
 import React from 'react';
-import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Metric, SectionLabel, Hero } from '../wireframe/WireframeComponents';
+import { WireframeHeader, WireframeFooter, ImagePlaceholder, WireframeButton, TitleDescription, Metric, SectionLabel, Hero, FAQItem } from '../wireframe/WireframeComponents';
 
 export function WorkWithUsPage() {
   return (
@@ -19,7 +19,7 @@ export function WorkWithUsPage() {
 
 
         {/* Team */}
-        <section data-block="work-with-us.pricing" className="border-t border-[#e0e0e0] py-16">
+        <section data-block="work-with-us.pricing" className="py-16">
           <div className="max-w-[1400px] mx-auto px-6 w-full">
             <SectionLabel>Team</SectionLabel>
             <div className="text-center mb-16">
@@ -90,7 +90,7 @@ export function WorkWithUsPage() {
         {/* Testimonials Section */}
         <section data-block="work-with-us.testimonials" className="border-t border-[#e0e0e0] py-16">
 
-          <div className="max-w-[1400px] mx-auto px-6">
+          <div className="max-w-[1200px] mx-auto px-6">
             <SectionLabel>Testimonials</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
               Testimonials
@@ -121,29 +121,24 @@ export function WorkWithUsPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section data-block="global.faq-accordion" className="border-t border-[#e0e0e0] py-16">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <SectionLabel>FAQ</SectionLabel>
-            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-8 text-center">
-              FAQs
-            </h2>
-            <div className="space-y-4">
-              {[
-                'What is your typical project timeline?',
-                'How do you handle project changes?',
-                'What are your payment terms?',
-                'Do you provide ongoing support?'
-              ].map((question, index) => (
-                <div key={index} className="border border-[#e0e0e0] p-6">
-                  <p data-field="item-title" className="text-[18px] font-medium text-[#1f1f1f]">
-                    {question}
-                  </p>
-                </div>
-              ))}
-            </div>
+        {/* Section Separator */}
+        <div className="border-t border-[#e0e0e0]"></div>
+
+        {/* FAQ */}
+        <div className="max-w-[800px] mx-auto px-6 py-16">
+          <SectionLabel>FAQ</SectionLabel>
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">Frequently asked questions</h2>
           </div>
-        </section>
+          <div className="space-y-4">
+            <FAQItem question="How often do you collect client feedback?" />
+            <FAQItem question="Who conducts the customer satisfaction surveys?" />
+            <FAQItem question="Do you share negative feedback as well?" />
+            <FAQItem question="How do you use this feedback to improve?" />
+            <FAQItem question="Can I speak to previous clients?" />
+          </div>
+        </div>
+
 
         {/* Final CTA */}
         <div className="border border-[#e0e0e0] mx-auto max-w-[1400px] mb-16">

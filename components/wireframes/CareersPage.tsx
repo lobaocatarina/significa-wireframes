@@ -169,7 +169,7 @@ export function CareersPage() {
         </div>
       </section>
 
-      {/* Optional: Quotes */}
+      {/*Quotes */}
       <section data-block="careers.quotes" className="border-t border-[#e0e0e0] py-16">
         <div className="max-w-[1200px] mx-auto px-6">
           <SectionLabel>Employee Quotes</SectionLabel>

@@ -4,7 +4,9 @@ import {
   SectionLabel,
   BlogCard,
   WireframeButton,
-  Hero
+  Hero,
+  ProjectCard,
+  MainCTA
 } from '../wireframe/WireframeComponents';
 
 export function BlogIndexPage() {
@@ -19,31 +21,35 @@ export function BlogIndexPage() {
         showMedia={false}
       />
 
-      {/* Filters */}
-      <div className="max-w-[1400px] mx-auto px-6 pb-8">
-        <SectionLabel>Filters</SectionLabel>
-        <div className="flex gap-3">
-          <WireframeButton>All</WireframeButton>
-          <WireframeButton variant="secondary">Design</WireframeButton>
-          <WireframeButton variant="secondary">Development</WireframeButton>
-          <WireframeButton variant="secondary">Strategy</WireframeButton>
-          <WireframeButton variant="secondary">Case Studies</WireframeButton>
+      {/* Project List */}
+      <div className="flex flex-col items-center py-16">
+        <div className="max-w-[1400px] mx-auto px-6 w-full">
+          <SectionLabel>Blog</SectionLabel>
+          <div className="flex gap-3 mb-8 mx-auto justify-center">
+            <WireframeButton data-field="cta">All Posts</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">E-commerce</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">SaaS</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">Mobile</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">B2B</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">Healthcare</WireframeButton>
+          </div>
+          <div className="grid grid-cols-2 gap-8 mt-8">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="group cursor-pointer">
+                <BlogCard
+                  title={`Blog Title ${i + 1}`}
+                  description="Brief description of the blog post"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-16">
+            <WireframeButton variant="secondary" data-field="cta">Load More Projects</WireframeButton>
+          </div>
         </div>
       </div>
 
-      {/* Post List */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
-        <SectionLabel>Post List</SectionLabel>
-        <div className="grid grid-cols-3 gap-8">
-          {[...Array(9)].map((_, i) => (
-            <BlogCard key={i} />
-          ))}
-        </div>
-
-        <div className="flex justify-center mt-12">
-          <WireframeButton variant="secondary">Load More Posts</WireframeButton>
-        </div>
-      </div>
 
       {/* Logos Row */}
       <div className="max-w-[1400px] mx-auto px-6 py-16">
