@@ -40,17 +40,15 @@ export function WorkWithUsPage() {
         {/* Pricing Section */}
         <section data-block="work-with-us.pricing" className="border-t border-[#e0e0e0] py-16">
 
-          <div className="max-w-[1400px] mx-auto px-6">
+          <div className="max-w-[1200px] mx-auto px-6">
             <SectionLabel>Pricing & Rates</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               Pricing & rates
             </h2>
-            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6 ">
+            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-6 text-center">
               Transparent pricing structure tailored to your project scope and timeline.
             </p>
-            <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
-              View detailed pricing in our Handbook: Billing & Invoicing
-            </a>
+            <WireframeButton variant="secondary" data-field="cta" className="mx-auto">View Full Team</WireframeButton>
             <figure className="media mt-8" data-field="media-label">
               <ImagePlaceholder className="w-full h-[250px]" />
               <figcaption className="sr-only">Pricing and billing structure overview</figcaption>
@@ -61,7 +59,7 @@ export function WorkWithUsPage() {
         {/* CX Preview Section */}
         <section data-block="global.cx-preview" className="border-t border-[#e0e0e0] py-16">
 
-          <div className="max-w-[1400px] mx-auto px-6">
+          <div className="max-w-[1200px] mx-auto px-6">
             <SectionLabel>CX Data</SectionLabel>
             <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
               CX Data
