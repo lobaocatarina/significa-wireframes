@@ -14,25 +14,32 @@ export function WorkWithUsPage() {
           title="Working with Significa."
           description="Learn how we collaborate, assemble teams, and structure our engagement to deliver exceptional results."
           showMedia={false}
+          cta="Explore our handbook"
         />
 
 
-        {/* Working with Significa */}
-        <section data-block="work-with-us.summary" className="border-t border-[#e0e0e0]">
-          <div className="flex flex-col items-center py-16">
+        {/* Team */}
+        <section data-block="work-with-us.pricing" className="border-t border-[#e0e0e0] py-16">
+          <div className="max-w-[1400px] mx-auto px-6 w-full">
+            <SectionLabel>Team</SectionLabel>
             <div className="text-center mb-16">
-              <SectionLabel>Working with Significa</SectionLabel>
-              <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
-                Working with Significa
+              <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
+                Our team
               </h2>
-              <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
-                We follow a hands-on collaborative approach that ensures your project delivers results.
+              <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
+                Meet the passionate individuals behind Significa. Our diverse team brings together expertise from design, development, and business strategy.
               </p>
             </div>
-            <div className="flex justify-center pb-16">
-              <ImagePlaceholder width="800px" height="464px" />
+            <div className="grid grid-cols-4 gap-8 mb-16">
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="text-center">
+                  <ImagePlaceholder width="200px" height="200px" className="mx-auto mb-4 rounded-full" />
+                  <h3 className="text-[18px] font-medium text-black leading-[24px] mb-1 text-center">Team Member Name</h3>
+                  <p className="text-[16px] text-black opacity-50 leading-[24px] mb-2">Position</p>
+                  <p className="text-[14px] text-black opacity-50 leading-[20px]">Location</p>
+                </div>
+              ))}
             </div>
-
           </div>
         </section>
 
@@ -56,31 +63,29 @@ export function WorkWithUsPage() {
           </div>
         </section>
 
-        {/* CX Preview Section */}
-        <section data-block="global.cx-preview" className="border-t border-[#e0e0e0] py-16">
+        {/* Section Separator */}
+        <div className="border-t border-[#e0e0e0]"></div>
 
-          <div className="max-w-[1200px] mx-auto px-6">
-            <SectionLabel>CX Data</SectionLabel>
-            <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-6 text-center">
-              CX Data
-            </h2>
-            <p data-field="paragraph" className="text-[18px] text-[rgba(0,0,0,0.8)] mb-8 ">
-              Our commitment to excellence is measured and shared transparently.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <Metric value="98%" label="Client Satisfaction" />
-              <Metric value="95%" label="On-time delivery" />
-              <Metric value="4.8/5" label="NPS Score" />
+        {/* Client Experience */}
+        <div className="flex flex-col items-center py-16 max-w-[1200px] mx-auto px-6 w-full">
+          <SectionLabel>Client Experience</SectionLabel>
+          <TitleDescription
+            title="We love what we do, and so do our clients."
+            description="Our clients don't just get great products, they enjoy the process too. An independent entity runs customer satisfaction surveys and interviews to help us understand how we can keep continuously improving."
+            cta="Learn more →"
+          />
+        </div>
+
+        <div className="flex justify-center pb-16">
+          <div className="flex flex-col items-center">
+            <SectionLabel>CX Metrics</SectionLabel>
+            <div className="flex gap-8">
+              <Metric value="98%" label="Satisfaction Rate" />
+              <Metric value="9.2/10" label="Average Rating" />
+              <Metric value="95%" label="Recommend Us" />
             </div>
-            <a data-field="link-href" className="text-[16px] text-[#1f1f1f] underline">
-              Explore our full CX Data →
-            </a>
-            <figure className="media mt-8" data-field="media-label">
-              <ImagePlaceholder className="w-full h-[200px]" />
-              <figcaption className="sr-only">Customer experience data visualization</figcaption>
-            </figure>
           </div>
-        </section>
+        </div>
 
         {/* Testimonials Section */}
         <section data-block="work-with-us.testimonials" className="border-t border-[#e0e0e0] py-16">
