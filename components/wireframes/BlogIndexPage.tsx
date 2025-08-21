@@ -45,21 +45,11 @@ export function BlogIndexPage() {
           </div>
 
           <div className="flex justify-center mt-16">
-            <WireframeButton variant="secondary" data-field="cta">Load More Projects</WireframeButton>
+            <WireframeButton variant="secondary" data-field="cta">Load More Posts</WireframeButton>
           </div>
         </div>
       </div>
 
-
-      {/* Logos Row */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
-        <SectionLabel>Client Logos</SectionLabel>
-        <div className="flex justify-center items-center gap-12">
-          {[...Array(5)].map((_, i) => (
-            <ImagePlaceholder key={i} width="120px" height="60px" />
-          ))}
-        </div>
-      </div>
 
 
     </div>
