@@ -17,7 +17,7 @@ export function WhatWeDoPage() {
         />
 
         {/* Services Section */}
-        <section data-block="what-we-do.services" className="border-t border-[#e0e0e0] py-16">
+        <section data-block="what-we-do.services" className="py-16">
 
           <div className="max-w-[1200px] mx-auto px-6">
             <SectionLabel>Our Services</SectionLabel>
@@ -51,7 +51,7 @@ export function WhatWeDoPage() {
         </section>
 
         {/* Deliverables Section */}
-        <section data-block="what-we-do.deliverables" className="border-t border-[#e0e0e0] py-16">
+        <section data-block="what-we-do.deliverables" className="py-16">
 
           <div className="max-w-[1400px] mx-auto px-6">
             <SectionLabel>What We Build</SectionLabel>
