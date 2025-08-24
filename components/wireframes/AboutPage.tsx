@@ -57,42 +57,23 @@ export function AboutPage() {
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>
 
-      {/* Locations */}
-      <div className=" py-16">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <SectionLabel>Locations</SectionLabel>
-          <div className="text-center mb-16">
-            <h2 className="text-[32px] font-medium text-black leading-[36px] max-w-[823px] mx-auto text-center">
-              Where we work
-            </h2>
-            <p className="text-[18px] text-[rgba(0,0,0,0.8)] leading-[24px] text-center max-w-[823px] mx-auto">
-              We're a global team with offices and remote workers around the world.
-            </p>
+      {/* Culture Note */}
+      <section data-block="careers.culture-note">
+        <div className="max-w-[1400px] mx-auto py-16 px-6">
+          <SectionLabel>Our office</SectionLabel>
+          <h2 data-field="heading" className="text-[32px] font-medium text-black leading-[36px] mb-4 text-center">
+            We are office-first.
+          </h2>
+          <p className="text-[16px] text-[rgba(0,0,0,0.8)] leading-[24px] max-w-[600px] mx-auto mb-8 text-center">
+            While we embrace flexibility, we believe the best work happens when we're together in our Porto office, collaborating face-to-face.
+          </p>
+          <div className="flex justify-center pb-6">
+            <ImagePlaceholder width="800px" height="464px" />
           </div>
 
-          <div className="grid grid-cols-3 gap-12 mb-16">
-            {[
-              { city: 'Porto', country: 'Portugal', description: 'Our main office and headquarters' },
-              { city: 'New York', country: 'United States', description: 'North American operations hub' },
-              { city: 'Remote', country: 'Global', description: 'Team members working from anywhere' }
-            ].map((location, i) => (
-              <div key={i} className="text-center">
-                <ImagePlaceholder width="300px" height="200px" className="mx-auto mb-6" />
-                <h3 className="text-[32px] font-medium text-black leading-[36px] mb-2 text-center">{location.city}</h3>
-                <p className="text-[18px] text-black opacity-50 leading-[24px] mb-3 text-center">{location.country}</p>
-                <p className="text-[16px] text-black opacity-80 leading-[24px] text-center">{location.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex justify-center gap-16">
-            <Metric value="3" label="Offices" />
-            <Metric value="25+" label="Team Members" />
-            <Metric value="12" label="Countries" />
-            <Metric value="100%" label="Remote Friendly" />
-          </div>
         </div>
-      </div>
+
+      </section>
 
       {/* Section Separator */}
       <div className="border-t border-[#e0e0e0]"></div>

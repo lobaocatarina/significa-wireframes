@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero, FAQItem } from '../wireframe/WireframeComponents';
+import { ImagePlaceholder, WireframeButton, SectionLabel, TitleDescription, Hero, FAQItem, WireframeHeader, WireframeFooter } from '../wireframe/WireframeComponents';
 
 export function WhatWeDoPage() {
   return (
@@ -8,12 +8,13 @@ export function WhatWeDoPage() {
         Skip to main content
       </a>
 
-
+      <WireframeHeader />
 
       <main id="content">
         <Hero
-          title="Custom design and development services built to grow your business."
-
+          title="What we do."
+          description="Custom design and development services built to grow your business."
+          variant="compact"
         />
 
         {/* Services Section */}
@@ -165,7 +166,7 @@ export function WhatWeDoPage() {
         </div>
       </main>
 
-
+      <WireframeFooter />
     </div>
   );
 }
