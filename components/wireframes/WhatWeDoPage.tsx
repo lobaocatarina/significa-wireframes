@@ -33,7 +33,7 @@ export function WhatWeDoPage() {
                 { name: 'Launch', description: 'Release & scalability' },
                 { name: 'Grow', description: 'Measure & observability' }
               ].map((service, index) => (
-                <div key={index} className="border border-[#e0e0e0] p-6">
+                <div key={index} className="border p-6">
                   <h3 data-field="item-title" className="text-[24px] font-semibold text-[#1f1f1f] mb-3 text-center">
                     {service.name}
                   </h3>
