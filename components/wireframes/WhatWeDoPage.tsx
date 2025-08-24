@@ -8,8 +8,6 @@ export function WhatWeDoPage() {
         Skip to main content
       </a>
 
-      <WireframeHeader />
-
       <main id="content">
         <Hero
           title="What we do."
