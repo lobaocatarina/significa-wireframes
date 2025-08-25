@@ -21,8 +21,7 @@ export function AboutPage() {
         mediaHeight="h-[400px]"
       />
 
-      {/* Section Separator */}
-      <div className="border-t border-[#e0e0e0]"></div>
+
 
       {/* Team */}
       <div className="flex flex-col items-center py-16">
