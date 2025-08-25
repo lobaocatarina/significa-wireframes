@@ -162,8 +162,6 @@ export function AboutPage() {
         </div>
       </div>
 
-      {/* Section Separator */}
-      <div className="border-t border-[#e0e0e0]"></div>
 
       {/* Careers Teaser */}
       <MainCTA
@@ -171,10 +169,6 @@ export function AboutPage() {
         description="Ready to be part of something special? Explore career opportunities and help us build the future of digital experiences."
         buttonText="View Open Positions"
       />
-
-      {/* Section Separator */}
-      <div className="border-t border-[#e0e0e0]"></div>
-
 
     </div>
   );
