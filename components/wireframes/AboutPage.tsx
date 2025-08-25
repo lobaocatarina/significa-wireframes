@@ -48,9 +48,7 @@ export function AboutPage() {
             ))}
           </div>
 
-          <div className="text-center">
-            <WireframeButton variant="secondary" data-field="cta">View Full Team</WireframeButton>
-          </div>
+
         </div>
       </div>
 
